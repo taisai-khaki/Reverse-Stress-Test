@@ -1,0 +1,4 @@
+method,budget,moderate_threshold_crossings,severe_threshold_crossings,structural_pathways,adaptation_limited_pathways,primary_family_coverage_full_denominator,primary_family_coverage_non_adaptation_limited,primary_family_coverage_CMD_PAC_RL_TO,multilabel_any_coverage_full_denominator,exact_multilabel_signature_coverage_full_denominator,exact_multilabel_signature_coverage_non_adaptation_limited,exact_multilabel_signature_coverage_CMD_PAC_RL_TO,exact_multilabel_signature_coverage_unique_signatures
+Baseline FST,50,33,11,,,0.964969450101833,0.9704777241009125,0.7912621359223301,1.0,0.7934826883910387,0.8105206655931294,0.5972994440031771,0.26666666666666666
+Mechanism-balanced FST,50,46,35,,,0.9511201629327902,0.9554482018250134,0.7087378640776699,0.9665987780040733,0.8525458248472505,0.8733225979602791,0.7124702144559174,0.3333333333333333
+RST,50,48,39,41.0,7.0,1.0,1.0,1.0,1.0,0.9022403258655805,0.917337627482555,0.8093725178713265,0.4666666666666667

@@ -1,0 +1,8 @@
+﻿ω_C,ω_P,ω_γ,Top mechanism family,Top classification,T2P IF,Corridor IF,Rank stable?
+0.5,0.3,0.2,Propagation-amplified cascade,Structural,0.830545,0.169455,True
+0.6,0.2,0.2,Propagation-amplified cascade,Structural,0.824514,0.175486,True
+0.4,0.4,0.2,Propagation-amplified cascade,Structural,0.836799,0.163201,True
+0.4,0.2,0.4,Propagation-amplified cascade,Structural,0.808148,0.191852,True
+0.33,0.33,0.34,Propagation-amplified cascade,Structural,0.817806,0.182194,True
+0.2,0.6,0.2,Hidden convergent dependency,Structural,0.850025,0.149975,True
+0.2,0.2,0.6,Propagation-amplified cascade,Structural,0.799193,0.200807,True

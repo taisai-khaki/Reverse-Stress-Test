@@ -1,0 +1,5 @@
+threshold,passive_pathways,T2P_IF,dominant_mechanism,intervention_implication
+SL<90% >=1 period,45,0.6972796360672826,Compounding moderate disturbance,Slack restoration and stress-triggered allocation.
+SL<90% >=2 periods,21,0.8305449479040461,Recovery lag and temporal overlap,Recovery sequencing and time-buffered restoration.
+SL<85% >=3 periods,5,0.9186078221591577,Propagation-amplified cascade,Segmentation and containment redesign.
+SL<80% >=4 periods,1,1.0,Propagation-amplified cascade,Segmentation and containment redesign.

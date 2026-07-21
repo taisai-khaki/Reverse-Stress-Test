@@ -1,0 +1,6 @@
+﻿group,scenarios,moderate_crossings,severe_crossings
+Corridor disruptions,6,1,0
+Demand spikes,4,0,0
+Individual tier-1 failures,27,0,0
+Prespecified combinations,5,1,0
+T2P partial failures,8,5,3

@@ -1,0 +1,8 @@
+﻿metric,FST,RST
+Computational budget,50.0,50.0
+Threshold-crossing pathways identified: moderate,7.0,21.0
+Threshold-crossing pathways identified: severe,3.0,5.0
+Coverage of Monte Carlo failures: moderate,0.45,0.4791666666666667
+Coverage of Monte Carlo failures: severe,0.43548387096774194,0.46774193548387094
+Hidden convergence pathways identified,5.0,3.0
+Compounding moderate-disturbance pathways identified,1.0,6.0

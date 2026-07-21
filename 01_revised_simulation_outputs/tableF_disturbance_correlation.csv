@@ -1,0 +1,5 @@
+﻿Disruption model,Moderate failures,Severe failures,Dominant mechanism family,Dominant classification,RST active pathways,Adaptation-limited share
+Independent baseline,240,124,Hidden convergent dependency,Adaptation-limited,11,0.608333
+Shared upstream shock,566,342,Hidden convergent dependency,Adaptation-limited,11,0.542403
+Supplier-cluster shock,308,161,Hidden convergent dependency,Adaptation-limited,11,0.551948
+Demand-supply coupling,472,258,Hidden convergent dependency,Adaptation-limited,11,0.59322

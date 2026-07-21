@@ -1,0 +1,51 @@
+scenario_id,category,specification,moderate_crossing,severe_crossing
+FST-01,Single tier-1 failure,S1A: 25% for 2w @t10,False,False
+FST-02,Single tier-1 failure,S1A: 25% for 4w @t10,False,False
+FST-03,Single tier-1 failure,S1A: 25% for 6w @t10,False,False
+FST-04,Single tier-1 failure,S1A: 50% for 2w @t10,False,False
+FST-05,Single tier-1 failure,S1A: 50% for 4w @t10,False,False
+FST-06,Single tier-1 failure,S1A: 50% for 6w @t10,False,False
+FST-07,Single tier-1 failure,S1A: 75% for 2w @t10,False,False
+FST-08,Single tier-1 failure,S1A: 75% for 4w @t10,False,False
+FST-09,Single tier-1 failure,S1A: 75% for 6w @t10,False,False
+FST-10,Single tier-1 failure,S1B: 25% for 2w @t10,False,False
+FST-11,Single tier-1 failure,S1B: 25% for 4w @t10,False,False
+FST-12,Single tier-1 failure,S1B: 25% for 6w @t10,False,False
+FST-13,Single tier-1 failure,S1B: 50% for 2w @t10,False,False
+FST-14,Single tier-1 failure,S1B: 50% for 4w @t10,False,False
+FST-15,Single tier-1 failure,S1B: 50% for 6w @t10,False,False
+FST-16,Single tier-1 failure,S1B: 75% for 2w @t10,False,False
+FST-17,Single tier-1 failure,S1B: 75% for 4w @t10,False,False
+FST-18,Single tier-1 failure,S1B: 75% for 6w @t10,False,False
+FST-19,Single tier-1 failure,S1C: 25% for 2w @t10,False,False
+FST-20,Single tier-1 failure,S1C: 25% for 4w @t10,False,False
+FST-21,Single tier-1 failure,S1C: 25% for 6w @t10,False,False
+FST-22,Single tier-1 failure,S1C: 50% for 2w @t10,False,False
+FST-23,Single tier-1 failure,S1C: 50% for 4w @t10,False,False
+FST-24,Single tier-1 failure,S1C: 50% for 6w @t10,False,False
+FST-25,Single tier-1 failure,S1C: 75% for 2w @t10,False,False
+FST-26,Single tier-1 failure,S1C: 75% for 4w @t10,False,False
+FST-27,Single tier-1 failure,S1C: 75% for 6w @t10,False,False
+FST-28,T2P partial failure,T2P: 30% for 3w @t10,False,False
+FST-29,T2P partial failure,T2P: 40% for 3w @t10,False,False
+FST-30,T2P partial failure,T2P: 50% for 3w @t10,False,False
+FST-31,T2P partial failure,T2P: 60% for 3w @t10,True,False
+FST-32,T2P partial failure,T2P: 60% for 4w @t10,True,True
+FST-33,T2P partial failure,T2P: 70% for 3w @t10,True,False
+FST-34,T2P partial failure,T2P: 70% for 4w @t10,True,True
+FST-35,T2P partial failure,T2P: 80% for 4w @t10,True,True
+FST-36,Corridor disruption,corridor: 20% for 2w @t10,False,False
+FST-37,Corridor disruption,corridor: 40% for 2w @t10,False,False
+FST-38,Corridor disruption,corridor: 60% for 2w @t10,False,False
+FST-39,Corridor disruption,corridor: 80% for 2w @t10,False,False
+FST-40,Corridor disruption,corridor: 100% for 1w @t10,False,False
+FST-41,Corridor disruption,corridor: 60% for 4w @t10,True,False
+FST-42,Demand spike,demand: 30% for 2w @t10,False,False
+FST-43,Demand spike,demand: 50% for 2w @t10,False,False
+FST-44,Demand spike,demand: 30% for 4w @t10,False,False
+FST-45,Demand spike,demand: 50% for 4w @t10,False,False
+FST-46,S1A + S1B simultaneous failure,S1A: 100% for 2w @t10 + S1B: 100% for 2w @t10,False,False
+FST-47,S1A + S1C simultaneous failure,S1A: 100% for 2w @t10 + S1C: 100% for 2w @t10,False,False
+FST-48,S1B + S1C simultaneous failure,S1B: 100% for 2w @t10 + S1C: 100% for 2w @t10,False,False
+FST-49,T2P + corridor concurrent,T2P: 60% for 3w @t10 + corridor: 40% for 3w @t10,True,False
+FST-50,S1A + S1B high-severity,S1A: 75% for 3w @t10 + S1B: 75% for 3w @t10,False,False

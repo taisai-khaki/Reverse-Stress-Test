@@ -1,0 +1,51 @@
+scenario_id,category,moderate_crossing,severe_crossing,assigned_family
+FST-E-01,T2P partial failure,False,False,Hidden convergent dependency
+FST-E-02,T2P partial failure,True,False,Hidden convergent dependency
+FST-E-03,T2P partial failure,False,False,Hidden convergent dependency
+FST-E-04,T2P partial failure,True,False,Hidden convergent dependency
+FST-E-05,T2P partial failure,False,False,Hidden convergent dependency
+FST-E-06,T2P partial failure,False,False,Hidden convergent dependency
+FST-E-07,T2P partial failure,True,False,Hidden convergent dependency
+FST-E-08,T2P partial failure,True,True,Hidden convergent dependency
+FST-E-09,T2P partial failure,True,True,Hidden convergent dependency
+FST-E-10,T2P partial failure,True,True,Hidden convergent dependency
+FST-E-11,Corridor disruption,False,False,Concentrated dependency
+FST-E-12,Corridor disruption,False,False,Concentrated dependency
+FST-E-13,Corridor disruption,False,False,Concentrated dependency
+FST-E-14,Corridor disruption,False,False,Concentrated dependency
+FST-E-15,Corridor disruption,True,False,Concentrated dependency
+FST-E-16,Corridor disruption,True,True,Concentrated dependency
+FST-E-17,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-18,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-19,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-20,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-21,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-22,Tier-1 supplier failure,False,False,Concentrated dependency
+FST-E-23,T2P + corridor combination,False,False,Compounding moderate disturbance
+FST-E-24,T2P + corridor combination,False,False,Compounding moderate disturbance
+FST-E-25,T2P + corridor combination,False,False,Compounding moderate disturbance
+FST-E-26,T2P + corridor combination,False,False,Compounding moderate disturbance
+FST-E-27,T2P + corridor combination,False,False,Compounding moderate disturbance
+FST-E-28,T2P + corridor combination,True,False,Compounding moderate disturbance
+FST-E-29,T2P + corridor combination,True,False,Compounding moderate disturbance
+FST-E-30,T2P + corridor combination,True,False,Compounding moderate disturbance
+FST-E-31,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-32,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-33,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-34,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-35,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-36,T2P + tier-1 combination,False,False,Compounding moderate disturbance
+FST-E-37,Demand spike + T2P impairment,True,False,Propagation-amplified cascade
+FST-E-38,Demand spike + T2P impairment,True,False,Propagation-amplified cascade
+FST-E-39,Demand spike + T2P impairment,True,True,Propagation-amplified cascade
+FST-E-40,Demand spike + T2P impairment,True,True,Propagation-amplified cascade
+FST-E-41,Sequential T2P to corridor disruption,False,False,Recovery lag and temporal overlap
+FST-E-42,Sequential T2P to corridor disruption,True,False,Recovery lag and temporal overlap
+FST-E-43,Sequential T2P to corridor disruption,True,False,Recovery lag and temporal overlap
+FST-E-44,Sequential T2P to corridor disruption,True,True,Recovery lag and temporal overlap
+FST-E-45,Sequential T2P to corridor disruption,True,True,Recovery lag and temporal overlap
+FST-E-46,Sequential corridor to T2P disruption,False,False,Recovery lag and temporal overlap
+FST-E-47,Sequential corridor to T2P disruption,False,False,Recovery lag and temporal overlap
+FST-E-48,Sequential corridor to T2P disruption,True,False,Recovery lag and temporal overlap
+FST-E-49,Sequential corridor to T2P disruption,True,True,Recovery lag and temporal overlap
+FST-E-50,Sequential corridor to T2P disruption,True,False,Recovery lag and temporal overlap

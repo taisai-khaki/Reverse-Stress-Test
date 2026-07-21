@@ -1,0 +1,11 @@
+item,value
+Programming language,3.14.3
+NumPy,2.4.3
+SciPy,1.17.1
+pandas,2.3.3
+Monte Carlo replications,1000
+Random seed,42
+Budget,50
+Horizon,52
+mc_max_events,2
+mc_interarrival_mean_weeks,18.0

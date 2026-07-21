@@ -1,0 +1,6 @@
+﻿Metric,FST-original,FST-enhanced-50,RST
+Structural ranking agreement,0.882,0.882,0.882
+Mechanism coverage including ALF,0.45,0.529167,0.479167
+Mechanism coverage excluding ALF,0.850394,1.0,0.905512
+CMD/PAC/RL-TO coverage,0.595745,1.0,1.0
+Passive–active classification,N/A,N/A,11 structural / 10 adaptation-limited

@@ -1,0 +1,11 @@
+topology,topology_description,seed,replications,mc_moderate_failures,mc_severe_failures,fst_original_crossings,fst_enhanced_crossings,rst_passive_pathways,rst_structural_pathways,rst_adaptation_limited_pathways,upstream_processor_criticality_rank,corridor_criticality_rank,rst_t2p_if,rst_corridor_if,fst_original_non_alf_coverage,fst_enhanced_non_alf_coverage,rst_non_alf_coverage,fst_original_cmd_pac_rlto_coverage,fst_enhanced_cmd_pac_rlto_coverage,rst_cmd_pac_rlto_coverage
+A,Shared-T2P single-corridor network,10,1000,217,102,7,22,21,11,10,1,2,0.8305449479040461,0.1694550520959539,0.8235294117647058,1.0,0.9327731092436975,0.5,1.0,1.0
+A,Shared-T2P single-corridor network,20,1000,256,133,7,22,21,11,10,1,2,0.8305449479040461,0.1694550520959539,0.8571428571428571,1.0,0.9323308270676691,0.6041666666666666,1.0,1.0
+A,Shared-T2P single-corridor network,30,1000,233,112,7,22,21,11,10,1,2,0.8305449479040461,0.1694550520959539,0.8492063492063492,1.0,0.873015873015873,0.5681818181818182,1.0,1.0
+A,Shared-T2P single-corridor network,40,1000,261,131,7,22,21,11,10,1,2,0.8305449479040461,0.1694550520959539,0.8897058823529411,1.0,0.8676470588235294,0.6666666666666666,1.0,1.0
+A,Shared-T2P single-corridor network,50,1000,244,124,7,22,21,11,10,1,2,0.8305449479040461,0.1694550520959539,0.8852459016393442,1.0,0.9016393442622951,0.6744186046511628,1.0,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,10,1000,108,37,4,17,7,2,5,1,2,0.9623104459227807,0.03768955407721928,0.52,1.0,0.8,0.0,1.0,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,20,1000,139,54,4,17,7,2,5,1,2,0.9623104459227807,0.03768955407721928,0.5147058823529411,1.0,0.8823529411764706,0.0,1.0,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,30,1000,122,47,4,17,7,2,5,1,2,0.9623104459227807,0.03768955407721928,0.5652173913043478,1.0,0.7536231884057971,0.0,1.0,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,40,1000,143,55,4,17,7,2,5,1,2,0.9623104459227807,0.03768955407721928,0.5945945945945946,1.0,0.7432432432432432,0.0,1.0,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,50,1000,126,52,4,17,7,2,5,1,2,0.9623104459227807,0.03768955407721928,0.47692307692307695,1.0,0.8461538461538461,0.0,1.0,1.0

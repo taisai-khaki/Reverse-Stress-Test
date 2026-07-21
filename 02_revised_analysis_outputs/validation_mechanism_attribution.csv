@@ -1,0 +1,8 @@
+check,probe,observed,passed
+Causal-prefix restriction,RST-01 plus a post-crossing demand event,"base=('Concentrated dependency', 'Hidden convergent dependency', 'Propagation-amplified cascade'); extended=('Concentrated dependency', 'Hidden convergent dependency', 'Propagation-amplified cascade'); prefix=(0,)",True
+Label-order invariance,RST-46 across all 120 signature orders,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,True
+Single-event CD,RST-05,"labels=('Concentrated dependency',); singles=(0,)",True
+HCD removal counterfactual,RST-01,"labels=('Concentrated dependency', 'Hidden convergent dependency', 'Propagation-amplified cascade'); removals=('T2P',)",True
+CMD constituent-event tests,RST-23,"labels=('Hidden convergent dependency', 'Compounding moderate disturbance'); singles=()",True
+PAC direct-impact counterfactual,RST-01,"labels=('Concentrated dependency', 'Hidden convergent dependency', 'Propagation-amplified cascade'); direct_failure=False",True
+RL-TO recovery-window test,RST-46 and recovery-end boundary,"support=((0, 1),); end_labels=('Concentrated dependency', 'Hidden convergent dependency', 'Propagation-amplified cascade')",True

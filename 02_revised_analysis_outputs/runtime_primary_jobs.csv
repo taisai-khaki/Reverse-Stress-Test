@@ -1,0 +1,27 @@
+workload,job_id,topology,dependence_model,seed,size,seconds,units_per_second,source
+Monte Carlo,topology_A_independent_seed_42_n_1000,A,Independent baseline,42.0,1000,,,resumed
+Monte Carlo,topology_A_independent_seed_314_n_1000,A,Independent baseline,314.0,1000,,,resumed
+Monte Carlo,topology_A_independent_seed_1618_n_1000,A,Independent baseline,1618.0,1000,,,resumed
+Monte Carlo,topology_A_independent_seed_2026_n_1000,A,Independent baseline,2026.0,1000,,,resumed
+Monte Carlo,topology_A_independent_seed_2718_n_1000,A,Independent baseline,2718.0,1000,,,resumed
+Monte Carlo,topology_B_independent_seed_42_n_1000,B,Independent baseline,42.0,1000,,,resumed
+Monte Carlo,topology_B_independent_seed_314_n_1000,B,Independent baseline,314.0,1000,,,resumed
+Monte Carlo,topology_B_independent_seed_1618_n_1000,B,Independent baseline,1618.0,1000,,,resumed
+Monte Carlo,topology_B_independent_seed_2026_n_1000,B,Independent baseline,2026.0,1000,,,resumed
+Monte Carlo,topology_B_independent_seed_2718_n_1000,B,Independent baseline,2718.0,1000,,,resumed
+Monte Carlo,topology_A_shared_upstream_shock_seed_42_n_1000,A,Shared upstream shock,42.0,1000,,,resumed
+Monte Carlo,topology_A_shared_upstream_shock_seed_314_n_1000,A,Shared upstream shock,314.0,1000,,,resumed
+Monte Carlo,topology_A_shared_upstream_shock_seed_1618_n_1000,A,Shared upstream shock,1618.0,1000,,,resumed
+Monte Carlo,topology_A_shared_upstream_shock_seed_2026_n_1000,A,Shared upstream shock,2026.0,1000,,,resumed
+Monte Carlo,topology_A_shared_upstream_shock_seed_2718_n_1000,A,Shared upstream shock,2718.0,1000,,,resumed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_42_n_1000,A,Supplier-cluster shock,42.0,1000,,,resumed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_314_n_1000,A,Supplier-cluster shock,314.0,1000,,,resumed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_1618_n_1000,A,Supplier-cluster shock,1618.0,1000,,,resumed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_2026_n_1000,A,Supplier-cluster shock,2026.0,1000,,,resumed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_2718_n_1000,A,Supplier-cluster shock,2718.0,1000,,,resumed
+Monte Carlo,topology_A_demand_supply_coupling_seed_42_n_1000,A,Demand-supply coupling,42.0,1000,,,resumed
+Monte Carlo,topology_A_demand_supply_coupling_seed_314_n_1000,A,Demand-supply coupling,314.0,1000,,,resumed
+Monte Carlo,topology_A_demand_supply_coupling_seed_1618_n_1000,A,Demand-supply coupling,1618.0,1000,,,resumed
+Monte Carlo,topology_A_demand_supply_coupling_seed_2026_n_1000,A,Demand-supply coupling,2026.0,1000,,,resumed
+Monte Carlo,topology_A_demand_supply_coupling_seed_2718_n_1000,A,Demand-supply coupling,2718.0,1000,,,resumed
+Primary RST,topology_A_RST_budget_50,A,N/A,,50,2.0006690999725834,24.991639047499252,executed

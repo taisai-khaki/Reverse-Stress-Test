@@ -1,0 +1,51 @@
+topology,topology_description,metric,mean,standard_deviation,minimum,maximum,runs
+A,"Shared T2P, single corridor",MC_moderate_failures,491.0,6.48074069840786,484.0,497.0,5
+A,"Shared T2P, single corridor",MC_severe_failures,289.0,8.215838362577491,278.0,299.0,5
+A,"Shared T2P, single corridor",FST_baseline_crossings,33.0,0.0,33.0,33.0,5
+A,"Shared T2P, single corridor",FST_mechanism_balanced_crossings,46.0,0.0,46.0,46.0,5
+A,"Shared T2P, single corridor",RST_passive_pathways,48.0,0.0,48.0,48.0,5
+A,"Shared T2P, single corridor",RST_severe_pathways,39.0,0.0,39.0,39.0,5
+A,"Shared T2P, single corridor",RST_structural_pathways,41.0,0.0,41.0,41.0,5
+A,"Shared T2P, single corridor",RST_adaptation_limited_pathways,7.0,0.0,7.0,7.0,5
+A,"Shared T2P, single corridor",MC_upstream_processor_rank,1.6,0.5477225575051661,1.0,2.0,5
+A,"Shared T2P, single corridor",MC_corridor_rank,1.4,0.5477225575051661,1.0,2.0,5
+A,"Shared T2P, single corridor",baseline_FST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+A,"Shared T2P, single corridor",baseline_FST_corridor_rank,5.0,0.0,5.0,5.0,5
+A,"Shared T2P, single corridor",mechanism_balanced_FST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+A,"Shared T2P, single corridor",mechanism_balanced_FST_corridor_rank,2.0,0.0,2.0,2.0,5
+A,"Shared T2P, single corridor",RST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+A,"Shared T2P, single corridor",RST_corridor_rank,2.0,0.0,2.0,2.0,5
+A,"Shared T2P, single corridor",baseline_FST_non_adaptation_coverage,0.9703283365255768,0.012980012446504116,0.953168044077135,0.9812332439678284,5
+A,"Shared T2P, single corridor",mechanism_balanced_FST_non_adaptation_coverage,0.9554804708478084,0.006905468954747068,0.9472295514511874,0.9628647214854111,5
+A,"Shared T2P, single corridor",RST_non_adaptation_coverage,1.0,0.0,1.0,1.0,5
+A,"Shared T2P, single corridor",baseline_FST_CMD_PAC_RL_TO_coverage,0.794037357223081,0.05669352719505709,0.7252747252747253,0.8428571428571429,5
+A,"Shared T2P, single corridor",mechanism_balanced_FST_CMD_PAC_RL_TO_coverage,0.7091653620668822,0.03226082833599718,0.6741573033707865,0.7532467532467533,5
+A,"Shared T2P, single corridor",RST_CMD_PAC_RL_TO_coverage,1.0,0.0,1.0,1.0,5
+A,"Shared T2P, single corridor",baseline_FST_exact_multilabel_signature_coverage,0.7936109934545019,0.028696015846530327,0.7706237424547284,0.8409090909090909,5
+A,"Shared T2P, single corridor",mechanism_balanced_FST_exact_multilabel_signature_coverage,0.8525942930776044,0.01689942988081818,0.8347107438016529,0.8801652892561983,5
+A,"Shared T2P, single corridor",RST_exact_multilabel_signature_coverage,0.9023031376526361,0.014456463454403474,0.890495867768595,0.9256198347107438,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,MC_moderate_failures,426.6,10.714476188783099,418.0,443.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,MC_severe_failures,192.2,12.988456413292536,175.0,207.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,FST_baseline_crossings,31.0,0.0,31.0,31.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,FST_mechanism_balanced_crossings,45.0,0.0,45.0,45.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_passive_pathways,44.0,0.0,44.0,44.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_severe_pathways,27.0,0.0,27.0,27.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_structural_pathways,35.0,0.0,35.0,35.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_adaptation_limited_pathways,9.0,0.0,9.0,9.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,MC_upstream_processor_rank,2.0,0.0,2.0,2.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,MC_corridor_rank,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,baseline_FST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,baseline_FST_corridor_rank,4.0,0.0,4.0,4.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,mechanism_balanced_FST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,mechanism_balanced_FST_corridor_rank,2.0,0.0,2.0,2.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_upstream_processor_rank,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_corridor_rank,2.0,0.0,2.0,2.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,baseline_FST_non_adaptation_coverage,0.9630242576883573,0.012367340355112612,0.946843853820598,0.9741935483870968,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,mechanism_balanced_FST_non_adaptation_coverage,0.9370898168633671,0.0037620749922952453,0.932258064516129,0.9419354838709677,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_non_adaptation_coverage,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,baseline_FST_CMD_PAC_RL_TO_coverage,0.8260509743182416,0.04620607365396406,0.7636363636363637,0.8761061946902655,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,mechanism_balanced_FST_CMD_PAC_RL_TO_coverage,0.7237701430716129,0.014076237540641558,0.6991150442477876,0.7346938775510204,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_CMD_PAC_RL_TO_coverage,1.0,0.0,1.0,1.0,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,baseline_FST_exact_multilabel_signature_coverage,0.7467188073873949,0.0396110996414172,0.7133182844243793,0.8119047619047619,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,mechanism_balanced_FST_exact_multilabel_signature_coverage,0.8524542540940899,0.02630332348179493,0.819047619047619,0.8904761904761904,5
+B,S1A/S1B via T2P-A; S1C via T2P-B; single corridor,RST_exact_multilabel_signature_coverage,0.9106014986162307,0.02620897987182653,0.8809523809523809,0.95,5

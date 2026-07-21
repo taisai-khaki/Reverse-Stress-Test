@@ -1,0 +1,87 @@
+{
+  "can_revise": true,
+  "parameters": {
+    "replications": 1000,
+    "seed": 42,
+    "budget": 50,
+    "horizon_weeks": 52
+  },
+  "checks": [
+    {
+      "check": "Monte Carlo moderate failures",
+      "required": "240 / 1000",
+      "actual": 240,
+      "passed": true
+    },
+    {
+      "check": "Monte Carlo severe failures",
+      "required": "124 / 1000",
+      "actual": 124,
+      "passed": true
+    },
+    {
+      "check": "FST-original moderate crossings",
+      "required": 7,
+      "actual": 7,
+      "passed": true
+    },
+    {
+      "check": "FST-original severe crossings",
+      "required": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "check": "RST moderate passive pathways",
+      "required": 21,
+      "actual": 21,
+      "passed": true
+    },
+    {
+      "check": "RST moderate active pathways",
+      "required": 11,
+      "actual": 11,
+      "passed": true
+    },
+    {
+      "check": "RST severe passive pathways",
+      "required": 5,
+      "actual": 5,
+      "passed": true
+    },
+    {
+      "check": "RST severe active pathways",
+      "required": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "check": "T2P rank",
+      "required": "1st for both FST and RST",
+      "actual": {
+        "FST": "1st",
+        "RST": "1st"
+      },
+      "passed": true
+    },
+    {
+      "check": "Kendall tau_b",
+      "required": "0.882 for both methods",
+      "actual": {
+        "FST": 0.882,
+        "RST": 0.882,
+        "FST_full_precision": 0.8819171036881968,
+        "RST_full_precision": 0.8819171036881968
+      },
+      "passed": true
+    }
+  ],
+  "files": [
+    "table4_fst_original.csv",
+    "table5_rst_pathways.csv",
+    "table6_current_comparison.csv",
+    "table7_criticality.csv",
+    "table8_threshold_sensitivity.csv",
+    "reproduction_log.json"
+  ]
+}

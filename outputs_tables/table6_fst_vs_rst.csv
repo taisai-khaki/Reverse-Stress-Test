@@ -1,0 +1,8 @@
+Metric,FST,RST
+Budget,50,50
+Moderate threshold-crossing scenarios/pathways,7,21
+Severe threshold-crossing scenarios/pathways,3,5
+"Mechanism-family coverage, full denominator",0.45,0.4791666666666667
+"Mechanism-family coverage, non-ALF denominator",0.8503937007874016,0.905511811023622
+CMD/PAC/RL-TO coverage,0.5957446808510638,1.0
+Passive-active classification,Not evaluated,10 adaptation-limited; 11 structural
