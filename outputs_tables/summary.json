@@ -1,0 +1,74 @@
+{
+  "config": {
+    "replications": 1000,
+    "seed": 42,
+    "budget": 50,
+    "horizon_weeks": 52
+  },
+  "monte_carlo": {
+    "moderate_failures_count": 240,
+    "severe_failures_count": 124,
+    "family_distribution_moderate": {
+      "Adaptation-limited failure": 113,
+      "Hidden convergent dependency": 68,
+      "Compounding moderate disturbance": 28,
+      "Propagation-amplified cascade": 15,
+      "Concentrated dependency": 12,
+      "Recovery lag and temporal overlap": 4
+    },
+    "classification_distribution_moderate": {
+      "Adaptation-limited": 146,
+      "Structural": 94
+    }
+  },
+  "fst": {
+    "total_scenarios": 50,
+    "moderate_crossings": 7,
+    "severe_crossings": 3,
+    "discovered_mechanism_families": [
+      "Compounding moderate disturbance",
+      "Concentrated dependency",
+      "Hidden convergent dependency"
+    ],
+    "discovered_families": [
+      "Compounding moderate disturbance",
+      "Concentrated dependency",
+      "Hidden convergent dependency"
+    ],
+    "coverage_moderate": 0.45,
+    "coverage_severe": 0.43548387096774194,
+    "coverage_moderate_full_denominator": 0.45,
+    "coverage_moderate_non_alf_denominator": 0.8503937007874016,
+    "coverage_cmd_pac_rlto_moderate": 0.5957446808510638
+  },
+  "rst": {
+    "total_candidates": 50,
+    "moderate_passive_failures": 21,
+    "moderate_active_failures": 11,
+    "moderate_adaptation_limited_failures": 10,
+    "discovered_mechanism_families": [
+      "Compounding moderate disturbance",
+      "Hidden convergent dependency",
+      "Propagation-amplified cascade",
+      "Recovery lag and temporal overlap"
+    ],
+    "discovered_families": [
+      "Compounding moderate disturbance",
+      "Hidden convergent dependency",
+      "Propagation-amplified cascade",
+      "Recovery lag and temporal overlap"
+    ],
+    "coverage_moderate": 0.4791666666666667,
+    "coverage_severe": 0.46774193548387094,
+    "coverage_moderate_full_denominator": 0.4791666666666667,
+    "coverage_moderate_non_alf_denominator": 0.905511811023622,
+    "coverage_cmd_pac_rlto_moderate": 1.0,
+    "criticality_scores": {
+      "T2P": 0.8305449479040461,
+      "corridor": 0.1694550520959539,
+      "S1A": 0.0,
+      "S1B": 0.0,
+      "S1C": 0.0
+    }
+  }
+}

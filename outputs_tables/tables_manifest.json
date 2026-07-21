@@ -1,0 +1,31 @@
+{
+  "output_dir": "C:\\Users\\L03128674\\projects\\rst_ijpr_code\\outputs_tables",
+  "replications": 1000,
+  "seed": 42,
+  "budget": 50,
+  "workbook_written": false,
+  "files": [
+    "appendix_a_fst_full_list.csv",
+    "appendix_b_rst_full_list.csv",
+    "appendix_c_metadata.csv",
+    "criticality_scores.csv",
+    "fst_enhanced_results.csv",
+    "fst_results.csv",
+    "monte_carlo_ground_truth.csv",
+    "rst_results.csv",
+    "summary.json",
+    "summary_corrected.json",
+    "table10_mechanism_summary.csv",
+    "table4_fst_summary.csv",
+    "table5_rst_family_counts.csv",
+    "table6_corrected_comparison.csv",
+    "table6_fst_vs_rst.csv",
+    "table6b_fst_original_vs_enhanced.csv",
+    "table6c_mechanism_coverage_corrected.csv",
+    "table7_criticality_comparison.csv",
+    "table7_kendall_tau.csv",
+    "table8_threshold_sensitivity.csv",
+    "table9_passive_active_pathways.csv",
+    "tables_manifest.json"
+  ]
+}

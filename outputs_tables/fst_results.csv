@@ -1,0 +1,51 @@
+scenario_id,category,moderate_crossing,severe_crossing,assigned_family
+FST-01,Single tier-1 failure,False,False,Concentrated dependency
+FST-02,Single tier-1 failure,False,False,Concentrated dependency
+FST-03,Single tier-1 failure,False,False,Concentrated dependency
+FST-04,Single tier-1 failure,False,False,Concentrated dependency
+FST-05,Single tier-1 failure,False,False,Concentrated dependency
+FST-06,Single tier-1 failure,False,False,Concentrated dependency
+FST-07,Single tier-1 failure,False,False,Concentrated dependency
+FST-08,Single tier-1 failure,False,False,Concentrated dependency
+FST-09,Single tier-1 failure,False,False,Concentrated dependency
+FST-10,Single tier-1 failure,False,False,Concentrated dependency
+FST-11,Single tier-1 failure,False,False,Concentrated dependency
+FST-12,Single tier-1 failure,False,False,Concentrated dependency
+FST-13,Single tier-1 failure,False,False,Concentrated dependency
+FST-14,Single tier-1 failure,False,False,Concentrated dependency
+FST-15,Single tier-1 failure,False,False,Concentrated dependency
+FST-16,Single tier-1 failure,False,False,Concentrated dependency
+FST-17,Single tier-1 failure,False,False,Concentrated dependency
+FST-18,Single tier-1 failure,False,False,Concentrated dependency
+FST-19,Single tier-1 failure,False,False,Concentrated dependency
+FST-20,Single tier-1 failure,False,False,Concentrated dependency
+FST-21,Single tier-1 failure,False,False,Concentrated dependency
+FST-22,Single tier-1 failure,False,False,Concentrated dependency
+FST-23,Single tier-1 failure,False,False,Concentrated dependency
+FST-24,Single tier-1 failure,False,False,Concentrated dependency
+FST-25,Single tier-1 failure,False,False,Concentrated dependency
+FST-26,Single tier-1 failure,False,False,Concentrated dependency
+FST-27,Single tier-1 failure,False,False,Concentrated dependency
+FST-28,T2P partial failure,False,False,Hidden convergent dependency
+FST-29,T2P partial failure,False,False,Hidden convergent dependency
+FST-30,T2P partial failure,False,False,Hidden convergent dependency
+FST-31,T2P partial failure,True,False,Hidden convergent dependency
+FST-32,T2P partial failure,True,True,Hidden convergent dependency
+FST-33,T2P partial failure,True,False,Hidden convergent dependency
+FST-34,T2P partial failure,True,True,Hidden convergent dependency
+FST-35,T2P partial failure,True,True,Hidden convergent dependency
+FST-36,Corridor disruption,False,False,Concentrated dependency
+FST-37,Corridor disruption,False,False,Concentrated dependency
+FST-38,Corridor disruption,False,False,Concentrated dependency
+FST-39,Corridor disruption,False,False,Concentrated dependency
+FST-40,Corridor disruption,False,False,Concentrated dependency
+FST-41,Corridor disruption,True,False,Concentrated dependency
+FST-42,Demand spike,False,False,Concentrated dependency
+FST-43,Demand spike,False,False,Concentrated dependency
+FST-44,Demand spike,False,False,Concentrated dependency
+FST-45,Demand spike,False,False,Concentrated dependency
+FST-46,S1A + S1B simultaneous failure,False,False,Compounding moderate disturbance
+FST-47,S1A + S1C simultaneous failure,False,False,Compounding moderate disturbance
+FST-48,S1B + S1C simultaneous failure,False,False,Compounding moderate disturbance
+FST-49,T2P + corridor concurrent,True,False,Compounding moderate disturbance
+FST-50,S1A + S1B high-severity,False,False,Compounding moderate disturbance

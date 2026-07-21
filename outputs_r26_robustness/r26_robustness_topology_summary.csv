@@ -1,0 +1,3 @@
+topology,topology_description,seeds,runs,mean_mc_moderate_failures,mean_mc_severe_failures,mean_fst_original_crossings,mean_fst_enhanced_crossings,mean_rst_passive_pathways,mean_rst_structural_pathways,mean_rst_adaptation_limited_pathways,mean_rst_non_alf_coverage,mean_rst_cmd_pac_rlto_coverage
+A,Shared-T2P single-corridor network,"10,20,30,40,50",5,242.2,120.4,7.0,22.0,21.0,11.0,10.0,0.9014812424826129,1.0
+B,Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B,"10,20,30,40,50",5,127.6,49.0,4.0,17.0,7.0,2.0,5.0,0.8050746437958715,1.0

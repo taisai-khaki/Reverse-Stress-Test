@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "replications": 1000,
+    "disturbance_replications": 1000,
+    "seed": 42,
+    "budget": 50
+  },
+  "notes": {
+    "FST-enhanced-50": "Uses the same 50-scenario budget as FST-original, with a mechanism-balanced passive scenario library.",
+    "Multi-label coverage": "Label-weighted coverage across inferred mechanism labels for Monte Carlo moderate failures.",
+    "Response sensitivity": "\u03c4_B is the active backlog trigger ratio used by NetworkConfig."
+  },
+  "files": [
+    "tableA_fst_original_vs_enhanced.csv",
+    "tableB_corrected_comparison.csv",
+    "tableC_multilabel_coverage.csv",
+    "tableD_response_sensitivity.csv",
+    "tableE_weight_sensitivity.csv",
+    "tableF_disturbance_correlation.csv"
+  ]
+}

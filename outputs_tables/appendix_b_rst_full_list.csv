@@ -1,0 +1,51 @@
+pathway_id,family,passive_failure,active_failure,classification,severity,plausibility,controllability,weight,elements
+RST-01,Hidden convergent dependency,False,,Non-failure,0.0,0.0157313872973083,1.0,0.0,T2P
+RST-02,Hidden convergent dependency,False,,Non-failure,0.0,0.0121092839257675,1.0,0.0,T2P
+RST-03,Hidden convergent dependency,True,True,Structural,1.6666666666666656,0.0078049662986499,0.1,0.4975450878827452,T2P
+RST-04,Hidden convergent dependency,False,,Non-failure,0.0,0.0107392937282958,1.0,0.0,T2P
+RST-05,Hidden convergent dependency,False,,Non-failure,0.0,0.004757171518706,1.0,0.0,T2P
+RST-06,Hidden convergent dependency,True,True,Structural,3.055555555555551,0.0012081705444332,0.1,0.3192260310820179,T2P
+RST-07,Hidden convergent dependency,False,,Non-failure,0.0,0.0108735348998995,1.0,0.0,T2P
+RST-08,Hidden convergent dependency,False,,Non-failure,0.0,0.0186189446656798,1.0,0.0,T2P
+RST-09,Hidden convergent dependency,False,,Non-failure,0.0,0.0190754845970355,1.0,0.0,T2P
+RST-10,Hidden convergent dependency,False,,Non-failure,0.0,1.710186253972434e-15,1.0,0.0,T2P
+RST-11,Compounding moderate disturbance,False,,Non-failure,0.0,0.000290999317049,1.0,0.0,"T2P,corridor"
+RST-12,Compounding moderate disturbance,False,,Non-failure,0.0,0.0001724228612273,1.0,0.0,"T2P,corridor"
+RST-13,Compounding moderate disturbance,False,,Non-failure,0.0,0.0004313290994933,1.0,0.0,"T2P,corridor"
+RST-14,Compounding moderate disturbance,True,True,Structural,0.1999999999999997,6.910347362387888e-19,0.1,0.204403346543373,"T2P,corridor"
+RST-15,Compounding moderate disturbance,True,False,Adaptation-limited,1.222222222222224,0.0004210059563788,0.9,0.045132656874748,T2P
+RST-16,Compounding moderate disturbance,True,False,Adaptation-limited,1.888888888888888,1.265322393015357e-18,0.9,0.0490239248495523,"T2P,corridor"
+RST-17,Compounding moderate disturbance,False,,Non-failure,0.0,0.0002035266038236,1.0,0.0,"T2P,corridor"
+RST-18,Compounding moderate disturbance,False,,Non-failure,0.0,7.994661808882409e-17,1.0,0.0,"T2P,corridor"
+RST-19,Compounding moderate disturbance,False,,Non-failure,0.0,1.8377517883155058e-29,1.0,0.0,T2P
+RST-20,Compounding moderate disturbance,True,False,Adaptation-limited,0.5000000000000009,1.1289529662793964e-16,0.9,0.012329370321448,T2P
+RST-21,Compounding moderate disturbance,False,,Non-failure,0.0,4.736995528413509e-17,1.0,0.0,"T2P,corridor"
+RST-22,Compounding moderate disturbance,False,,Non-failure,0.0,1.7006442703440743e-16,1.0,0.0,T2P
+RST-23,Compounding moderate disturbance,True,False,Adaptation-limited,0.0777777777777772,0.0003029935129627,0.9,0.0110498883936481,T2P
+RST-24,Compounding moderate disturbance,False,,Non-failure,0.0,0.0004210059563788,1.0,0.0,corridor
+RST-25,Compounding moderate disturbance,True,False,Adaptation-limited,0.3555555555555558,1.4798948620155454e-30,0.9,0.008513136650521,"T2P,corridor"
+RST-26,Propagation-amplified cascade,True,False,Adaptation-limited,2.5222222222222235,0.0002944539985874,0.9,0.0753539704729626,T2P
+RST-27,Propagation-amplified cascade,True,True,Structural,3.566666666666661,8.90428891728507e-05,0.1,0.2962531789361052,T2P
+RST-28,Propagation-amplified cascade,True,True,Structural,3.316666666666661,4.754080957742116e-05,0.1,0.2882954551199,T2P
+RST-29,Propagation-amplified cascade,True,False,Adaptation-limited,1.7777777777777763,0.0002608082124388,0.9,0.0545890504752959,T2P
+RST-30,Propagation-amplified cascade,False,,Non-failure,0.0,1.1566350996647043e-16,1.0,0.0,T2P
+RST-31,Propagation-amplified cascade,False,,Non-failure,0.0,0.0107392937282958,1.0,0.0,T2P
+RST-32,Propagation-amplified cascade,False,,Non-failure,0.0,0.004757171518706,1.0,0.0,corridor
+RST-33,Propagation-amplified cascade,True,True,Structural,18.95833333333333,0.0001766507013462,0.1,0.7057576900445877,T2P
+RST-34,Recovery lag and temporal overlap,False,,Non-failure,0.0,7.437111557553925e-05,1.0,0.0,"T2P,corridor"
+RST-35,Recovery lag and temporal overlap,True,True,Structural,1.8999999999999968,0.0001089420638313,0.1,0.2528683001139974,T2P
+RST-36,Recovery lag and temporal overlap,True,True,Structural,3.055555555555551,2.593939015797656e-05,0.1,0.2806928098975194,"T2P,corridor"
+RST-37,Recovery lag and temporal overlap,False,,Non-failure,0.0,0.0004188007302004,1.0,0.0,"T2P,corridor"
+RST-38,Recovery lag and temporal overlap,True,True,Structural,2.122222222222223,0.0002208385056384,0.1,0.2623865416102386,T2P
+RST-39,Recovery lag and temporal overlap,True,False,Adaptation-limited,0.3166666666666667,0.0002299161886119,0.9,0.0149794954894713,"T2P,corridor"
+RST-40,Recovery lag and temporal overlap,True,True,Structural,2.544444444444446,6.029613061220791e-05,0.1,0.2683090251932041,"T2P,corridor"
+RST-41,Recovery lag and temporal overlap,True,False,Adaptation-limited,1.5055555555555582,3.594376719375716e-05,0.9,0.0400677661461429,"T2P,corridor"
+RST-42,Recovery lag and temporal overlap,True,False,Adaptation-limited,1.71111111111111,0.0004094219731913,0.9,0.0576715758463283,T2P
+RST-43,Hidden convergent dependency,False,,Non-failure,0.0,0.0083699370494905,1.0,0.0,T2P
+RST-44,Hidden convergent dependency,False,,Non-failure,0.0,1.710186253972434e-15,1.0,0.0,T2P
+RST-45,Compounding moderate disturbance,False,,Non-failure,0.0,6.689270016541518e-17,1.0,0.0,corridor
+RST-46,Hidden convergent dependency,True,True,Structural,0.0333333333333331,0.0092042485777252,0.1,0.5,T2P
+RST-47,Concentrated dependency,False,,Non-failure,0.0,7.89596228037773e-17,1.0,0.0,"S1A,T2P"
+RST-48,Concentrated dependency,False,,Non-failure,0.0,3.2471778131361308e-15,1.0,0.0,S1A
+RST-49,Concentrated dependency,False,,Non-failure,0.0,1.7006442703440743e-16,1.0,0.0,"S1B,T2P"
+RST-50,Concentrated dependency,False,,Non-failure,0.0,1.1566350996647043e-16,1.0,0.0,"S1C,corridor"

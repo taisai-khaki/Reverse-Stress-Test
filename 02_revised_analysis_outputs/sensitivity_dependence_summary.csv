@@ -1,0 +1,21 @@
+dependence_model,metric,mean,standard_deviation,minimum,maximum,runs
+Demand-supply coupling,moderate_failures,464.4,2.4083189157584592,461.0,467.0,5
+Demand-supply coupling,severe_failures,264.2,11.713240371477058,252.0,280.0,5
+Demand-supply coupling,structural_failures,348.4,5.856620185738529,340.0,356.0,5
+Demand-supply coupling,adaptation_limited_failures,116.0,4.743416490252569,110.0,121.0,5
+Demand-supply coupling,adaptation_limited_share,0.24980129262777484,0.010640864876577293,0.23605150214592274,0.26247288503253796,5
+Independent baseline,moderate_failures,491.0,6.48074069840786,484.0,497.0,5
+Independent baseline,severe_failures,289.0,8.215838362577491,278.0,299.0,5
+Independent baseline,structural_failures,372.6,6.2289646009589745,363.0,379.0,5
+Independent baseline,adaptation_limited_failures,118.4,5.458937625582473,111.0,125.0,5
+Independent baseline,adaptation_limited_share,0.24111943728551774,0.010072412286951339,0.22933884297520662,0.25201612903225806,5
+Shared upstream shock,moderate_failures,505.6,8.73498712076898,492.0,515.0,5
+Shared upstream shock,severe_failures,324.8,7.661592523751182,315.0,336.0,5
+Shared upstream shock,structural_failures,401.4,12.759310326189263,391.0,423.0,5
+Shared upstream shock,adaptation_limited_failures,104.2,8.228000972289685,92.0,113.0,5
+Shared upstream shock,adaptation_limited_share,0.20616860176951707,0.016883085688513953,0.1786407766990291,0.22332015810276679,5
+Supplier-cluster shock,moderate_failures,456.4,5.224940191045253,448.0,462.0,5
+Supplier-cluster shock,severe_failures,259.0,11.247221879201993,245.0,272.0,5
+Supplier-cluster shock,structural_failures,348.0,10.36822067666386,334.0,361.0,5
+Supplier-cluster shock,adaptation_limited_failures,108.4,5.594640292279746,101.0,114.0,5
+Supplier-cluster shock,adaptation_limited_share,0.23763029817943576,0.014620191783701204,0.21861471861471862,0.2544642857142857,5

@@ -1,0 +1,8 @@
+workload,size,seconds,units_per_second
+Monte Carlo without mechanism counterfactuals,100,1.7876968999626115,55.93789417103729
+Monte Carlo without mechanism counterfactuals,250,3.248048200039193,76.96930113197931
+Monte Carlo without mechanism counterfactuals,500,8.343998600030318,59.923308232360355
+Monte Carlo without mechanism counterfactuals,1000,17.943101500044577,55.731725086519496
+RST with multilabel counterfactual attribution,10,0.32736320002004504,30.54711097456184
+RST with multilabel counterfactual attribution,25,1.9781481999671087,12.638082424974876
+RST with multilabel counterfactual attribution,50,2.7359791999915615,18.274992733919255

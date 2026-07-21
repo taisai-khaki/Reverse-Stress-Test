@@ -1,0 +1,118 @@
+{
+  "status": "completed",
+  "validation_passed": true,
+  "primary": {
+    "seeds": [
+      42,
+      314,
+      1618,
+      2026,
+      2718
+    ],
+    "replications_per_seed": 1000,
+    "pooled_replications": 5000,
+    "pooled_moderate_failures": 2455,
+    "pooled_severe_failures": 1445,
+    "baseline_FST_moderate_crossings": 33,
+    "baseline_FST_severe_crossings": 11,
+    "mechanism_balanced_FST_moderate_crossings": 46,
+    "mechanism_balanced_FST_severe_crossings": 35,
+    "RST_passive_pathways": 48,
+    "RST_severe_pathways": 39,
+    "RST_structural_pathways": 41,
+    "RST_adaptation_limited_pathways": 7,
+    "coverage": {
+      "Baseline FST": {
+        "primary_family_coverage_full_denominator": 0.964969450101833,
+        "primary_family_coverage_non_adaptation_limited": 0.9704777241009125,
+        "primary_family_coverage_CMD_PAC_RL_TO": 0.7912621359223301,
+        "multilabel_any_coverage_full_denominator": 1.0,
+        "exact_multilabel_signature_coverage_full_denominator": 0.7934826883910387,
+        "exact_multilabel_signature_coverage_non_adaptation_limited": 0.8105206655931294,
+        "exact_multilabel_signature_coverage_CMD_PAC_RL_TO": 0.5972994440031771,
+        "exact_multilabel_signature_coverage_unique_signatures": 0.26666666666666666
+      },
+      "Mechanism-balanced FST": {
+        "primary_family_coverage_full_denominator": 0.9511201629327902,
+        "primary_family_coverage_non_adaptation_limited": 0.9554482018250134,
+        "primary_family_coverage_CMD_PAC_RL_TO": 0.7087378640776699,
+        "multilabel_any_coverage_full_denominator": 0.9665987780040733,
+        "exact_multilabel_signature_coverage_full_denominator": 0.8525458248472505,
+        "exact_multilabel_signature_coverage_non_adaptation_limited": 0.8733225979602791,
+        "exact_multilabel_signature_coverage_CMD_PAC_RL_TO": 0.7124702144559174,
+        "exact_multilabel_signature_coverage_unique_signatures": 0.3333333333333333
+      },
+      "RST": {
+        "primary_family_coverage_full_denominator": 1.0,
+        "primary_family_coverage_non_adaptation_limited": 1.0,
+        "primary_family_coverage_CMD_PAC_RL_TO": 1.0,
+        "multilabel_any_coverage_full_denominator": 1.0,
+        "exact_multilabel_signature_coverage_full_denominator": 0.9022403258655805,
+        "exact_multilabel_signature_coverage_non_adaptation_limited": 0.917337627482555,
+        "exact_multilabel_signature_coverage_CMD_PAC_RL_TO": 0.8093725178713265,
+        "exact_multilabel_signature_coverage_unique_signatures": 0.4666666666666667
+      }
+    },
+    "criticality_ranks": {
+      "Baseline FST": {
+        "T2P": 1,
+        "corridor": 5,
+        "S1A": 2,
+        "S1B": 3,
+        "S1C": 4
+      },
+      "Mechanism-balanced FST": {
+        "T2P": 1,
+        "corridor": 2,
+        "S1A": 3,
+        "S1B": 3,
+        "S1C": 3
+      },
+      "Monte Carlo frequency": {
+        "T2P": 2,
+        "corridor": 1,
+        "S1A": 4,
+        "S1B": 5,
+        "S1C": 3
+      },
+      "RST": {
+        "T2P": 1,
+        "corridor": 2,
+        "S1A": 3,
+        "S1B": 3,
+        "S1C": 3
+      }
+    }
+  },
+  "manuscript_numeric_consistency": {
+    "targets": {
+      "baseline_FST_moderate": 7,
+      "baseline_FST_severe": 3,
+      "mechanism_balanced_FST_moderate": 22,
+      "mechanism_balanced_FST_severe": 9,
+      "RST_passive": 21,
+      "RST_severe": 5,
+      "RST_structural": 11,
+      "RST_adaptation_limited": 10
+    },
+    "observed": {
+      "baseline_FST_moderate": 33,
+      "baseline_FST_severe": 11,
+      "mechanism_balanced_FST_moderate": 46,
+      "mechanism_balanced_FST_severe": 35,
+      "RST_passive": 48,
+      "RST_severe": 39,
+      "RST_structural": 41,
+      "RST_adaptation_limited": 7
+    },
+    "reproduced": false
+  },
+  "model_consistency_flags": [
+    "Section 4.2 uses tau_B=0.20D as the primary baseline; the four kappa_alt and rho_rel robustness reruns use the Table 8 reference tau_B=0.17D.",
+    "Section 3.7 excludes controllability from structural weights; sensitivity therefore varies only omega_C and omega_P.",
+    "The manuscript invokes a primary mechanism family without defining a tie-break; the package uses the documented fixed priority HCD, CMD, PAC, RL-TO, CD only for scalar summaries.",
+    "Topology B keeps total upstream capacity at 1,000 and allocates it 2:1 across T2P-A and T2P-B according to served tier-1 channels.",
+    "Under the revised operator, pooled Monte Carlo frequency ranks the corridor first and T2P second, while RST ranks T2P first and the corridor second."
+  ],
+  "runtime_seconds": 103.89223899994977
+}

@@ -1,0 +1,22 @@
+pathway_id,family,passive_status,active_status,classification,weight,intervention
+RST-33,Propagation-amplified cascade,Failure,Failure,Structural,0.7057576900445877,Segmentation and containment redesign.
+RST-46,Hidden convergent dependency,Failure,Failure,Structural,0.5,Upstream T2P qualification and alternative processor sourcing.
+RST-03,Hidden convergent dependency,Failure,Failure,Structural,0.4975450878827452,Upstream T2P qualification and alternative processor sourcing.
+RST-06,Hidden convergent dependency,Failure,Failure,Structural,0.3192260310820179,Upstream T2P qualification and alternative processor sourcing.
+RST-27,Propagation-amplified cascade,Failure,Failure,Structural,0.2962531789361052,Segmentation and containment redesign.
+RST-28,Propagation-amplified cascade,Failure,Failure,Structural,0.2882954551199,Segmentation and containment redesign.
+RST-36,Recovery lag and temporal overlap,Failure,Failure,Structural,0.2806928098975194,Recovery sequencing and time-buffered restoration.
+RST-40,Recovery lag and temporal overlap,Failure,Failure,Structural,0.2683090251932041,Recovery sequencing and time-buffered restoration.
+RST-38,Recovery lag and temporal overlap,Failure,Failure,Structural,0.2623865416102386,Recovery sequencing and time-buffered restoration.
+RST-35,Recovery lag and temporal overlap,Failure,Failure,Structural,0.2528683001139974,Recovery sequencing and time-buffered restoration.
+RST-14,Compounding moderate disturbance,Failure,Failure,Structural,0.204403346543373,Slack restoration and stress-triggered allocation.
+RST-26,Propagation-amplified cascade,Failure,Safe,Adaptation-limited,0.0753539704729626,Segmentation and containment redesign.
+RST-42,Recovery lag and temporal overlap,Failure,Safe,Adaptation-limited,0.0576715758463283,Recovery sequencing and time-buffered restoration.
+RST-29,Propagation-amplified cascade,Failure,Safe,Adaptation-limited,0.0545890504752959,Segmentation and containment redesign.
+RST-16,Compounding moderate disturbance,Failure,Safe,Adaptation-limited,0.0490239248495523,Slack restoration and stress-triggered allocation.
+RST-15,Compounding moderate disturbance,Failure,Safe,Adaptation-limited,0.045132656874748,Slack restoration and stress-triggered allocation.
+RST-41,Recovery lag and temporal overlap,Failure,Safe,Adaptation-limited,0.0400677661461429,Recovery sequencing and time-buffered restoration.
+RST-39,Recovery lag and temporal overlap,Failure,Safe,Adaptation-limited,0.0149794954894713,Recovery sequencing and time-buffered restoration.
+RST-20,Compounding moderate disturbance,Failure,Safe,Adaptation-limited,0.012329370321448,Slack restoration and stress-triggered allocation.
+RST-23,Compounding moderate disturbance,Failure,Safe,Adaptation-limited,0.0110498883936481,Slack restoration and stress-triggered allocation.
+RST-25,Compounding moderate disturbance,Failure,Safe,Adaptation-limited,0.008513136650521,Slack restoration and stress-triggered allocation.

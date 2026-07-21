@@ -1,0 +1,49 @@
+{
+  "config": {
+    "replications": 1000,
+    "seed": 42,
+    "budget": 50
+  },
+  "fst_enhanced_50": {
+    "scenario_class_counts": {
+      "T2P partial failure": 10,
+      "T2P + corridor combination": 8,
+      "Corridor disruption": 6,
+      "Tier-1 supplier failure": 6,
+      "T2P + tier-1 combination": 6,
+      "Sequential T2P to corridor disruption": 5,
+      "Sequential corridor to T2P disruption": 5,
+      "Demand spike + T2P impairment": 4
+    },
+    "moderate_crossings": 22,
+    "severe_crossings": 9,
+    "discovered_mechanism_families": [
+      "Compounding moderate disturbance",
+      "Concentrated dependency",
+      "Hidden convergent dependency",
+      "Propagation-amplified cascade",
+      "Recovery lag and temporal overlap"
+    ],
+    "coverage_full_denominator": 0.5291666666666667,
+    "coverage_non_alf_denominator": 1.0,
+    "coverage_cmd_pac_rlto": 1.0,
+    "families_not_covered_by_rst": [
+      "Concentrated dependency"
+    ]
+  },
+  "comparison": {
+    "fst_original": {
+      "coverage_full_denominator": 0.45,
+      "coverage_non_alf_denominator": 0.8503937007874016,
+      "coverage_cmd_pac_rlto": 0.5957446808510638
+    },
+    "rst": {
+      "coverage_full_denominator": 0.4791666666666667,
+      "coverage_non_alf_denominator": 0.905511811023622,
+      "coverage_cmd_pac_rlto": 1.0,
+      "adaptation_limited_pathways": 10,
+      "structural_pathways": 11
+    }
+  },
+  "decision_rule_result": "RST's main value is passive-active classification; FST-enhanced also covers Concentrated dependency, so frame RST as complementary rather than coverage-superior."
+}

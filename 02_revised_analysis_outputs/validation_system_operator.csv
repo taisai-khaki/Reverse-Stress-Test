@@ -1,0 +1,12 @@
+check,requirement,observed,tolerance,passed
+52-period nominal steady state,All nominal state equations hold for 52 periods,0.0,1e-09,True
+Nonnegative inventories and backlog,Minimum state >= 0,0.0,-1e-09,True
+Tier-1 pipeline conservation,Maximum absolute residual <= 1e-9,3.410605131648481e-13,1e-09,True
+Corridor pipeline conservation,Maximum absolute residual <= 1e-9,2.2737367544323206e-13,1e-09,True
+Tier-1 inventory conservation,Maximum absolute residual <= 1e-9,7.105427357601002e-15,1e-09,True
+Corridor throughput bound,Throughput <= effective corridor capacity,1.1368683772161603e-13,1e-09,True
+Rerouting bounds,"Reroute <= blocked flow, cap, and shortfall",0.0,1e-09,True
+Reserve monotonicity,Reserve never increases,0.0,1e-09,True
+Reserve release cap,Cumulative release <= rho_rel * reserve,0.0,1e-09,True
+Rerouting response exercised,At least one validation pathway uses rerouting,200.0,0.0,True
+Reserve response exercised,At least one validation pathway releases reserve,270.0,0.0,True

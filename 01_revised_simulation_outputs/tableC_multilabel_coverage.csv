@@ -1,0 +1,4 @@
+﻿Method,Primary-label coverage,Multi-label coverage,ALF-excluded coverage
+FST-original,0.45,0.573671,0.850394
+FST-enhanced-50,0.529167,0.823671,1.0
+RST,0.479167,0.777778,0.905512

@@ -1,0 +1,21 @@
+{
+  "reviewer_comment": "R2-6",
+  "seeds": [
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "replications": 1000,
+  "budget": 50,
+  "topologies": {
+    "A": "Shared-T2P single-corridor network",
+    "B": "Partial upstream diversification: S1A/S1B from T2P-A; S1C from T2P-B"
+  },
+  "files": [
+    "r26_robustness_runs.csv",
+    "r26_robustness_spread.csv",
+    "r26_robustness_topology_summary.csv"
+  ]
+}

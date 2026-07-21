@@ -1,0 +1,16 @@
+signature_id,exact_multilabel_signature,label_count,MC_failure_count,MC_failure_share,MC_structural_count,MC_adaptation_limited_count,baseline_fst_matching_crossings,baseline_fst_signature_discovered,mechanism_balanced_fst_matching_crossings,mechanism_balanced_fst_signature_discovered,rst_matching_crossings,rst_signature_discovered
+MS-01,Concentrated dependency,1,1075,0.4378818737270876,797,278,23,True,16,True,8,True
+MS-02,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade,3,670,0.2729124236252546,547,123,8,True,12,True,22,True
+MS-03,Concentrated dependency; Propagation-amplified cascade,2,179,0.07291242362525459,136,43,0,False,15,True,7,True
+MS-04,Concentrated dependency; Hidden convergent dependency,2,121,0.049287169042769856,107,14,1,True,2,True,7,True
+MS-05,Concentrated dependency; Recovery lag and temporal overlap,2,86,0.03503054989816701,55,31,0,False,0,False,0,False
+MS-06,Compounding moderate disturbance,1,82,0.03340122199592668,59,23,1,True,0,False,1,True
+MS-07,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,4,48,0.019551934826883912,40,8,0,False,1,True,1,True
+MS-08,Hidden convergent dependency; Compounding moderate disturbance,2,40,0.016293279022403257,23,17,0,False,0,False,2,True
+MS-09,Compounding moderate disturbance; Recovery lag and temporal overlap,2,36,0.014663951120162933,24,12,0,False,0,False,0,False
+MS-10,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,3,27,0.010997963340122199,19,8,0,False,0,False,0,False
+MS-11,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,3,26,0.010590631364562118,14,12,0,False,0,False,0,False
+MS-12,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,3,25,0.010183299389002037,19,6,0,False,0,False,0,False
+MS-13,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,3,19,0.007739307535641548,11,8,0,False,0,False,0,False
+MS-14,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,4,19,0.007739307535641548,12,7,0,False,0,False,0,False
+MS-15,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,3,2,0.000814663951120163,0,2,0,False,0,False,0,False

@@ -1,0 +1,8 @@
+Metric,FST-original,FST-enhanced-50,RST
+Budget,50,50,50
+Moderate threshold crossings,7,22,21
+Severe threshold crossings,3,9,5
+Full-denominator coverage,45.0%,52.9%,47.9%
+Non-ALF coverage,85.0%,100.0%,90.6%
+CMD/PAC/RL-TO coverage,59.6%,100.0%,100.0%
+Passive-active classification,N/A,N/A,10 ALF; 11 structural

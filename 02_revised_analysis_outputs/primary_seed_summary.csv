@@ -1,0 +1,6 @@
+topology,dependence_model,seed,replications,moderate_failures,severe_failures,structural_failures,adaptation_limited_failures,adaptation_limited_share,dominant_mechanism_family
+A,Independent baseline,42,1000,496,295,371,125,0.25201612903225806,Concentrated dependency
+A,Independent baseline,314,1000,484,299,373,111,0.22933884297520662,Concentrated dependency
+A,Independent baseline,1618,1000,494,286,379,115,0.23279352226720648,Concentrated dependency
+A,Independent baseline,2026,1000,484,287,363,121,0.25,Concentrated dependency
+A,Independent baseline,2718,1000,497,278,377,120,0.2414486921529175,Concentrated dependency

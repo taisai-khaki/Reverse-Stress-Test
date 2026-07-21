@@ -1,0 +1,1001 @@
+replication,moderate_passive_failure,moderate_active_failure,passive_active_classification,severe_passive_failure,severe_active_failure,primary_family,event_count,max_backlog_passive,has_T2P,has_corridor,has_S1A,has_S1B,has_S1C
+1,False,False,Non-failure,False,False,Non-failure,2,517.1114248559244,False,False,True,False,False
+2,False,False,Non-failure,False,False,Non-failure,1,179.74174548584642,True,False,False,False,False
+3,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,True,False
+4,False,False,Non-failure,False,False,Non-failure,1,1384.0085242371367,False,False,False,False,False
+5,False,False,Non-failure,False,False,Non-failure,2,698.0735217384827,False,False,False,False,True
+6,True,True,Structural,False,False,Hidden convergent dependency,2,1493.8977964244586,True,False,False,False,False
+7,False,False,Non-failure,False,False,Non-failure,2,306.1438200417241,True,True,False,False,False
+8,True,True,Structural,False,False,Hidden convergent dependency,2,484.70352928549903,True,False,True,False,False
+9,False,False,Non-failure,False,False,Non-failure,2,760.0511938843044,False,False,True,False,False
+10,False,False,Non-failure,False,False,Non-failure,2,531.5124596449193,True,False,False,True,False
+11,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,781.4260722057957,True,False,True,False,False
+12,False,False,Non-failure,False,False,Non-failure,2,106.5703211415431,False,False,False,False,True
+13,False,False,Non-failure,False,False,Non-failure,2,152.62713365955256,False,True,False,True,False
+14,False,False,Non-failure,False,False,Non-failure,2,281.0128332567941,True,True,False,False,False
+15,False,False,Non-failure,False,False,Non-failure,2,125.50319725408144,False,False,False,False,True
+16,False,False,Non-failure,False,False,Non-failure,2,124.95592989459124,False,True,False,False,False
+17,False,False,Non-failure,False,False,Non-failure,2,16.814175042498846,False,True,True,False,False
+18,True,True,Structural,True,False,Concentrated dependency,2,2589.183656308245,False,False,True,True,False
+19,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+20,False,False,Non-failure,False,False,Non-failure,2,199.55575037190692,False,True,False,False,False
+21,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+22,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+23,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2322.68444013926,True,False,False,False,False
+24,True,True,Structural,False,False,Hidden convergent dependency,2,569.2875724441798,True,True,False,False,False
+25,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+26,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1364.7173282210474,True,True,False,False,False
+27,False,False,Non-failure,False,False,Non-failure,2,1122.7240304277998,True,True,False,False,False
+28,True,True,Structural,False,False,Hidden convergent dependency,2,1185.2457445879809,True,False,False,False,True
+29,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,404.86743444171134,True,False,True,False,False
+30,False,False,Non-failure,False,False,Non-failure,1,418.65152567108635,False,False,False,False,False
+31,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,834.0169047247302,True,True,False,False,False
+32,False,False,Non-failure,False,False,Non-failure,2,275.5565024874413,True,False,False,True,False
+33,False,False,Non-failure,False,False,Non-failure,2,1996.7460551818485,False,False,False,True,False
+34,True,True,Structural,True,False,Hidden convergent dependency,2,1037.8272209633938,True,False,False,True,False
+35,False,False,Non-failure,False,False,Non-failure,2,364.40472796684185,True,False,False,True,False
+36,False,False,Non-failure,False,False,Non-failure,2,756.5108533585492,True,False,True,False,False
+37,False,False,Non-failure,False,False,Non-failure,2,5619.4447260514735,False,False,False,False,True
+38,True,True,Structural,False,False,Hidden convergent dependency,2,1265.9550559160818,True,False,False,True,False
+39,False,False,Non-failure,False,False,Non-failure,2,171.36521467393993,True,False,False,True,False
+40,True,True,Structural,False,False,Hidden convergent dependency,2,1245.4062294237574,True,False,True,False,False
+41,False,False,Non-failure,False,False,Non-failure,2,430.630233625236,False,True,True,False,False
+42,False,False,Non-failure,False,False,Non-failure,2,818.2869510048504,False,False,False,False,False
+43,True,True,Structural,False,False,Hidden convergent dependency,2,1508.1369850241138,True,False,False,False,True
+44,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+45,False,False,Non-failure,False,False,Non-failure,2,563.9403935723774,True,False,False,True,False
+46,False,False,Non-failure,False,False,Non-failure,2,19.346882030696406,False,False,False,True,True
+47,False,False,Non-failure,False,False,Non-failure,2,1981.880041355871,False,True,False,False,False
+48,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2369.118355086245,True,False,False,False,False
+49,False,False,Non-failure,False,False,Non-failure,2,493.1382730728078,False,True,False,True,False
+50,False,False,Non-failure,False,False,Non-failure,2,777.8767374657871,True,False,True,False,False
+51,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+52,False,False,Non-failure,False,False,Non-failure,2,473.9437275290071,False,False,True,False,False
+53,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+54,False,False,Non-failure,False,False,Non-failure,2,769.0616022666106,True,False,False,False,False
+55,False,False,Non-failure,False,False,Non-failure,2,460.86790592557657,False,False,False,False,True
+56,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+57,False,False,Non-failure,False,False,Non-failure,2,19.4078422457942,False,False,True,False,False
+58,False,False,Non-failure,False,False,Non-failure,2,318.10795096663196,False,True,False,False,True
+59,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1209.8025945365187,True,True,False,False,False
+60,False,False,Non-failure,False,False,Non-failure,2,179.4774829337032,True,True,False,False,False
+61,False,False,Non-failure,False,False,Non-failure,2,184.52278177874177,False,True,True,False,False
+62,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,474.1966732139906,True,True,False,False,False
+63,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1343.134790620583,True,False,False,True,False
+64,False,False,Non-failure,False,False,Non-failure,2,4265.420480865289,False,False,False,False,True
+65,False,False,Non-failure,False,False,Non-failure,2,1917.4896506393547,False,True,False,False,False
+66,False,False,Non-failure,False,False,Non-failure,2,891.9534490931924,False,False,False,False,True
+67,False,False,Non-failure,False,False,Non-failure,2,27.295922009549372,False,False,False,True,False
+68,False,False,Non-failure,False,False,Non-failure,2,289.54805371487635,True,False,False,False,True
+69,False,False,Non-failure,False,False,Non-failure,2,1468.3110013675341,False,False,False,True,False
+70,False,False,Non-failure,False,False,Non-failure,2,136.99799794528906,True,False,False,True,False
+71,False,False,Non-failure,False,False,Non-failure,2,61.945110648589775,True,False,True,False,False
+72,False,False,Non-failure,False,False,Non-failure,2,1138.9919415050208,True,False,False,False,False
+73,False,False,Non-failure,False,False,Non-failure,2,548.3887894054346,True,False,False,False,False
+74,False,False,Non-failure,False,False,Non-failure,2,250.77340887869536,True,True,False,False,False
+75,False,False,Non-failure,False,False,Non-failure,2,198.73528890959813,False,False,False,False,True
+76,False,False,Non-failure,False,False,Non-failure,2,13.826857751097009,False,True,False,True,False
+77,False,False,Non-failure,False,False,Non-failure,2,2077.0276444582896,False,False,False,False,True
+78,False,False,Non-failure,False,False,Non-failure,2,802.623814307384,True,False,False,True,False
+79,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1099.421862366515,True,False,False,False,False
+80,False,False,Non-failure,False,False,Non-failure,2,1912.5105548277234,False,False,True,False,False
+81,False,False,Non-failure,False,False,Non-failure,2,1431.072040580999,False,False,False,True,False
+82,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+83,False,False,Non-failure,False,False,Non-failure,2,390.11819762151276,False,False,False,True,False
+84,False,False,Non-failure,False,False,Non-failure,2,139.3142433140024,True,False,False,False,True
+85,False,False,Non-failure,False,False,Non-failure,2,113.54295291738163,True,False,False,False,True
+86,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,False
+87,False,False,Non-failure,False,False,Non-failure,2,978.6216709596358,True,True,False,False,False
+88,False,False,Non-failure,False,False,Non-failure,2,29.938753664677733,True,False,True,False,False
+89,False,False,Non-failure,False,False,Non-failure,2,517.6422711518248,True,False,True,False,False
+90,False,False,Non-failure,False,False,Non-failure,2,1707.8871808413007,False,False,False,False,False
+91,False,False,Non-failure,False,False,Non-failure,2,68.14207076494279,False,True,False,False,False
+92,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+93,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+94,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1457.9872710485624,True,False,False,True,False
+95,False,False,Non-failure,False,False,Non-failure,2,64.13342974550937,False,False,False,False,True
+96,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+97,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+98,False,False,Non-failure,False,False,Non-failure,2,1637.3292060874514,False,False,False,False,True
+99,False,False,Non-failure,False,False,Non-failure,2,156.42452396017484,False,False,True,True,False
+100,False,False,Non-failure,False,False,Non-failure,1,3638.4835473205903,False,False,False,False,False
+101,False,False,Non-failure,False,False,Non-failure,1,490.616923368721,False,False,False,False,False
+102,False,False,Non-failure,False,False,Non-failure,2,1326.5959388194515,True,False,False,False,True
+103,False,False,Non-failure,False,False,Non-failure,2,204.38654998677384,False,False,True,False,True
+104,False,False,Non-failure,False,False,Non-failure,2,537.2039686422539,False,False,False,True,False
+105,False,False,Non-failure,False,False,Non-failure,2,154.66604883213188,True,True,False,False,False
+106,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+107,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+108,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,1173.3564376830352,True,False,False,False,False
+109,True,True,Structural,True,False,Hidden convergent dependency,2,2532.7597299490703,True,False,False,False,False
+110,True,True,Structural,True,False,Hidden convergent dependency,2,2094.2216133892357,True,True,False,False,False
+111,False,False,Non-failure,False,False,Non-failure,2,1.155949567489074,False,True,False,True,False
+112,False,False,Non-failure,False,False,Non-failure,2,905.0491622703485,False,False,False,True,False
+113,False,False,Non-failure,False,False,Non-failure,2,116.79430736106758,True,True,False,False,False
+114,False,False,Non-failure,False,False,Non-failure,2,419.08499754466936,True,False,False,False,True
+115,False,False,Non-failure,False,False,Non-failure,2,483.7926815308143,False,True,False,False,False
+116,False,False,Non-failure,False,False,Non-failure,2,404.00076291829646,False,True,False,False,True
+117,False,False,Non-failure,False,False,Non-failure,2,1112.7903382933255,False,False,True,False,False
+118,False,False,Non-failure,False,False,Non-failure,2,631.2587669644449,True,True,False,False,False
+119,False,False,Non-failure,False,False,Non-failure,2,322.9997439936287,True,False,False,False,False
+120,False,False,Non-failure,False,False,Non-failure,2,608.2790474756364,True,False,True,False,False
+121,False,False,Non-failure,False,False,Non-failure,2,278.8720578749336,True,False,False,False,False
+122,False,False,Non-failure,False,False,Non-failure,2,141.23366709556376,False,False,False,False,True
+123,False,False,Non-failure,False,False,Non-failure,2,76.7394424330464,True,False,True,False,False
+124,False,False,Non-failure,False,False,Non-failure,2,1053.7040994856777,False,False,False,False,True
+125,False,False,Non-failure,False,False,Non-failure,2,1055.8734990110472,False,True,False,False,False
+126,True,False,Adaptation-limited,False,False,Propagation-amplified cascade,2,1456.7268943985307,True,False,False,False,False
+127,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1924.138678693882,True,False,False,False,False
+128,False,False,Non-failure,False,False,Non-failure,2,2764.801559841444,False,False,False,True,False
+129,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+130,False,False,Non-failure,False,False,Non-failure,2,115.45526731316647,False,True,False,False,False
+131,False,False,Non-failure,False,False,Non-failure,2,175.1175404193873,True,False,False,False,True
+132,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,897.3414464954054,True,False,False,True,False
+133,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+134,False,False,Non-failure,False,False,Non-failure,2,2570.791574043672,False,False,False,False,False
+135,False,False,Non-failure,False,False,Non-failure,2,534.3613566798263,False,False,True,False,False
+136,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+137,False,False,Non-failure,False,False,Non-failure,2,271.87341949182905,True,False,False,True,False
+138,False,False,Non-failure,False,False,Non-failure,1,403.6008622833465,False,True,False,False,False
+139,False,False,Non-failure,False,False,Non-failure,2,1001.2938816474172,True,False,False,False,False
+140,False,False,Non-failure,False,False,Non-failure,1,2945.7930640720215,False,False,False,False,False
+141,True,True,Structural,True,False,Concentrated dependency,2,1374.9494959153599,True,True,False,False,False
+142,False,False,Non-failure,False,False,Non-failure,1,0.0,False,True,False,False,False
+143,False,False,Non-failure,False,False,Non-failure,2,381.065656699157,False,False,True,False,True
+144,False,False,Non-failure,False,False,Non-failure,2,868.8210804065221,True,True,False,False,False
+145,False,False,Non-failure,False,False,Non-failure,2,920.252612368824,True,False,False,False,False
+146,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3238.502161227152,True,True,False,False,False
+147,False,False,Non-failure,False,False,Non-failure,2,214.05287299900647,True,False,False,True,False
+148,True,True,Structural,True,True,Hidden convergent dependency,2,2238.394897876427,True,False,False,False,False
+149,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+150,False,False,Non-failure,False,False,Non-failure,2,1347.313074773299,False,False,False,True,False
+151,False,False,Non-failure,False,False,Non-failure,2,459.6997057001247,False,True,True,False,False
+152,False,False,Non-failure,False,False,Non-failure,2,34.64145503747022,False,False,True,True,False
+153,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+154,True,True,Structural,True,False,Hidden convergent dependency,2,1882.639602240231,True,True,False,False,False
+155,True,True,Structural,False,False,Hidden convergent dependency,2,1125.3879824384458,True,False,False,False,True
+156,False,False,Non-failure,False,False,Non-failure,2,629.9084677649338,True,True,False,False,False
+157,False,False,Non-failure,False,False,Non-failure,2,8.439093495261659,True,False,False,True,False
+158,False,False,Non-failure,False,False,Non-failure,2,6.370075137275535,True,False,False,True,False
+159,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1783.1832076172377,True,False,False,False,True
+160,False,False,Non-failure,False,False,Non-failure,2,1145.3026641456722,True,False,False,False,False
+161,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,952.8343595623262,True,False,False,False,False
+162,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+163,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+164,False,False,Non-failure,False,False,Non-failure,2,1912.839259467446,False,False,False,True,False
+165,False,False,Non-failure,False,False,Non-failure,2,400.0512606211089,True,False,False,False,True
+166,True,True,Structural,False,False,Compounding moderate disturbance,2,980.3782186470955,True,False,False,True,False
+167,False,False,Non-failure,False,False,Non-failure,2,1646.4738462998066,True,False,False,False,False
+168,False,False,Non-failure,False,False,Non-failure,2,845.6319039175121,False,False,False,False,True
+169,False,False,Non-failure,False,False,Non-failure,2,750.1878657349251,False,False,True,True,False
+170,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,2772.4339819992065,False,True,False,False,False
+171,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3294.442789180226,True,False,False,False,False
+172,False,False,Non-failure,False,False,Non-failure,2,1190.2149779500241,True,False,False,False,False
+173,False,False,Non-failure,False,False,Non-failure,2,242.55719252544168,True,True,False,False,False
+174,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1399.5990810481012,True,False,False,False,False
+175,False,False,Non-failure,False,False,Non-failure,2,17.36216354576618,False,False,False,True,True
+176,False,False,Non-failure,False,False,Non-failure,2,596.9287570152501,False,False,False,False,True
+177,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+178,False,False,Non-failure,False,False,Non-failure,2,8.229461156418097,True,True,False,False,False
+179,False,False,Non-failure,False,False,Non-failure,2,894.3325325182464,True,False,False,True,False
+180,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,387.99838838095604,False,True,True,False,False
+181,False,False,Non-failure,False,False,Non-failure,2,460.55199425257456,True,True,False,False,False
+182,False,False,Non-failure,False,False,Non-failure,2,386.28592916426885,True,False,False,False,False
+183,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1439.6073852173545,True,True,False,False,False
+184,False,False,Non-failure,False,False,Non-failure,2,8.129870270610581,True,False,True,False,False
+185,False,False,Non-failure,False,False,Non-failure,2,765.1144102936689,False,False,True,False,False
+186,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+187,False,False,Non-failure,False,False,Non-failure,2,186.58877663717135,True,False,False,False,False
+188,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+189,False,False,Non-failure,False,False,Non-failure,2,458.4641884738114,False,False,True,False,False
+190,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1192.3494164063727,True,False,False,False,False
+191,False,False,Non-failure,False,False,Non-failure,2,2254.770658515544,False,False,False,False,False
+192,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+193,False,False,Non-failure,False,False,Non-failure,2,358.391552012464,True,False,True,False,False
+194,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,1659.843331301982,True,False,False,False,False
+195,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+196,True,True,Structural,False,False,Hidden convergent dependency,2,361.350730829588,True,False,False,False,True
+197,False,False,Non-failure,False,False,Non-failure,2,369.38188966250436,False,False,False,True,False
+198,True,True,Structural,False,False,Propagation-amplified cascade,2,1062.1845272599226,True,False,False,False,False
+199,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+200,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+201,False,False,Non-failure,False,False,Non-failure,2,3323.3825603009745,False,False,False,False,False
+202,False,False,Non-failure,False,False,Non-failure,1,625.0995397450087,False,True,False,False,False
+203,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+204,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1244.2325182218217,True,False,False,False,False
+205,True,True,Structural,False,False,Concentrated dependency,2,494.68531603777376,False,True,False,True,False
+206,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+207,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+208,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,1531.5149609770865,False,True,False,False,False
+209,False,False,Non-failure,False,False,Non-failure,2,1408.5059783894317,False,False,True,False,False
+210,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,4576.413365527336,False,True,False,False,False
+211,False,False,Non-failure,False,False,Non-failure,2,2057.789948339232,False,False,False,False,False
+212,False,False,Non-failure,False,False,Non-failure,2,93.4506580933695,True,False,True,False,False
+213,False,False,Non-failure,False,False,Non-failure,1,270.4526737190299,False,False,True,False,False
+214,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,952.0020315235296,True,False,False,False,False
+215,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+216,False,False,Non-failure,False,False,Non-failure,2,107.2705059726818,True,False,False,False,True
+217,False,False,Non-failure,False,False,Non-failure,2,726.4921117573176,True,False,True,False,False
+218,False,False,Non-failure,False,False,Non-failure,2,155.88873665834694,False,True,False,False,True
+219,False,False,Non-failure,False,False,Non-failure,2,1819.2456403390572,False,False,False,True,False
+220,True,True,Structural,True,True,Hidden convergent dependency,2,3334.4441677347654,True,False,False,False,False
+221,False,False,Non-failure,False,False,Non-failure,2,924.4753706549072,False,True,True,False,False
+222,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1728.7162881759366,False,True,True,False,False
+223,False,False,Non-failure,False,False,Non-failure,2,15.711389792912314,False,False,False,True,False
+224,True,True,Structural,False,False,Concentrated dependency,2,1324.582280656691,False,True,False,False,False
+225,True,False,Adaptation-limited,True,False,Compounding moderate disturbance,2,3438.0221525639436,False,True,False,False,False
+226,False,False,Non-failure,False,False,Non-failure,2,469.5410436316457,True,True,False,False,False
+227,False,False,Non-failure,False,False,Non-failure,2,490.73897664310584,True,False,False,False,False
+228,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1213.401498601725,True,True,False,False,False
+229,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,3659.033747655636,False,True,False,False,False
+230,False,False,Non-failure,False,False,Non-failure,1,3749.9999999999927,False,False,False,False,False
+231,False,False,Non-failure,False,False,Non-failure,2,3462.725611925307,False,False,False,False,False
+232,False,False,Non-failure,False,False,Non-failure,2,1661.3741370967464,False,False,False,False,True
+233,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+234,False,False,Non-failure,False,False,Non-failure,2,616.2435491059094,True,True,False,False,False
+235,True,True,Structural,True,False,Hidden convergent dependency,2,1810.0528525838454,True,False,False,False,False
+236,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2042.32703586734,False,True,False,True,False
+237,False,False,Non-failure,False,False,Non-failure,2,216.04207600618747,True,False,False,False,False
+238,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+239,False,False,Non-failure,False,False,Non-failure,2,383.1979798842631,True,False,True,False,False
+240,False,False,Non-failure,False,False,Non-failure,2,176.62328903356718,True,False,False,False,True
+241,False,False,Non-failure,False,False,Non-failure,2,261.4257269909856,True,False,False,True,False
+242,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+243,False,False,Non-failure,False,False,Non-failure,2,273.69003292767115,False,False,False,True,False
+244,True,True,Structural,True,False,Concentrated dependency,2,1563.9972934700031,False,True,False,False,False
+245,False,False,Non-failure,False,False,Non-failure,2,468.21573859155137,True,False,False,False,False
+246,False,False,Non-failure,False,False,Non-failure,2,157.064683225688,True,False,False,False,True
+247,False,False,Non-failure,False,False,Non-failure,2,96.08273696701417,True,False,False,False,True
+248,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1706.2222845776896,True,True,False,False,False
+249,False,False,Non-failure,False,False,Non-failure,2,110.6261005173335,True,False,True,False,False
+250,False,False,Non-failure,False,False,Non-failure,1,718.4105208253911,True,False,False,False,False
+251,False,False,Non-failure,False,False,Non-failure,2,2877.454863464549,False,True,False,False,False
+252,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+253,False,False,Non-failure,False,False,Non-failure,2,2299.3747693945857,False,False,True,False,False
+254,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+255,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1147.342350228559,True,False,True,False,False
+256,False,False,Non-failure,False,False,Non-failure,1,543.9622091532592,False,False,False,False,False
+257,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+258,True,True,Structural,False,False,Hidden convergent dependency,2,728.7083236910411,True,False,False,False,False
+259,False,False,Non-failure,False,False,Non-failure,2,266.06451907774795,True,False,False,False,True
+260,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,658.479211943784,True,False,False,False,False
+261,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1371.0076385158598,True,False,False,True,False
+262,False,False,Non-failure,False,False,Non-failure,1,519.9155226981906,True,False,False,False,False
+263,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1901.9892966510665,False,True,False,False,True
+264,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1488.6339026488538,True,True,False,False,False
+265,False,False,Non-failure,False,False,Non-failure,2,1075.0148991107253,True,False,False,False,False
+266,False,False,Non-failure,False,False,Non-failure,2,164.2744571527752,True,False,True,False,False
+267,False,False,Non-failure,False,False,Non-failure,2,645.1254918881243,False,True,True,False,False
+268,True,False,Adaptation-limited,True,False,Adaptation-limited failure,1,2924.6487786257535,True,False,False,False,False
+269,False,False,Non-failure,False,False,Non-failure,2,222.91140649971214,False,False,True,True,False
+270,True,True,Structural,False,False,Hidden convergent dependency,2,690.2984159227215,True,False,True,False,False
+271,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,787.2485791738499,True,False,False,False,False
+272,False,False,Non-failure,False,False,Non-failure,2,104.63754247813108,False,False,False,False,True
+273,False,False,Non-failure,False,False,Non-failure,2,40.495019363575125,False,True,False,False,True
+274,True,True,Structural,True,False,Concentrated dependency,2,1724.9609391686756,True,True,False,False,False
+275,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+276,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1762.1718400947075,True,False,False,False,True
+277,False,False,Non-failure,False,False,Non-failure,2,602.2729756507765,False,True,False,False,True
+278,False,False,Non-failure,False,False,Non-failure,2,660.1592882918579,False,True,False,True,False
+279,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,269.75480577040685,True,False,False,False,True
+280,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+281,False,False,Non-failure,False,False,Non-failure,1,434.9483425794797,False,False,False,False,False
+282,False,False,Non-failure,False,False,Non-failure,2,2871.2348306729773,False,False,True,False,False
+283,False,False,Non-failure,False,False,Non-failure,2,199.6910764361421,False,False,False,True,False
+284,False,False,Non-failure,False,False,Non-failure,2,2738.306700281046,True,False,False,False,False
+285,False,False,Non-failure,False,False,Non-failure,2,386.6663612702582,False,True,False,True,False
+286,False,False,Non-failure,False,False,Non-failure,2,642.2509986761655,True,False,False,True,False
+287,False,False,Non-failure,False,False,Non-failure,2,262.50991542930365,True,False,False,False,True
+288,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1617.7028943313608,True,False,False,True,False
+289,False,False,Non-failure,False,False,Non-failure,2,64.69657295012621,False,True,False,True,False
+290,False,False,Non-failure,False,False,Non-failure,2,693.6192936154013,True,False,False,True,False
+291,False,False,Non-failure,False,False,Non-failure,2,288.5547825688652,False,True,True,False,False
+292,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2468.127295744728,False,True,False,False,False
+293,False,False,Non-failure,False,False,Non-failure,2,60.680429212149534,False,False,True,True,False
+294,True,False,Adaptation-limited,False,False,Propagation-amplified cascade,2,1445.829220455774,True,False,False,False,False
+295,False,False,Non-failure,False,False,Non-failure,2,7.0402945711232405,True,False,False,False,True
+296,False,False,Non-failure,False,False,Non-failure,2,1149.556986999487,False,True,False,False,False
+297,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+298,False,False,Non-failure,False,False,Non-failure,2,93.05836802902002,False,True,False,True,False
+299,False,False,Non-failure,False,False,Non-failure,2,193.946131559253,False,False,False,True,True
+300,False,False,Non-failure,False,False,Non-failure,1,0.0,True,False,False,False,False
+301,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1300.0256454149703,True,False,False,True,False
+302,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+303,False,False,Non-failure,False,False,Non-failure,1,0.0,False,True,False,False,False
+304,True,True,Structural,False,False,Hidden convergent dependency,2,1400.3870167869063,True,False,True,False,False
+305,False,False,Non-failure,False,False,Non-failure,2,753.7774026128541,False,False,True,False,False
+306,False,False,Non-failure,False,False,Non-failure,1,315.2562638241701,False,True,False,False,False
+307,True,True,Structural,False,False,Hidden convergent dependency,2,1659.4139658249633,True,False,False,False,False
+308,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1222.674695606352,True,True,False,False,False
+309,False,False,Non-failure,False,False,Non-failure,2,693.1997077001835,True,False,False,False,False
+310,False,False,Non-failure,False,False,Non-failure,2,795.6638382691657,True,False,False,False,True
+311,False,False,Non-failure,False,False,Non-failure,2,551.7955511024664,False,True,False,False,False
+312,False,False,Non-failure,False,False,Non-failure,2,406.9885303915604,False,False,True,False,True
+313,False,False,Non-failure,False,False,Non-failure,2,98.36272764008481,False,True,True,False,False
+314,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,False
+315,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+316,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1775.6008109467411,True,False,False,False,False
+317,False,False,Non-failure,False,False,Non-failure,2,28.736469774765396,False,True,False,True,False
+318,False,False,Non-failure,False,False,Non-failure,2,591.8322077251227,True,False,False,False,True
+319,False,False,Non-failure,False,False,Non-failure,2,1.7382137086918874,False,False,False,True,True
+320,False,False,Non-failure,False,False,Non-failure,2,2404.5936553196043,False,False,False,False,False
+321,False,False,Non-failure,False,False,Non-failure,2,389.9699375666594,False,True,False,True,False
+322,False,False,Non-failure,False,False,Non-failure,2,309.2285237736902,False,True,False,False,False
+323,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1591.0441865636576,True,False,True,False,False
+324,False,False,Non-failure,False,False,Non-failure,2,1949.9999999999973,False,False,False,True,False
+325,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,True,False,False
+326,True,True,Structural,False,False,Compounding moderate disturbance,2,297.14164153469994,True,False,True,False,False
+327,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+328,False,False,Non-failure,False,False,Non-failure,2,889.4485181207033,False,False,True,False,False
+329,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1474.3140105108475,True,False,False,False,False
+330,False,False,Non-failure,False,False,Non-failure,2,438.5212197851249,True,False,True,False,False
+331,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,932.8776485642868,True,True,False,False,False
+332,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1195.5716851024179,True,False,False,False,False
+333,False,False,Non-failure,False,False,Non-failure,2,887.4790612988801,False,False,False,True,False
+334,False,False,Non-failure,False,False,Non-failure,2,858.0871637388667,True,False,False,True,False
+335,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,True,False
+336,False,False,Non-failure,False,False,Non-failure,1,332.96543178158754,False,False,False,False,False
+337,False,False,Non-failure,False,False,Non-failure,2,600.8212408936629,False,False,False,True,False
+338,False,False,Non-failure,False,False,Non-failure,2,492.5328402910744,True,False,False,True,False
+339,False,False,Non-failure,False,False,Non-failure,2,441.78851471747043,True,False,False,True,False
+340,False,False,Non-failure,False,False,Non-failure,2,150.98328786578065,False,True,True,False,False
+341,False,False,Non-failure,False,False,Non-failure,2,1421.1661838674543,False,False,False,False,False
+342,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+343,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+344,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+345,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+346,True,False,Adaptation-limited,True,False,Adaptation-limited failure,1,2132.64697812001,True,False,False,False,False
+347,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+348,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,4431.123276896051,True,False,False,False,False
+349,False,False,Non-failure,False,False,Non-failure,2,1596.683624190891,False,False,True,False,False
+350,False,False,Non-failure,False,False,Non-failure,2,2088.0222355814267,False,False,False,True,False
+351,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,False
+352,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+353,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+354,True,False,Adaptation-limited,False,False,Adaptation-limited failure,1,332.13304489094196,True,False,False,False,False
+355,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+356,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,433.46114912937753,False,True,False,True,False
+357,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,2234.563798645578,True,False,False,False,False
+358,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+359,True,True,Structural,False,False,Concentrated dependency,2,608.1884063546281,False,True,False,True,False
+360,False,False,Non-failure,False,False,Non-failure,1,242.9858960329757,False,False,False,False,False
+361,False,False,Non-failure,False,False,Non-failure,2,73.8797261262946,True,False,True,False,False
+362,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2020.4806920946908,True,True,False,False,False
+363,False,False,Non-failure,False,False,Non-failure,2,143.61898390764532,True,True,False,False,False
+364,False,False,Non-failure,False,False,Non-failure,2,870.5453466389908,False,False,False,True,False
+365,False,False,Non-failure,False,False,Non-failure,2,1699.323031444571,False,False,False,False,True
+366,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1376.185828455512,True,False,False,False,False
+367,False,False,Non-failure,False,False,Non-failure,1,1468.5683485870572,False,False,False,False,False
+368,False,False,Non-failure,False,False,Non-failure,2,2367.646637502263,True,False,False,False,False
+369,False,False,Non-failure,False,False,Non-failure,2,690.7330975969095,True,False,False,False,False
+370,False,False,Non-failure,False,False,Non-failure,2,1884.4798081294769,False,False,False,False,False
+371,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1228.6054889741781,True,True,False,False,False
+372,True,True,Structural,False,False,Compounding moderate disturbance,2,592.2220494524024,True,False,False,False,False
+373,False,False,Non-failure,False,False,Non-failure,2,813.9434758151665,False,True,False,False,False
+374,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1881.3435766352766,True,False,False,False,False
+375,False,False,Non-failure,False,False,Non-failure,2,1106.053844190294,True,False,False,False,False
+376,True,True,Structural,False,False,Hidden convergent dependency,2,1100.0632252646394,True,False,False,False,False
+377,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,893.9333931340102,True,False,False,True,False
+378,False,False,Non-failure,False,False,Non-failure,2,497.13204820605563,False,True,False,True,False
+379,False,False,Non-failure,False,False,Non-failure,2,740.1597016619932,True,True,False,False,False
+380,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,591.1371727402295,False,True,False,False,False
+381,False,False,Non-failure,False,False,Non-failure,2,571.9499335351658,True,False,False,False,True
+382,True,True,Structural,True,False,Hidden convergent dependency,2,2832.535487020139,True,False,False,False,True
+383,True,True,Structural,True,False,Hidden convergent dependency,2,2463.9741515393016,True,True,False,False,False
+384,False,False,Non-failure,False,False,Non-failure,2,6.151659738421586,False,True,False,True,False
+385,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3765.265929014947,True,False,False,False,False
+386,False,False,Non-failure,False,False,Non-failure,2,667.961905862061,True,False,False,True,False
+387,False,False,Non-failure,False,False,Non-failure,2,179.04515377426821,True,False,True,False,False
+388,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+389,False,False,Non-failure,False,False,Non-failure,2,113.20271466043425,False,True,False,True,False
+390,False,False,Non-failure,False,False,Non-failure,2,164.19711678982708,True,False,False,True,False
+391,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1516.9911632395217,True,False,False,False,False
+392,False,False,Non-failure,False,False,Non-failure,2,574.1984371592312,True,False,False,False,True
+393,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+394,False,False,Non-failure,False,False,Non-failure,2,3190.8989738572764,False,True,False,False,False
+395,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1890.527586487924,True,False,False,False,True
+396,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+397,False,False,Non-failure,False,False,Non-failure,2,249.02415507570538,False,True,True,False,False
+398,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1044.373601809948,True,False,False,False,False
+399,True,True,Structural,True,False,Hidden convergent dependency,2,1997.0656906348936,True,False,False,False,True
+400,False,False,Non-failure,False,False,Non-failure,2,52.88564388867269,False,True,True,False,False
+401,False,False,Non-failure,False,False,Non-failure,2,147.92115574835088,True,False,False,False,True
+402,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2948.81026202714,True,False,False,False,False
+403,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+404,False,False,Non-failure,False,False,Non-failure,2,793.4380332933789,False,True,False,True,False
+405,False,False,Non-failure,False,False,Non-failure,2,836.241857211214,True,False,False,True,False
+406,True,True,Structural,False,False,Hidden convergent dependency,2,1023.4510700054885,True,False,False,False,False
+407,False,False,Non-failure,False,False,Non-failure,2,1211.2546421095442,True,False,False,False,False
+408,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+409,False,False,Non-failure,False,False,Non-failure,2,122.70635151203771,False,False,True,True,False
+410,False,False,Non-failure,False,False,Non-failure,2,239.53143804844217,True,False,False,False,True
+411,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,1443.8065430366448,False,True,False,False,True
+412,False,False,Non-failure,False,False,Non-failure,2,69.3883382283467,False,True,False,True,False
+413,False,False,Non-failure,False,False,Non-failure,2,375.0000000000008,False,False,False,False,True
+414,False,False,Non-failure,False,False,Non-failure,2,2671.015670087907,False,False,False,False,False
+415,False,False,Non-failure,False,False,Non-failure,2,773.1846341668197,False,False,False,False,True
+416,False,False,Non-failure,False,False,Non-failure,2,208.65838562697593,False,True,False,False,False
+417,False,False,Non-failure,False,False,Non-failure,2,180.26887432112312,False,False,True,False,False
+418,False,False,Non-failure,False,False,Non-failure,2,727.1499749463887,True,False,True,False,False
+419,False,False,Non-failure,False,False,Non-failure,2,212.65679551528865,True,False,False,False,True
+420,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+421,False,False,Non-failure,False,False,Non-failure,2,49.88541502822363,False,True,False,False,True
+422,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+423,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+424,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+425,False,False,Non-failure,False,False,Non-failure,2,1707.3257885441044,False,False,False,True,False
+426,False,False,Non-failure,False,False,Non-failure,2,124.49062227042168,False,False,False,False,True
+427,False,False,Non-failure,False,False,Non-failure,2,505.9573512885023,False,True,False,False,True
+428,False,False,Non-failure,False,False,Non-failure,2,76.61788562684137,True,False,True,False,False
+429,False,False,Non-failure,False,False,Non-failure,2,2223.9123904536127,False,False,False,False,False
+430,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,1698.35522468513,True,False,False,False,False
+431,False,False,Non-failure,False,False,Non-failure,2,540.0552947626295,True,True,False,False,False
+432,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+433,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1795.024081144627,False,True,False,False,False
+434,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+435,True,True,Structural,False,False,Hidden convergent dependency,2,1049.4210911266825,True,False,True,False,False
+436,False,False,Non-failure,False,False,Non-failure,2,1254.592039703096,True,False,False,False,False
+437,False,False,Non-failure,False,False,Non-failure,2,404.6310122266291,True,False,False,False,True
+438,False,False,Non-failure,False,False,Non-failure,2,1637.8225688283055,False,False,False,True,False
+439,False,False,Non-failure,False,False,Non-failure,2,74.69829226191018,True,False,False,True,False
+440,False,False,Non-failure,False,False,Non-failure,2,451.121732574454,False,True,True,False,False
+441,False,False,Non-failure,False,False,Non-failure,2,462.23009499752186,True,False,True,False,False
+442,False,False,Non-failure,False,False,Non-failure,2,474.0916301805556,False,True,True,False,False
+443,False,False,Non-failure,False,False,Non-failure,2,21.050862499705204,True,False,False,False,True
+444,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+445,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,982.784934459662,True,False,False,True,False
+446,False,False,Non-failure,False,False,Non-failure,2,354.0886117678232,False,True,False,False,False
+447,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,944.6753086072227,True,True,False,False,False
+448,True,True,Structural,True,False,Hidden convergent dependency,2,1727.0072819489865,True,True,False,False,False
+449,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+450,False,False,Non-failure,False,False,Non-failure,2,730.0272040507441,False,True,False,False,True
+451,False,False,Non-failure,False,False,Non-failure,2,604.6683964563758,True,False,False,False,True
+452,False,False,Non-failure,False,False,Non-failure,2,176.80262895871806,True,False,False,False,True
+453,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1650.9993855778998,True,False,False,False,False
+454,False,False,Non-failure,False,False,Non-failure,2,167.9640589577558,True,False,False,False,True
+455,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+456,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2144.464499059877,True,False,False,True,False
+457,False,False,Non-failure,False,False,Non-failure,2,182.44419938617,True,False,False,False,True
+458,False,False,Non-failure,False,False,Non-failure,1,4059.718118871414,False,False,False,False,False
+459,False,False,Non-failure,False,False,Non-failure,2,192.83636396552197,True,False,False,True,False
+460,False,False,Non-failure,False,False,Non-failure,2,209.34576569066257,True,False,False,False,True
+461,True,False,Adaptation-limited,False,False,Adaptation-limited failure,1,543.6694550224121,True,False,False,False,False
+462,True,True,Structural,True,False,Hidden convergent dependency,2,3100.843205505536,True,False,False,False,False
+463,False,False,Non-failure,False,False,Non-failure,2,1036.5658577836602,True,False,False,False,False
+464,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1671.9183140003909,True,False,False,True,False
+465,True,False,Adaptation-limited,True,False,Compounding moderate disturbance,2,1683.7768465787103,True,False,False,False,False
+466,False,False,Non-failure,False,False,Non-failure,2,212.80608641519575,False,True,True,False,False
+467,False,False,Non-failure,False,False,Non-failure,2,2449.011054474803,False,False,False,False,False
+468,False,False,Non-failure,False,False,Non-failure,2,413.4267186916013,False,True,True,False,False
+469,False,False,Non-failure,False,False,Non-failure,2,608.6268172549931,True,False,False,False,True
+470,True,True,Structural,True,False,Hidden convergent dependency,2,2085.2376179213343,True,False,False,False,True
+471,False,False,Non-failure,False,False,Non-failure,2,101.14600747931763,False,True,True,False,False
+472,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1391.6900207784745,False,True,False,False,False
+473,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+474,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+475,False,False,Non-failure,False,False,Non-failure,1,410.81582777808023,True,False,False,False,False
+476,False,False,Non-failure,False,False,Non-failure,2,207.5056864721903,False,True,False,True,False
+477,False,False,Non-failure,False,False,Non-failure,2,2324.720052195392,False,True,False,False,False
+478,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+479,False,False,Non-failure,False,False,Non-failure,2,389.9884726679901,True,False,False,False,False
+480,False,False,Non-failure,False,False,Non-failure,2,991.360138476319,False,True,False,False,False
+481,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+482,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+483,True,True,Structural,True,True,Hidden convergent dependency,1,3594.716483334616,True,False,False,False,False
+484,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,False
+485,False,False,Non-failure,False,False,Non-failure,2,535.5853809109954,True,False,False,False,False
+486,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+487,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+488,False,False,Non-failure,False,False,Non-failure,2,151.42468012606696,False,True,False,False,True
+489,False,False,Non-failure,False,False,Non-failure,1,90.4321377831966,False,False,False,False,True
+490,False,False,Non-failure,False,False,Non-failure,2,204.61661164582438,False,False,True,True,False
+491,False,False,Non-failure,False,False,Non-failure,2,628.4500356728402,False,True,False,False,True
+492,False,False,Non-failure,False,False,Non-failure,2,328.74450982176086,True,False,False,True,False
+493,False,False,Non-failure,False,False,Non-failure,2,1414.866861580486,False,False,False,False,True
+494,False,False,Non-failure,False,False,Non-failure,2,898.0253155174711,False,True,False,False,False
+495,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,257.03850322874314,True,True,False,False,False
+496,False,False,Non-failure,False,False,Non-failure,2,98.40938074821804,True,True,False,False,False
+497,False,False,Non-failure,False,False,Non-failure,2,196.07605144593617,True,False,False,False,True
+498,True,True,Structural,True,True,Hidden convergent dependency,2,1645.8281263992856,True,False,False,True,False
+499,False,False,Non-failure,False,False,Non-failure,1,147.38333606419747,False,False,False,True,False
+500,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+501,True,False,Adaptation-limited,False,False,Adaptation-limited failure,1,417.71686113167084,True,False,False,False,False
+502,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,433.83029206875483,False,True,False,True,False
+503,False,False,Non-failure,False,False,Non-failure,2,963.5353117019305,False,False,False,False,True
+504,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+505,False,False,Non-failure,False,False,Non-failure,2,273.95147306307285,False,True,False,True,False
+506,True,True,Structural,True,False,Hidden convergent dependency,2,2150.6450398463458,True,False,False,False,False
+507,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+508,False,False,Non-failure,False,False,Non-failure,2,38.321407879853496,True,True,False,False,False
+509,False,False,Non-failure,False,False,Non-failure,2,119.24486039798705,False,False,False,True,True
+510,False,False,Non-failure,False,False,Non-failure,2,918.3886868237973,True,True,False,False,False
+511,False,False,Non-failure,False,False,Non-failure,2,674.0419437332732,False,False,True,False,False
+512,False,False,Non-failure,False,False,Non-failure,2,415.7432094869346,True,False,False,True,False
+513,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+514,False,False,Non-failure,False,False,Non-failure,2,246.60167688932756,True,True,False,False,False
+515,False,False,Non-failure,False,False,Non-failure,2,70.6046548611705,False,True,True,False,False
+516,False,False,Non-failure,False,False,Non-failure,2,692.643289286129,True,True,False,False,False
+517,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+518,True,True,Structural,True,False,Hidden convergent dependency,2,2031.3823197911508,True,False,True,False,False
+519,False,False,Non-failure,False,False,Non-failure,2,227.83518793203075,True,True,False,False,False
+520,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+521,False,False,Non-failure,False,False,Non-failure,2,2243.040411259133,False,False,False,False,False
+522,True,True,Structural,True,False,Hidden convergent dependency,2,3901.8855356519034,True,False,False,False,False
+523,False,False,Non-failure,False,False,Non-failure,2,742.3531556012122,True,False,False,False,False
+524,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+525,False,False,Non-failure,False,False,Non-failure,2,29.47163650197126,False,False,False,False,True
+526,True,True,Structural,False,False,Propagation-amplified cascade,2,3013.9192541965704,True,False,False,False,False
+527,False,False,Non-failure,False,False,Non-failure,2,203.47800594665296,False,True,False,False,True
+528,False,False,Non-failure,False,False,Non-failure,1,1362.0815381628852,False,False,False,False,False
+529,False,False,Non-failure,False,False,Non-failure,2,128.78738073633895,False,True,False,False,False
+530,False,False,Non-failure,False,False,Non-failure,2,311.72757772962575,False,False,False,False,True
+531,True,True,Structural,True,False,Concentrated dependency,2,1430.250706145797,False,True,False,True,False
+532,False,False,Non-failure,False,False,Non-failure,2,483.12599984379426,True,True,False,False,False
+533,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,True,False,False
+534,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+535,False,False,Non-failure,False,False,Non-failure,2,876.7763148053298,False,False,False,True,False
+536,False,False,Non-failure,False,False,Non-failure,2,1331.6819434330462,False,False,False,False,True
+537,False,False,Non-failure,False,False,Non-failure,2,1500.0,False,True,False,False,False
+538,False,False,Non-failure,False,False,Non-failure,2,623.097375326242,True,False,True,False,False
+539,False,False,Non-failure,False,False,Non-failure,2,235.63581030706519,True,True,False,False,False
+540,True,True,Structural,True,False,Hidden convergent dependency,2,1240.1027057818242,True,True,False,False,False
+541,False,False,Non-failure,False,False,Non-failure,2,22.070859413260223,False,False,True,False,False
+542,True,True,Structural,False,False,Hidden convergent dependency,2,680.7703824178677,True,False,False,False,False
+543,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+544,False,False,Non-failure,False,False,Non-failure,1,1751.9594795321684,False,False,False,False,False
+545,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+546,False,False,Non-failure,False,False,Non-failure,2,503.9624621987531,True,False,False,True,False
+547,False,False,Non-failure,False,False,Non-failure,2,696.8012037449798,False,False,True,False,False
+548,False,False,Non-failure,False,False,Non-failure,2,67.50507463416966,False,True,True,False,False
+549,True,True,Structural,False,False,Recovery lag and temporal overlap,2,296.5060577402405,True,False,False,False,True
+550,False,False,Non-failure,False,False,Non-failure,2,136.0607126683127,False,True,True,False,False
+551,False,False,Non-failure,False,False,Non-failure,2,2157.3008749899323,False,True,False,False,False
+552,False,False,Non-failure,False,False,Non-failure,2,582.7722455732337,True,False,False,False,False
+553,False,False,Non-failure,False,False,Non-failure,2,40.520574689717705,False,False,True,True,False
+554,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,2120.058022316441,True,False,False,False,False
+555,False,False,Non-failure,False,False,Non-failure,2,1104.6519114414023,False,False,True,False,False
+556,False,False,Non-failure,False,False,Non-failure,2,66.55325226905643,True,False,False,False,True
+557,False,False,Non-failure,False,False,Non-failure,2,812.5358639136729,False,False,False,False,True
+558,False,False,Non-failure,False,False,Non-failure,2,1667.134415501674,False,False,False,True,False
+559,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2436.802610494614,True,False,False,False,True
+560,False,False,Non-failure,False,False,Non-failure,2,135.94423831986182,False,False,True,True,False
+561,False,False,Non-failure,False,False,Non-failure,1,77.57066434453031,True,False,False,False,False
+562,True,True,Structural,False,False,Compounding moderate disturbance,2,654.1828843379634,True,False,False,False,False
+563,False,False,Non-failure,False,False,Non-failure,1,85.13105025847005,True,False,False,False,False
+564,False,False,Non-failure,False,False,Non-failure,2,72.870235823945,True,False,True,False,False
+565,False,False,Non-failure,False,False,Non-failure,2,884.9520611607467,False,True,False,False,False
+566,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+567,False,False,Non-failure,False,False,Non-failure,2,177.4922756968292,True,False,False,True,False
+568,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1112.0044015560475,True,False,False,False,False
+569,False,False,Non-failure,False,False,Non-failure,2,481.03804806080814,True,True,False,False,False
+570,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2568.408564618398,True,False,True,False,False
+571,True,True,Structural,True,True,Hidden convergent dependency,2,2822.438859489378,True,False,False,False,False
+572,False,False,Non-failure,False,False,Non-failure,2,191.95020303657464,False,True,True,False,False
+573,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1212.693146401687,False,True,False,False,False
+574,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+575,False,False,Non-failure,False,False,Non-failure,2,198.02605363623354,False,True,False,False,False
+576,False,False,Non-failure,False,False,Non-failure,2,901.3683209700926,False,True,True,False,False
+577,False,False,Non-failure,False,False,Non-failure,2,1912.7457735840574,False,False,False,False,False
+578,True,True,Structural,True,False,Recovery lag and temporal overlap,2,2470.020750459529,True,False,False,True,False
+579,False,False,Non-failure,False,False,Non-failure,2,1181.119538295037,False,False,False,True,False
+580,False,False,Non-failure,False,False,Non-failure,2,205.8535532453161,False,False,False,False,True
+581,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+582,False,False,Non-failure,False,False,Non-failure,2,28.277360798573454,True,False,True,False,False
+583,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+584,False,False,Non-failure,False,False,Non-failure,2,226.3229434162722,True,False,False,True,False
+585,True,True,Structural,True,True,Hidden convergent dependency,2,2302.474816276791,True,False,False,True,False
+586,False,False,Non-failure,False,False,Non-failure,2,386.60377629049844,True,False,False,False,False
+587,False,False,Non-failure,False,False,Non-failure,2,16.223333061183098,False,True,False,True,False
+588,False,False,Non-failure,False,False,Non-failure,2,510.8553089092841,True,False,False,False,False
+589,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1179.4372264876224,True,False,False,False,False
+590,False,False,Non-failure,False,False,Non-failure,2,340.773618898393,False,False,False,False,True
+591,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+592,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1250.7367514078605,True,False,False,False,False
+593,False,False,Non-failure,False,False,Non-failure,2,1570.3165999126763,False,False,True,False,False
+594,True,False,Adaptation-limited,True,False,Compounding moderate disturbance,2,2168.3236583623852,False,True,False,False,False
+595,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1256.0101165257263,True,True,False,False,False
+596,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1539.6566693156453,True,True,False,False,False
+597,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+598,False,False,Non-failure,False,False,Non-failure,2,171.7876444055821,False,False,True,False,True
+599,False,False,Non-failure,False,False,Non-failure,2,87.52201174282436,True,True,False,False,False
+600,False,False,Non-failure,False,False,Non-failure,2,282.68985103356374,True,False,True,False,False
+601,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,5560.679382849789,False,True,False,False,False
+602,False,False,Non-failure,False,False,Non-failure,2,681.1016606064939,False,False,True,False,False
+603,False,False,Non-failure,False,False,Non-failure,2,1559.8967649545268,False,False,False,False,False
+604,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+605,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+606,False,False,Non-failure,False,False,Non-failure,2,311.6507205916721,False,False,True,False,True
+607,False,False,Non-failure,False,False,Non-failure,2,476.9371178435073,False,True,False,False,False
+608,False,False,Non-failure,False,False,Non-failure,2,145.19614563897073,False,False,True,False,True
+609,False,False,Non-failure,False,False,Non-failure,2,318.2436856982455,False,False,False,False,True
+610,False,False,Non-failure,False,False,Non-failure,2,187.0476956495619,True,False,False,False,True
+611,False,False,Non-failure,False,False,Non-failure,2,739.6296421704554,False,False,False,False,True
+612,True,True,Structural,True,False,Concentrated dependency,2,3414.3476882702444,False,True,False,False,False
+613,False,False,Non-failure,False,False,Non-failure,2,473.40879644435563,False,True,False,False,False
+614,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2216.3336574465297,True,True,False,False,False
+615,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+616,False,False,Non-failure,False,False,Non-failure,2,6.730281597081216,False,True,False,True,False
+617,True,False,Adaptation-limited,False,False,Recovery lag and temporal overlap,2,485.10720873051866,True,False,True,False,False
+618,True,True,Structural,False,False,Compounding moderate disturbance,2,970.5468976806694,True,False,False,False,False
+619,False,False,Non-failure,False,False,Non-failure,2,805.4794048880854,True,True,False,False,False
+620,True,True,Structural,True,False,Hidden convergent dependency,2,4643.138686054288,True,False,False,False,False
+621,False,False,Non-failure,False,False,Non-failure,2,168.5001785003717,True,False,False,False,True
+622,False,False,Non-failure,False,False,Non-failure,2,808.2114406001417,True,False,False,False,True
+623,False,False,Non-failure,False,False,Non-failure,2,814.0124199158237,True,False,False,True,False
+624,False,False,Non-failure,False,False,Non-failure,2,194.70507837557432,True,False,True,False,False
+625,False,False,Non-failure,False,False,Non-failure,2,80.52913928447981,True,False,True,False,False
+626,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+627,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1305.433422694864,True,False,False,False,False
+628,False,False,Non-failure,False,False,Non-failure,2,883.608690129465,False,True,False,False,False
+629,False,False,Non-failure,False,False,Non-failure,2,276.66412105667723,True,False,False,True,False
+630,False,False,Non-failure,False,False,Non-failure,2,382.7854979854794,True,False,False,False,True
+631,False,False,Non-failure,False,False,Non-failure,2,128.84706497887555,False,True,False,False,True
+632,False,False,Non-failure,False,False,Non-failure,2,277.17599506557724,True,False,False,True,False
+633,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+634,False,False,Non-failure,False,False,Non-failure,2,393.846447305129,False,True,False,False,False
+635,True,True,Structural,True,False,Hidden convergent dependency,2,1121.0677129831643,True,False,False,False,False
+636,False,False,Non-failure,False,False,Non-failure,2,172.60608252899056,True,False,True,False,False
+637,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+638,False,False,Non-failure,False,False,Non-failure,2,74.98670034593079,False,False,False,True,True
+639,False,False,Non-failure,False,False,Non-failure,2,355.22981436811153,True,False,False,True,False
+640,False,False,Non-failure,False,False,Non-failure,2,116.66467159043714,True,False,False,False,True
+641,False,False,Non-failure,False,False,Non-failure,1,363.5336391074824,True,False,False,False,False
+642,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+643,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+644,False,False,Non-failure,False,False,Non-failure,2,129.65377716116518,True,False,False,True,False
+645,False,False,Non-failure,False,False,Non-failure,2,191.1483335635753,False,False,False,True,True
+646,False,False,Non-failure,False,False,Non-failure,2,597.502896748819,True,False,False,True,False
+647,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,True,False,False
+648,True,True,Structural,False,False,Compounding moderate disturbance,2,519.426255773606,False,True,False,False,True
+649,True,True,Structural,True,True,Propagation-amplified cascade,2,2450.489258783995,True,True,False,False,False
+650,False,False,Non-failure,False,False,Non-failure,2,224.4667495885999,True,True,False,False,False
+651,False,False,Non-failure,False,False,Non-failure,2,368.58937064408565,False,True,False,False,False
+652,False,False,Non-failure,False,False,Non-failure,2,149.799770221093,False,False,False,True,True
+653,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,937.9145092015331,True,True,False,False,False
+654,False,False,Non-failure,False,False,Non-failure,2,146.84681252316796,True,True,False,False,False
+655,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+656,False,False,Non-failure,False,False,Non-failure,1,25.712374394550693,False,True,False,False,False
+657,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+658,False,False,Non-failure,False,False,Non-failure,2,862.2028750183149,False,False,True,False,False
+659,True,True,Structural,True,False,Hidden convergent dependency,2,1608.363684006645,True,True,False,False,False
+660,False,False,Non-failure,False,False,Non-failure,2,191.11716547002584,True,False,True,False,False
+661,False,False,Non-failure,False,False,Non-failure,1,113.53803989478297,False,False,False,True,False
+662,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1411.4923286447665,True,False,True,False,False
+663,False,False,Non-failure,False,False,Non-failure,2,845.0040058008726,True,False,False,False,False
+664,False,False,Non-failure,False,False,Non-failure,2,748.0981567798931,True,False,True,False,False
+665,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+666,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+667,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+668,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1750.0740928342245,True,False,False,False,False
+669,False,False,Non-failure,False,False,Non-failure,2,78.62748239063944,False,True,False,True,False
+670,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+671,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,2715.8054722872066,True,False,False,False,False
+672,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+673,True,False,Adaptation-limited,False,False,Recovery lag and temporal overlap,2,371.4137791313485,True,True,False,False,False
+674,False,False,Non-failure,False,False,Non-failure,2,10.518065166844167,False,False,True,True,False
+675,False,False,Non-failure,False,False,Non-failure,2,983.5192532101203,False,False,True,False,False
+676,False,False,Non-failure,False,False,Non-failure,2,553.3319973433277,True,False,True,False,False
+677,False,False,Non-failure,False,False,Non-failure,2,285.62880731738596,False,True,False,False,True
+678,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+679,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,902.7562739082808,True,False,False,False,True
+680,False,False,Non-failure,False,False,Non-failure,2,880.8045018379772,True,False,False,False,False
+681,False,False,Non-failure,False,False,Non-failure,2,458.8991209994542,True,False,False,False,False
+682,False,False,Non-failure,False,False,Non-failure,2,306.93578000355205,False,False,False,True,True
+683,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,False
+684,True,True,Structural,True,False,Hidden convergent dependency,2,2946.2332064169123,True,False,False,False,False
+685,False,False,Non-failure,False,False,Non-failure,2,123.80903746962304,False,False,True,False,True
+686,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+687,False,False,Non-failure,False,False,Non-failure,2,287.40971846898447,False,True,False,False,True
+688,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,1100.4406752342607,True,False,True,False,False
+689,False,False,Non-failure,False,False,Non-failure,2,129.10027386100728,True,False,False,False,True
+690,False,False,Non-failure,False,False,Non-failure,2,371.0112747456394,False,False,False,False,True
+691,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,1906.609647466189,True,False,False,False,False
+692,False,False,Non-failure,False,False,Non-failure,2,2076.3055305340686,False,False,False,False,False
+693,False,False,Non-failure,False,False,Non-failure,1,1339.4418756718603,False,False,False,False,False
+694,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,False
+695,True,True,Structural,True,False,Hidden convergent dependency,2,2194.007016236407,True,False,False,False,False
+696,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,False
+697,False,False,Non-failure,False,False,Non-failure,2,908.2722313965861,True,False,True,False,False
+698,True,True,Structural,True,False,Hidden convergent dependency,2,1911.9215285159426,True,False,False,False,False
+699,False,False,Non-failure,False,False,Non-failure,2,1340.949741712645,False,False,False,True,True
+700,False,False,Non-failure,False,False,Non-failure,2,637.9822180339258,True,False,False,True,False
+701,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+702,False,False,Non-failure,False,False,Non-failure,2,427.1420880485498,False,True,False,False,True
+703,False,False,Non-failure,False,False,Non-failure,2,1700.9076656795262,False,False,False,False,False
+704,False,False,Non-failure,False,False,Non-failure,2,646.4553991767739,True,True,False,False,False
+705,False,False,Non-failure,False,False,Non-failure,2,99.67869007109732,True,False,False,True,False
+706,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,False
+707,False,False,Non-failure,False,False,Non-failure,2,38.77044416797423,True,True,False,False,False
+708,False,False,Non-failure,False,False,Non-failure,2,2178.4891233642447,False,False,False,False,True
+709,False,False,Non-failure,False,False,Non-failure,2,670.3557596141861,True,True,False,False,False
+710,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+711,True,True,Structural,False,False,Hidden convergent dependency,2,1097.939965791871,True,False,False,False,False
+712,False,False,Non-failure,False,False,Non-failure,2,476.3694824535636,True,False,True,False,False
+713,False,False,Non-failure,False,False,Non-failure,2,420.1415514795781,True,False,False,False,True
+714,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+715,False,False,Non-failure,False,False,Non-failure,2,1185.0941723596984,False,False,False,True,False
+716,False,False,Non-failure,False,False,Non-failure,2,404.7557732986679,False,True,False,True,False
+717,True,True,Structural,True,False,Compounding moderate disturbance,2,1548.4564719796397,True,False,False,False,False
+718,False,False,Non-failure,False,False,Non-failure,1,0.0,False,True,False,False,False
+719,True,True,Structural,True,True,Hidden convergent dependency,2,4561.217401585283,True,False,True,False,False
+720,False,False,Non-failure,False,False,Non-failure,2,545.7157154234785,True,False,True,False,False
+721,False,False,Non-failure,False,False,Non-failure,2,10.934473840368128,False,True,False,True,False
+722,False,False,Non-failure,False,False,Non-failure,2,752.086335122911,True,False,False,True,False
+723,True,True,Structural,False,False,Hidden convergent dependency,2,655.052958712721,True,True,False,False,False
+724,False,False,Non-failure,False,False,Non-failure,2,351.4033376735606,True,True,False,False,False
+725,False,False,Non-failure,False,False,Non-failure,2,293.9745358478517,False,False,True,False,True
+726,False,False,Non-failure,False,False,Non-failure,2,367.86222455536563,False,False,False,False,True
+727,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1201.9052758546825,True,False,False,True,False
+728,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1268.3057055512006,True,True,False,False,False
+729,False,False,Non-failure,False,False,Non-failure,2,782.0609559514346,True,False,True,False,False
+730,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,522.1735197644173,True,True,False,False,False
+731,True,True,Structural,False,False,Propagation-amplified cascade,2,2602.7784661445753,True,False,False,False,False
+732,False,False,Non-failure,False,False,Non-failure,2,224.76175303775324,True,True,False,False,False
+733,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1245.2598940661408,True,False,False,True,False
+734,False,False,Non-failure,False,False,Non-failure,2,443.8873907926328,False,True,False,False,False
+735,False,False,Non-failure,False,False,Non-failure,2,373.8244137483407,True,False,False,False,False
+736,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1618.5870869185435,False,True,False,False,False
+737,True,True,Structural,True,False,Hidden convergent dependency,2,2074.439855065862,True,True,False,False,False
+738,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,279.57878991355756,False,True,False,False,False
+739,True,False,Adaptation-limited,False,False,Adaptation-limited failure,1,400.4813950077164,True,False,False,False,False
+740,False,False,Non-failure,False,False,Non-failure,2,500.68359794549394,False,True,False,True,False
+741,False,False,Non-failure,False,False,Non-failure,2,478.2702562855487,True,True,False,False,False
+742,False,False,Non-failure,False,False,Non-failure,2,203.17201905523075,True,False,False,False,True
+743,False,False,Non-failure,False,False,Non-failure,2,653.5777394408273,False,False,False,True,False
+744,False,False,Non-failure,False,False,Non-failure,2,898.8437393127672,False,False,True,False,False
+745,False,False,Non-failure,False,False,Non-failure,2,1179.3092026589175,False,False,True,False,False
+746,False,False,Non-failure,False,False,Non-failure,2,300.5094556851817,False,False,False,False,True
+747,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,True,False,False
+748,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+749,True,True,Structural,True,False,Hidden convergent dependency,2,2755.3798975791196,True,False,False,False,False
+750,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,True,False,False
+751,False,False,Non-failure,False,False,Non-failure,2,2.1584308819924445,False,False,False,True,True
+752,False,False,Non-failure,False,False,Non-failure,2,2252.3262344459818,False,True,False,False,False
+753,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,1979.1759344070028,True,False,False,False,False
+754,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+755,False,False,Non-failure,False,False,Non-failure,2,503.096858494838,True,False,False,False,True
+756,False,False,Non-failure,False,False,Non-failure,2,776.7681485441792,True,False,False,True,False
+757,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+758,True,True,Structural,True,True,Hidden convergent dependency,2,2736.5868937445534,True,False,False,False,True
+759,False,False,Non-failure,False,False,Non-failure,2,1182.298369914234,True,False,False,False,False
+760,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+761,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+762,False,False,Non-failure,False,False,Non-failure,2,796.9723060221047,True,True,False,False,False
+763,False,False,Non-failure,False,False,Non-failure,2,900.6313200714279,False,False,True,False,True
+764,False,False,Non-failure,False,False,Non-failure,2,209.60351353344254,False,True,False,False,True
+765,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,1656.8974537853521,True,False,False,False,False
+766,False,False,Non-failure,False,False,Non-failure,2,3987.138521558046,False,False,False,False,False
+767,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1233.2955330386699,True,False,False,False,False
+768,False,False,Non-failure,False,False,Non-failure,2,81.82746013229041,False,False,False,False,True
+769,False,False,Non-failure,False,False,Non-failure,2,1582.7128339905744,False,False,False,False,True
+770,False,False,Non-failure,False,False,Non-failure,2,456.69065057774924,False,False,False,True,False
+771,False,False,Non-failure,False,False,Non-failure,2,157.35635860465766,True,False,False,False,False
+772,False,False,Non-failure,False,False,Non-failure,2,2170.6080061060075,False,False,False,True,False
+773,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1322.274937076546,True,False,False,False,False
+774,False,False,Non-failure,False,False,Non-failure,2,465.69939923606,False,True,False,True,False
+775,False,False,Non-failure,False,False,Non-failure,2,28.317540701786356,False,False,True,False,False
+776,False,False,Non-failure,False,False,Non-failure,2,1438.1199841840712,True,False,False,False,False
+777,False,False,Non-failure,False,False,Non-failure,2,505.3649754991475,False,True,False,False,True
+778,True,True,Structural,False,False,Hidden convergent dependency,2,1276.9904049595712,True,True,False,False,False
+779,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1510.0904539754688,True,False,False,False,False
+780,False,False,Non-failure,False,False,Non-failure,2,8.03598530595491,True,False,False,True,False
+781,False,False,Non-failure,False,False,Non-failure,2,532.2389862042488,False,False,False,True,False
+782,True,True,Structural,True,False,Hidden convergent dependency,2,2093.411580552948,True,False,False,False,False
+783,False,False,Non-failure,False,False,Non-failure,2,593.3722917291293,True,False,True,False,False
+784,True,True,Structural,False,False,Hidden convergent dependency,1,1012.8460933535027,True,False,False,False,False
+785,False,False,Non-failure,False,False,Non-failure,2,87.57325247882272,False,False,False,False,True
+786,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+787,False,False,Non-failure,False,False,Non-failure,2,443.2653777976842,True,False,True,False,False
+788,False,False,Non-failure,False,False,Non-failure,2,141.47373445060418,True,False,True,False,False
+789,False,False,Non-failure,False,False,Non-failure,2,3161.0039249637475,False,False,False,False,False
+790,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,2641.422690145435,False,True,False,False,False
+791,False,False,Non-failure,False,False,Non-failure,1,310.31290417172704,False,False,False,False,False
+792,False,False,Non-failure,False,False,Non-failure,2,8.538476934991536,False,True,True,False,False
+793,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+794,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+795,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+796,False,False,Non-failure,False,False,Non-failure,2,1945.5151733615724,False,False,False,False,False
+797,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+798,False,False,Non-failure,False,False,Non-failure,2,114.66695009769603,True,False,False,True,False
+799,False,False,Non-failure,False,False,Non-failure,2,116.07863938351034,True,False,False,False,True
+800,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+801,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+802,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1564.7060919558935,True,False,False,False,False
+803,False,False,Non-failure,False,False,Non-failure,2,2000.009899991503,False,False,False,False,True
+804,False,False,Non-failure,False,False,Non-failure,2,111.18394982821906,False,False,True,True,False
+805,False,False,Non-failure,False,False,Non-failure,2,771.948539658472,True,False,False,False,False
+806,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+807,False,False,Non-failure,False,False,Non-failure,2,1487.1668955860782,False,False,True,False,False
+808,False,False,Non-failure,False,False,Non-failure,2,322.5593597074994,False,False,True,False,False
+809,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+810,False,False,Non-failure,False,False,Non-failure,2,63.95311070141588,False,False,False,True,False
+811,False,False,Non-failure,False,False,Non-failure,2,385.10436255399475,False,True,True,False,False
+812,False,False,Non-failure,False,False,Non-failure,2,497.1414649934155,False,True,False,True,False
+813,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1145.0261996118566,True,False,False,False,False
+814,False,False,Non-failure,False,False,Non-failure,2,67.1363459646293,True,True,False,False,False
+815,False,False,Non-failure,False,False,Non-failure,2,2633.3048258176877,True,False,False,False,False
+816,False,False,Non-failure,False,False,Non-failure,2,1275.0000000000023,False,True,False,False,False
+817,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3858.5138505393707,False,True,False,True,False
+818,True,True,Structural,False,False,Hidden convergent dependency,2,1087.0703885647727,True,False,False,True,False
+819,False,False,Non-failure,False,False,Non-failure,2,45.77359625454824,True,False,False,False,True
+820,False,False,Non-failure,False,False,Non-failure,2,251.3526783353368,False,False,True,False,True
+821,False,False,Non-failure,False,False,Non-failure,2,240.52188509282803,True,False,False,False,True
+822,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+823,True,True,Structural,True,False,Hidden convergent dependency,2,1257.8564202203422,True,False,False,False,True
+824,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,786.9574356459511,False,True,False,False,True
+825,False,False,Non-failure,False,False,Non-failure,1,277.31740870826525,True,False,False,False,False
+826,False,False,Non-failure,False,False,Non-failure,2,59.54481249187643,False,True,False,False,True
+827,True,True,Structural,False,False,Compounding moderate disturbance,2,1584.6575740768835,True,False,False,False,True
+828,False,False,Non-failure,False,False,Non-failure,1,116.96742329357266,False,True,False,False,False
+829,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+830,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+831,True,True,Structural,True,True,Hidden convergent dependency,2,2253.1093982269203,True,False,False,False,False
+832,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+833,False,False,Non-failure,False,False,Non-failure,2,482.3051424197448,False,False,True,False,False
+834,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1370.3326278343886,True,False,False,False,True
+835,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+836,False,False,Non-failure,False,False,Non-failure,2,898.9476302386447,False,False,False,False,False
+837,False,False,Non-failure,False,False,Non-failure,2,267.48557238787635,True,False,True,False,False
+838,False,False,Non-failure,False,False,Non-failure,2,326.48259627804316,False,True,False,False,False
+839,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1990.6234907980747,True,False,False,True,False
+840,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,1460.8917574210625,True,False,False,False,False
+841,False,False,Non-failure,False,False,Non-failure,2,419.30505687436266,True,False,True,False,False
+842,True,True,Structural,True,False,Hidden convergent dependency,2,1819.5369919762963,True,False,True,False,False
+843,False,False,Non-failure,False,False,Non-failure,2,398.93466895743995,False,True,False,False,False
+844,False,False,Non-failure,False,False,Non-failure,2,962.660113898894,False,False,False,False,True
+845,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1615.1695343587878,True,True,False,False,False
+846,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1543.1027779177916,True,True,False,False,False
+847,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+848,False,False,Non-failure,False,False,Non-failure,2,875.560166233051,False,False,False,False,True
+849,False,False,Non-failure,False,False,Non-failure,2,786.7386004284594,True,False,False,False,True
+850,False,False,Non-failure,False,False,Non-failure,2,0.0,True,True,False,False,False
+851,False,False,Non-failure,False,False,Non-failure,2,1010.5680824640308,True,True,False,False,False
+852,False,False,Non-failure,False,False,Non-failure,2,435.80813346947605,True,False,False,True,False
+853,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+854,False,False,Non-failure,False,False,Non-failure,2,560.9779417864429,True,False,False,False,True
+855,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+856,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+857,True,True,Structural,False,False,Concentrated dependency,2,1275.4194110877509,True,True,False,False,False
+858,True,False,Adaptation-limited,False,False,Propagation-amplified cascade,2,2991.114826655018,True,False,False,False,False
+859,False,False,Non-failure,False,False,Non-failure,2,101.77280522955152,False,False,True,True,False
+860,False,False,Non-failure,False,False,Non-failure,2,370.21702020829036,False,True,False,False,False
+861,False,False,Non-failure,False,False,Non-failure,2,20.625237959421497,True,False,False,False,True
+862,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+863,False,False,Non-failure,False,False,Non-failure,2,461.335474889186,False,False,False,True,False
+864,False,False,Non-failure,False,False,Non-failure,2,612.7843185353795,False,True,False,False,False
+865,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3972.7093209849845,False,True,False,False,False
+866,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1691.1243843558764,True,False,False,False,False
+867,True,True,Structural,True,False,Hidden convergent dependency,2,1643.9592276341295,True,False,False,False,True
+868,False,False,Non-failure,False,False,Non-failure,2,745.3789284616042,True,False,True,False,False
+869,True,True,Structural,True,True,Hidden convergent dependency,2,3524.120822371545,True,False,False,False,True
+870,False,False,Non-failure,False,False,Non-failure,2,180.8084822918613,False,True,False,False,False
+871,False,False,Non-failure,False,False,Non-failure,2,301.8702992030037,False,False,True,True,False
+872,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+873,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+874,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+875,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1583.5622298656504,True,False,True,False,False
+876,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+877,False,False,Non-failure,False,False,Non-failure,2,1557.2856302261657,False,False,False,False,True
+878,False,False,Non-failure,False,False,Non-failure,2,1889.8700005196106,False,False,False,False,True
+879,True,False,Adaptation-limited,True,False,Compounding moderate disturbance,2,2256.3288809615296,True,False,False,False,False
+880,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+881,True,True,Structural,True,False,Hidden convergent dependency,2,1620.605598166862,True,False,False,False,False
+882,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+883,False,False,Non-failure,False,False,Non-failure,2,30.3766280625141,True,True,False,False,False
+884,False,False,Non-failure,False,False,Non-failure,2,1584.7640076425282,False,False,False,True,False
+885,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+886,False,False,Non-failure,False,False,Non-failure,2,1195.295622025706,True,False,True,False,False
+887,False,False,Non-failure,False,False,Non-failure,2,827.5759692296076,False,True,False,False,False
+888,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+889,False,False,Non-failure,False,False,Non-failure,2,54.39330678142608,False,False,True,False,True
+890,True,False,Adaptation-limited,False,False,Compounding moderate disturbance,2,2650.1022400079405,True,False,False,False,False
+891,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1220.3209739746303,True,False,True,False,False
+892,False,False,Non-failure,False,False,Non-failure,2,74.3457934682167,False,False,True,False,True
+893,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+894,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1591.997889065201,True,False,True,False,False
+895,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,False,True
+896,True,True,Structural,False,False,Concentrated dependency,2,212.36801844774982,False,True,False,False,True
+897,False,False,Non-failure,False,False,Non-failure,2,1686.1958591901903,False,False,False,False,True
+898,False,False,Non-failure,False,False,Non-failure,2,1582.2566833116784,False,True,False,False,False
+899,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,661.3143553969278,True,True,False,False,False
+900,False,False,Non-failure,False,False,Non-failure,2,687.6912389994663,True,True,False,False,False
+901,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+902,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+903,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+904,False,False,Non-failure,False,False,Non-failure,2,449.5897918415694,True,False,True,False,False
+905,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,False,True
+906,True,True,Structural,False,False,Hidden convergent dependency,2,1466.7143231625255,True,False,False,False,False
+907,False,False,Non-failure,False,False,Non-failure,1,0.0,False,False,False,True,False
+908,False,False,Non-failure,False,False,Non-failure,2,5.017336983612722,False,False,True,False,True
+909,False,False,Non-failure,False,False,Non-failure,2,434.10202056411765,True,False,False,False,True
+910,False,False,Non-failure,False,False,Non-failure,2,36.15165020875463,True,False,False,False,True
+911,False,False,Non-failure,False,False,Non-failure,2,700.4237708055061,True,False,False,False,True
+912,False,False,Non-failure,False,False,Non-failure,2,398.11584424963553,True,False,False,False,False
+913,False,False,Non-failure,False,False,Non-failure,2,116.32417762994737,False,False,True,True,False
+914,False,False,Non-failure,False,False,Non-failure,2,241.54993049365828,False,False,True,False,True
+915,False,False,Non-failure,False,False,Non-failure,2,1696.3994313874357,False,False,False,True,False
+916,False,False,Non-failure,False,False,Non-failure,2,2625.0,False,False,False,True,False
+917,False,False,Non-failure,False,False,Non-failure,2,16.816986911330332,False,False,True,True,False
+918,True,True,Structural,True,False,Hidden convergent dependency,2,1683.7104296000025,True,False,True,False,False
+919,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,True,False,False
+920,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,1076.637801567387,True,False,True,False,False
+921,False,False,Non-failure,False,False,Non-failure,2,790.3213088956059,True,False,False,True,False
+922,False,False,Non-failure,False,False,Non-failure,2,892.546620429636,False,False,False,False,True
+923,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1733.6555128792256,True,False,False,False,False
+924,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,541.1226672068683,True,True,False,False,False
+925,False,False,Non-failure,False,False,Non-failure,2,959.6200462285893,False,False,False,False,True
+926,True,True,Structural,True,False,Hidden convergent dependency,2,2784.719797246098,True,False,False,True,False
+927,False,False,Non-failure,False,False,Non-failure,2,967.0534797842295,True,False,False,False,False
+928,False,False,Non-failure,False,False,Non-failure,2,401.21091099659225,False,True,True,False,False
+929,False,False,Non-failure,False,False,Non-failure,1,524.8872390281217,True,False,False,False,False
+930,True,True,Structural,True,False,Hidden convergent dependency,2,3115.346834594352,True,False,False,False,False
+931,False,False,Non-failure,False,False,Non-failure,2,482.3280261197807,True,True,False,False,False
+932,False,False,Non-failure,False,False,Non-failure,2,388.2241130346614,False,False,True,False,False
+933,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+934,False,False,Non-failure,False,False,Non-failure,2,120.13149111078769,True,False,False,False,True
+935,False,False,Non-failure,False,False,Non-failure,2,844.3139539470394,False,False,True,False,False
+936,False,False,Non-failure,False,False,Non-failure,2,76.73839513314852,False,False,False,False,True
+937,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+938,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,True,False
+939,False,False,Non-failure,False,False,Non-failure,2,199.24701796715544,True,True,False,False,False
+940,False,False,Non-failure,False,False,Non-failure,2,782.023504437917,False,True,False,False,False
+941,False,False,Non-failure,False,False,Non-failure,2,697.9608529600491,False,False,False,False,True
+942,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
+943,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,False
+944,False,False,Non-failure,False,False,Non-failure,2,571.4395175154444,True,False,False,True,False
+945,False,False,Non-failure,False,False,Non-failure,2,306.44127023553983,True,False,False,False,False
+946,False,False,Non-failure,False,False,Non-failure,2,598.1594369516175,False,False,False,True,True
+947,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+948,False,False,Non-failure,False,False,Non-failure,2,1049.0624050621168,False,False,True,True,False
+949,True,True,Structural,False,False,Hidden convergent dependency,2,1004.3083656794054,True,False,True,False,False
+950,False,False,Non-failure,False,False,Non-failure,2,51.82548109408913,False,False,True,False,False
+951,False,False,Non-failure,False,False,Non-failure,2,667.8360733477849,True,True,False,False,False
+952,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+953,True,False,Adaptation-limited,True,False,Propagation-amplified cascade,2,3045.4723991905103,True,False,False,False,False
+954,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,720.2732370694644,True,False,False,False,True
+955,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,False
+956,False,False,Non-failure,False,False,Non-failure,2,1086.183551623994,False,False,False,True,False
+957,True,True,Structural,True,False,Hidden convergent dependency,2,3775.9082489386587,True,False,False,False,False
+958,False,False,Non-failure,False,False,Non-failure,2,633.4363772782874,False,False,True,False,False
+959,False,False,Non-failure,False,False,Non-failure,2,307.12092670577215,False,True,True,False,False
+960,False,False,Non-failure,False,False,Non-failure,2,1135.4298365233149,False,False,True,False,False
+961,False,False,Non-failure,False,False,Non-failure,2,912.9978544288267,False,True,False,False,False
+962,False,False,Non-failure,False,False,Non-failure,2,272.3022917431995,False,False,False,False,True
+963,False,False,Non-failure,False,False,Non-failure,1,15.183352910251187,True,False,False,False,False
+964,False,False,Non-failure,False,False,Non-failure,2,1333.089117272665,False,True,False,False,False
+965,False,False,Non-failure,False,False,Non-failure,2,465.8875274702227,True,False,False,True,False
+966,False,False,Non-failure,False,False,Non-failure,2,156.61756822516782,False,False,True,False,False
+967,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,True,False,True
+968,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,False,True
+969,False,False,Non-failure,False,False,Non-failure,2,2023.6690295161372,False,True,False,False,False
+970,False,False,Non-failure,False,False,Non-failure,2,585.9430685720605,True,False,False,False,True
+971,False,False,Non-failure,False,False,Non-failure,2,338.40824466092215,True,False,True,False,False
+972,False,False,Non-failure,False,False,Non-failure,2,701.3544656116757,True,False,False,False,True
+973,False,False,Non-failure,False,False,Non-failure,2,316.8245427813856,True,False,True,False,False
+974,False,False,Non-failure,False,False,Non-failure,2,110.79777217759067,False,False,True,True,False
+975,False,False,Non-failure,False,False,Non-failure,2,766.6798291476921,False,False,False,True,False
+976,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,3861.3243326277357,True,False,False,False,False
+977,False,False,Non-failure,False,False,Non-failure,2,982.6797422690927,True,False,False,False,False
+978,False,False,Non-failure,False,False,Non-failure,2,7.9375129943936145,True,False,False,False,True
+979,False,False,Non-failure,False,False,Non-failure,2,679.1653511631825,True,False,False,False,False
+980,False,False,Non-failure,False,False,Non-failure,2,91.45517816818688,False,False,False,True,True
+981,False,False,Non-failure,False,False,Non-failure,2,22.010281795501214,False,False,False,True,False
+982,True,True,Structural,True,False,Hidden convergent dependency,2,1947.5006109454987,True,False,False,True,False
+983,False,False,Non-failure,False,False,Non-failure,2,0.0,False,True,False,True,False
+984,True,False,Adaptation-limited,False,False,Adaptation-limited failure,2,714.966974771227,True,True,False,False,False
+985,False,False,Non-failure,False,False,Non-failure,2,907.4255928458306,False,False,False,False,False
+986,False,False,Non-failure,False,False,Non-failure,2,0.0,False,False,False,True,True
+987,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1500.2102123161008,True,True,False,False,False
+988,False,False,Non-failure,False,False,Non-failure,2,2067.7438870002597,False,False,False,False,False
+989,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,True,False
+990,False,False,Non-failure,False,False,Non-failure,2,49.82160522090919,False,False,False,True,False
+991,True,True,Structural,False,False,Concentrated dependency,2,1123.7449059872056,False,True,False,True,False
+992,True,True,Structural,False,False,Hidden convergent dependency,2,446.0758929898435,True,False,False,True,False
+993,False,False,Non-failure,False,False,Non-failure,2,1176.1304962473876,False,False,False,True,False
+994,False,False,Non-failure,False,False,Non-failure,2,338.5407580843299,True,False,False,True,False
+995,False,False,Non-failure,False,False,Non-failure,2,1047.147588415129,True,True,False,False,False
+996,False,False,Non-failure,False,False,Non-failure,2,273.4701828114879,True,True,False,False,False
+997,True,False,Adaptation-limited,True,False,Adaptation-limited failure,2,1505.2064100133039,True,True,False,False,False
+998,False,False,Non-failure,False,False,Non-failure,2,515.6522373320454,True,False,True,False,False
+999,False,False,Non-failure,False,False,Non-failure,2,1178.601343676487,True,False,False,False,False
+1000,False,False,Non-failure,False,False,Non-failure,2,0.0,True,False,False,False,True
