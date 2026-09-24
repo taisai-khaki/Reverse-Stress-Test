@@ -81,11 +81,7 @@ def _sha256_file(path: Path) -> str:
 
 
 def _sha256_canonical_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(chunk.replace(b"\r\n", b"\n"))
-    return digest.hexdigest()
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
 
 
 def _sha256_text(value: str) -> str:
