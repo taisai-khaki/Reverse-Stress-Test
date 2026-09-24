@@ -80,6 +80,9 @@ class Round2ProtocolTests(unittest.TestCase):
         self.assertEqual(int(figure_data.iloc[0]["omitted_frequency"]), 4)
         self.assertAlmostEqual(float(figure_data.iloc[0]["omission_fraction"]), 0.4)
 
+    def test_omission_signature_code_is_abbreviated(self):
+        self.assertEqual(round2._signature_code(f"{model.CD}; {model.HCD}; {model.RL_TO}"), "CD+HCD+RL-TO")
+
     def test_portable_hash_normalizes_line_endings(self):
         path = round2.PROJECT_ROOT / ".hash_test_line_endings.tmp"
         try:

@@ -160,6 +160,20 @@ def _labels_text(labels: Sequence[str]) -> str:
     return "; ".join(labels) if labels else model.UNCLASSIFIED
 
 
+def _signature_code(signature: str) -> str:
+    abbreviations = {
+        model.CD: "CD",
+        model.HCD: "HCD",
+        model.CMD: "CMD",
+        model.PAC: "PAC",
+        model.RL_TO: "RL-TO",
+        model.UNCLASSIFIED: "UNCLASS",
+    }
+    if not signature:
+        return "UNCLASS"
+    return "+".join(abbreviations.get(label.strip(), label.strip()) for label in signature.split(";"))
+
+
 def _clone_pathway(
     pathway: model.Pathway,
     *,
@@ -1295,6 +1309,7 @@ def _omission_figure_data(omission_catalog: pd.DataFrame) -> pd.DataFrame:
                 "threshold",
                 "method",
                 "signature",
+                "signature_code",
                 "omitted_frequency",
                 "total_failures",
                 "omission_fraction",
@@ -1307,6 +1322,7 @@ def _omission_figure_data(omission_catalog: pd.DataFrame) -> pd.DataFrame:
         out=np.zeros(len(uncovered), dtype=float),
         where=uncovered["total_failures"].to_numpy() != 0,
     )
+    uncovered["signature_code"] = uncovered["signature"].map(_signature_code)
     return uncovered[
         [
             "cohort",
@@ -1314,6 +1330,7 @@ def _omission_figure_data(omission_catalog: pd.DataFrame) -> pd.DataFrame:
             "threshold",
             "method",
             "signature",
+            "signature_code",
             "omitted_frequency",
             "total_failures",
             "omission_fraction",
@@ -1356,13 +1373,15 @@ def _make_figures(
         plt.close(fig)
     if not omissions.empty:
         top = omissions.sort_values("omitted_frequency", ascending=False).head(20)
-        fig, ax = plt.subplots(figsize=(10, 5))
+        fig, ax = plt.subplots(figsize=(11, max(6, 0.38 * len(top) + 1)))
         values = top["omitted_frequency"].astype(float).tolist()
-        labels = [f"{row['cohort']} {row['topology']} {row['threshold']}\n{row['method']}\n{row['signature']}" for _, row in top.iterrows()]
-        ax.bar(range(len(values)), values)
-        ax.set_ylabel("Uncovered failure frequency")
+        labels = [f"{row['cohort']} {row['topology']} {row['threshold']} | {row['method']} | {row['signature_code']}" for _, row in top.iterrows()]
+        ax.barh(range(len(values)), values)
+        ax.set_xlabel("Uncovered failure frequency")
+        ax.set_ylabel("Cohort / topology / threshold / method / signature")
         ax.set_title("Observed signature omissions")
-        ax.set_xticks(range(len(labels)), labels, rotation=75, ha="right")
+        ax.set_yticks(range(len(labels)), labels)
+        ax.invert_yaxis()
         fig.tight_layout()
         fig.savefig(figures_dir / "observed_omission_populations.svg", metadata={"Date": None})
         plt.close(fig)
@@ -1376,6 +1395,26 @@ def _make_figures(
                 ax.plot(group["focal_value"], group["median_seconds"], marker="o", label=architecture)
             ax.set_xlabel(title)
             ax.set_ylabel("Median completed-run seconds")
+            if axis == "n":
+                timeout_rows = scaling[
+                    (scaling["focal_axis"] == "n")
+                    & (scaling["architecture"] == "partitioned")
+                    & (scaling["n"] == 300)
+                    & (scaling["horizon"] == 52)
+                    & (scaling["K"] == 4)
+                    & (scaling["B"] == 50)
+                ]
+                if len(timeout_rows) and float(timeout_rows.iloc[0]["timeout_repetitions"]) > 0:
+                    ax.text(
+                        0.98,
+                        0.95,
+                        f"Partitioned n=300: {int(timeout_rows.iloc[0]['timeout_repetitions'])} timeouts; no median",
+                        transform=ax.transAxes,
+                        ha="right",
+                        va="top",
+                        fontsize=8,
+                        color="darkred",
+                    )
             ax.legend()
         fig.tight_layout()
         fig.savefig(figures_dir / "scaling_runtime.svg", metadata={"Date": None})
@@ -1433,6 +1472,17 @@ def _evidence_report(
     if not scaling.empty:
         completed = int((scaling["status"] == "completed").sum())
         lines.extend(["", "## Scaling result", "", f"{completed} timed workload repetitions completed; timeout and incomplete rows, if any, remain visible in `scaling_runs.csv`."])
+        partitioned_n300 = scaling[
+            (scaling["architecture"] == "partitioned")
+            & (scaling["n"] == 300)
+            & (scaling["horizon"] == 52)
+            & (scaling["K"] == 4)
+            & (scaling["B"] == 50)
+        ]
+        if len(partitioned_n300):
+            timeout_count = int((partitioned_n300["status"] == "timeout").sum())
+            completed_count = int((partitioned_n300["status"] == "completed").sum())
+            lines.append(f"The partitioned `n=300`, `H=52`, `K=4`, `B=50` cell had {timeout_count} timeout repetitions and {completed_count} completed repetitions; its median is therefore missing and the timeout is annotated in the scaling figure.")
     if not coverage.empty:
         lines.extend(["", "## Variant and interval results", "", "The coverage rows below are the observed variant results used by the comparison; bootstrap intervals are percentages on the 0-1 coverage scale.", "", "| Cohort | Topology | Threshold | Method | Numerator/denominator | Coverage | Bootstrap 95% interval |", "|---|---|---|---|---:|---:|---:|"])
         for row in coverage.to_dict("records"):
