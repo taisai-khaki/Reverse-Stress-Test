@@ -1,0 +1,6 @@
+03_round2_revision_outputs/** text eol=lf
+baseline_verification/** text eol=lf
+generate_round2_analysis.py text eol=lf
+tests/** text eol=lf
+README.md text eol=lf
+requirements.txt text eol=lf

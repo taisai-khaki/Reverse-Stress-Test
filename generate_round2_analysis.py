@@ -64,12 +64,12 @@ def _json_default(value: Any) -> Any:
 
 
 def _write_json(value: Any, path: Path) -> None:
-    path.write_text(json.dumps(value, indent=2, default=_json_default) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(value, indent=2, default=_json_default) + "\n", encoding="utf-8", newline="\n")
 
 
 def _write_csv(rows: Sequence[Mapping[str, Any]] | pd.DataFrame, path: Path) -> None:
     dataframe = rows if isinstance(rows, pd.DataFrame) else pd.DataFrame(list(rows))
-    dataframe.to_csv(path, index=False, encoding="utf-8-sig")
+    dataframe.to_csv(path, index=False, encoding="utf-8-sig", lineterminator="\n")
 
 
 def _sha256_file(path: Path) -> str:
@@ -77,6 +77,14 @@ def _sha256_file(path: Path) -> str:
     with path.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _sha256_canonical_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk.replace(b"\r\n", b"\n"))
     return digest.hexdigest()
 
 
@@ -128,9 +136,15 @@ def _event_dict(event: model.Event) -> dict[str, Any]:
     }
 
 
-def _event_key(events: Sequence[model.Event]) -> str:
+def _event_key(events: Sequence[model.Event], cfg: Optional[model.NetworkConfig] = None) -> str:
     normalized = sorted(
-        [_event_dict(event) for event in events],
+        [
+            {
+                **_event_dict(event),
+                "target": model._profile_target(event.target, cfg) if cfg is not None else event.target,
+            }
+            for event in events
+        ],
         key=lambda row: (
             row["target"],
             row["start_week"],
@@ -286,6 +300,7 @@ class AttributionRecord:
     hcd_removal_elements: tuple[str, ...]
     direct_impact_crossing: Optional[bool]
     rlto_support_pairs: tuple[tuple[int, int], ...]
+    rlto_pair_iterations: int = 0
 
 
 class InstrumentedEvaluator:
@@ -310,7 +325,7 @@ class InstrumentedEvaluator:
         threshold: str,
         event_indices: Sequence[int] = (),
     ) -> model.SimulationResult:
-        key = (_event_key(events), active, direct)
+        key = (_event_key(events, self.cfg), active, direct)
         self.request_index += 1
         request_id = self.request_index
         cache_hit = key in self.cache
@@ -405,10 +420,12 @@ def _attribution(
     if has_upstream:
         direct_impact_crossing = subset_crosses(prefix_indices, direct=True, purpose="direct_impact")
     rlto_pairs: list[tuple[int, int]] = []
+    rlto_pair_iterations = 0
     for first_index in prefix_indices:
         for second_index in prefix_indices:
             if first_index == second_index:
                 continue
+            rlto_pair_iterations += 1
             first = events[first_index]
             second = events[second_index]
             if first.start_week > second.start_week or not model._recovery_overlap(first, second):
@@ -433,6 +450,7 @@ def _attribution(
         tuple(hcd_removals),
         direct_impact_crossing,
         tuple(rlto_pairs),
+        rlto_pair_iterations,
     )
 
 
@@ -568,6 +586,7 @@ def _evaluate_library(
                     "hcd_removal_elements": ";".join(attr.hcd_removal_elements),
                     "direct_impact_crossing": attr.direct_impact_crossing,
                     "rlto_support_pairs": ";".join(f"{a}:{b}" for a, b in attr.rlto_support_pairs),
+                    "rlto_pair_iterations": attr.rlto_pair_iterations,
                     "event_specification": _event_spec(pathway.events),
                     "canonical_event_key": _event_key(pathway.events),
                 }
@@ -638,7 +657,7 @@ def _mc_cohort(
                         "replication": replication,
                         "threshold": threshold_name,
                         "event_specification": event_spec,
-                        "canonical_event_key": _event_key(events),
+                        "canonical_event_key": _event_key(events, cfg),
                         "passive_failure": crossed,
                         "active_failure": active_cross,
                         "first_cross_week": first_week,
@@ -752,6 +771,10 @@ def _coverage_rows(mc: pd.DataFrame, result_frames: Mapping[str, pd.DataFrame], 
             delta_rst = np.zeros(bootstrap_reps, dtype=np.int64)
             delta_cmp = np.zeros(bootstrap_reps, dtype=np.int64)
             delta_denominator = np.zeros(bootstrap_reps, dtype=np.int64)
+            observed_rst_numerator = 0
+            observed_comparator_numerator = 0
+            observed_denominator = 0
+            per_seed_deltas: list[float] = []
             rng = np.random.default_rng(np.random.SeedSequence([BOOTSTRAP_SEED, 991, _stable_seed(cohort, topology, threshold, comparator)]))
             for stratum in all_records.values():
                 population_size = len(stratum)
@@ -764,6 +787,12 @@ def _coverage_rows(mc: pd.DataFrame, result_frames: Mapping[str, pd.DataFrame], 
                 cmp_only = int((~rst_success & cmp_success).sum())
                 neither = int((~rst_success & ~cmp_success).sum())
                 nonfailure = population_size - len(failures)
+                valid_count = int(valid.sum())
+                observed_rst_numerator += int(rst_success.sum())
+                observed_comparator_numerator += int(cmp_success.sum())
+                observed_denominator += valid_count
+                if valid_count:
+                    per_seed_deltas.append(100.0 * (int(rst_success.sum()) - int(cmp_success.sum())) / valid_count)
                 category_counts = np.array([both, rst_only, cmp_only, neither, nonfailure], dtype=np.int64)
                 sampled = rng.multinomial(population_size, category_counts / population_size, size=bootstrap_reps)
                 delta_rst += sampled[:, 0] + sampled[:, 1]
@@ -780,11 +809,12 @@ def _coverage_rows(mc: pd.DataFrame, result_frames: Mapping[str, pd.DataFrame], 
             lost = sorted(comparator_discovered - rst_discovered)
             for direction, signatures in (("gained", gained), ("lost", lost)):
                 for signature in signatures:
+                    support_method = "RST" if direction == "gained" else comparator
                     support = ";".join(
-                        result_frames["RST"].loc[
-                            (result_frames["RST"]["topology"] == topology)
-                            & (result_frames["RST"]["threshold"] == threshold)
-                            & (result_frames["RST"]["mechanism_signature"] == signature),
+                        result_frames[support_method].loc[
+                            (result_frames[support_method]["topology"] == topology)
+                            & (result_frames[support_method]["threshold"] == threshold)
+                            & (result_frames[support_method]["mechanism_signature"] == signature),
                             "candidate_id",
                         ].astype(str).tolist()
                     )
@@ -798,6 +828,7 @@ def _coverage_rows(mc: pd.DataFrame, result_frames: Mapping[str, pd.DataFrame], 
                             "direction": direction,
                             "signature": signature,
                             "candidate_support_ids": support,
+                            "support_method": support_method,
                             "monte_carlo_frequency": frequency,
                         }
                     )
@@ -810,7 +841,18 @@ def _coverage_rows(mc: pd.DataFrame, result_frames: Mapping[str, pd.DataFrame], 
                     "direction": "paired_delta_summary",
                     "signature": "",
                     "candidate_support_ids": "",
+                    "support_method": "",
                     "monte_carlo_frequency": np.nan,
+                    "rst_numerator": observed_rst_numerator,
+                    "comparator_numerator": observed_comparator_numerator,
+                    "paired_denominator": observed_denominator,
+                    "observed_delta_pp": (
+                        100.0 * (observed_rst_numerator - observed_comparator_numerator) / observed_denominator
+                        if observed_denominator
+                        else np.nan
+                    ),
+                    "per_seed_delta_mean_pp": float(np.mean(per_seed_deltas)) if per_seed_deltas else np.nan,
+                    "per_seed_delta_sd_pp": float(np.std(per_seed_deltas, ddof=1)) if len(per_seed_deltas) > 1 else np.nan,
                     "delta_pp_lower_95": float(np.nanpercentile(delta_values, 2.5)) if len(delta_values) else np.nan,
                     "delta_pp_upper_95": float(np.nanpercentile(delta_values, 97.5)) if len(delta_values) else np.nan,
                 }
@@ -877,16 +919,32 @@ def _evaluate_reference_grid(
                     "mechanism_signature": _labels_text(attr.labels) if attr else model.UNCLASSIFIED,
                     "unclassified": bool(crossed and (attr is None or not attr.labels)),
                     "event_specification": _event_spec(path.events),
-                    "canonical_event_key": _event_key(path.events),
+                    "canonical_event_key": _event_key(path.events, cfg),
                 }
             )
     return pd.DataFrame(rows), evaluator
 
 
-def _common_scores(result_df: pd.DataFrame, pathways: Sequence[model.Pathway]) -> list[dict[str, Any]]:
-    path_map = {pathway.pathway_id: pathway for pathway in pathways}
+def _rank_scores(scores: Mapping[str, float], tolerance: float = 1e-12) -> dict[str, int]:
+    ordered = sorted(scores.items(), key=lambda item: (-item[1], item[0]))
+    ranks: dict[str, int] = {}
+    previous_score: Optional[float] = None
+    rank = 0
+    for position, (element, score) in enumerate(ordered, 1):
+        if previous_score is None or not math.isclose(score, previous_score, rel_tol=1e-9, abs_tol=tolerance):
+            rank = position
+        ranks[element] = rank
+        previous_score = score
+    return ranks
+
+
+def _common_scores(
+    result_df: pd.DataFrame,
+    pathways_by_method: Mapping[str, Sequence[model.Pathway]],
+) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for method, group in result_df[result_df["threshold"] == "moderate"].groupby("method", sort=False):
+        path_map = {pathway.pathway_id: pathway for pathway in pathways_by_method.get(method, ())}
         failures = group[group["passive_failure"]].copy()
         severity_values = model._normalize(failures["severity"].astype(float).tolist())
         plausibility_values = model._normalize(failures["plausibility"].astype(float).tolist())
@@ -906,7 +964,7 @@ def _common_scores(result_df: pd.DataFrame, pathways: Sequence[model.Pathway]) -
                     scores[element] += weight / len(elements)
         if eligible_weight > 0:
             scores = {element: score / eligible_weight for element, score in scores.items()}
-        ranks = pd.Series(scores).rank(method="dense", ascending=False).astype(int).to_dict()
+        ranks = _rank_scores(scores)
         severity_min = float(failures["severity"].min()) if len(failures) else np.nan
         severity_max = float(failures["severity"].max()) if len(failures) else np.nan
         plausibility_min = float(failures["plausibility"].min()) if len(failures) else np.nan
@@ -1044,9 +1102,11 @@ def _run_scaling_cell(architecture: str, n: int, horizon: int, K: int, B: int) -
         passive_time = active_time = attribution_time = 0.0
         failures = 0
         prefix_events = 0
+        attribution_pair_iterations = 0
         status = "completed"
         completed = 0
-        max_memory = _process_rss()[0]
+        baseline_memory, memory_measurement = _process_rss()
+        peak_memory = baseline_memory
         for b in range(1, B + 1):
             if time.perf_counter() - started > 120.0:
                 status = "timeout"
@@ -1070,10 +1130,11 @@ def _run_scaling_cell(architecture: str, n: int, horizon: int, K: int, B: int) -
                 attr = _attribution(evaluator, pathway.events, cfg, model.MODERATE, "moderate", "scaling", pathway.pathway_id, passive)
                 attribution_time += time.perf_counter() - begin
                 prefix_events += len(attr.prefix_indices)
+                attribution_pair_iterations += attr.rlto_pair_iterations
             completed += 1
             current_memory = _process_rss()[0]
             if current_memory is not None:
-                max_memory = max(max_memory or current_memory, current_memory)
+                peak_memory = max(peak_memory or current_memory, current_memory)
             if time.perf_counter() - started > 120.0:
                 status = "timeout"
                 break
@@ -1089,6 +1150,7 @@ def _run_scaling_cell(architecture: str, n: int, horizon: int, K: int, B: int) -
                 "completed_candidates": completed,
                 "failures": failures,
                 "prefix_event_count": prefix_events,
+                "attribution_pair_iterations": attribution_pair_iterations,
                 "passive_seconds": passive_time,
                 "active_seconds": active_time,
                 "attribution_seconds": attribution_time,
@@ -1096,10 +1158,16 @@ def _run_scaling_cell(architecture: str, n: int, horizon: int, K: int, B: int) -
                 "requested_simulations": len(evaluator.requests),
                 "unique_simulations": len(evaluator.executions),
                 "cache_hits": sum(bool(row["cache_hit"]) for row in evaluator.requests),
-                "max_memory_mb": max_memory,
-                "memory_measurement": _process_rss()[1],
+                "baseline_memory_mb": baseline_memory,
+                "peak_memory_mb": peak_memory,
+                "incremental_peak_memory_mb": (
+                    peak_memory - baseline_memory
+                    if peak_memory is not None and baseline_memory is not None
+                    else None
+                ),
+                "memory_measurement": f"{memory_measurement}; incremental over cell baseline",
                 "node_count": len(cfg.tier1_nodes) + len(cfg.upstream_nodes) + 2,
-                "edge_count": len(cfg.tier1_nodes) + len(cfg.upstream_nodes) + 1,
+                "edge_count": 2 * len(cfg.tier1_nodes) + 1,
             }
         )
     return raw_rows, workload_rows
@@ -1162,44 +1230,141 @@ def _deterministic_threshold_sensitivity(
     return pd.DataFrame(rows)
 
 
-def _make_figures(output_dir: Path, coverage: pd.DataFrame, omissions: pd.DataFrame, scaling: pd.DataFrame) -> None:
+def _summarize_scaling(scaling: pd.DataFrame) -> pd.DataFrame:
+    if scaling.empty:
+        return pd.DataFrame()
+    group_columns = ["architecture", "n", "horizon", "K", "B"]
+    all_summary = scaling.groupby(group_columns, as_index=False).agg(
+        total_repetitions=("repetition", "count"),
+        completed_repetitions=("status", lambda values: int((values == "completed").sum())),
+        timeout_repetitions=("status", lambda values: int((values == "timeout").sum())),
+        partial_timeout_repetitions=(
+            "completed_candidates",
+            lambda values: int(
+                ((scaling.loc[values.index, "status"] == "timeout") & (values > 0)).sum()
+            ),
+        ),
+        partial_timeout_candidates=(
+            "completed_candidates",
+            lambda values: int(
+                values[scaling.loc[values.index, "status"] == "timeout"].sum()
+            ),
+        ),
+    )
+    completed = scaling[scaling["status"] == "completed"]
+    if completed.empty:
+        return all_summary
+    completed_summary = completed.groupby(group_columns, as_index=False).agg(
+        median_seconds=("end_to_end_seconds", "median"),
+        iqr_seconds=(
+            "end_to_end_seconds",
+            lambda values: float(np.percentile(values, 75) - np.percentile(values, 25)),
+        ),
+        incremental_peak_memory_mb=("incremental_peak_memory_mb", "median"),
+        peak_memory_mb=("peak_memory_mb", "median"),
+        median_unique_simulations=("unique_simulations", "median"),
+        median_cache_hits=("cache_hits", "median"),
+        median_attribution_pair_iterations=("attribution_pair_iterations", "median"),
+    )
+    return all_summary.merge(completed_summary, on=group_columns, how="left", validate="one_to_one")
+
+
+def _scaling_figure_data(scaling_summary: pd.DataFrame) -> pd.DataFrame:
+    if scaling_summary.empty:
+        return pd.DataFrame()
+    axes = ("n", "horizon", "K", "B")
+    reference = {"n": 30, "horizon": 52, "K": 4, "B": 50}
+    rows: list[dict[str, Any]] = []
+    for focal_axis in axes:
+        subset = scaling_summary.copy()
+        for axis in axes:
+            if axis != focal_axis:
+                subset = subset[subset[axis] == reference[axis]]
+        for row in subset.to_dict("records"):
+            row["focal_axis"] = focal_axis
+            row["focal_value"] = row[focal_axis]
+            rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def _omission_figure_data(omission_catalog: pd.DataFrame) -> pd.DataFrame:
+    if omission_catalog.empty:
+        return pd.DataFrame()
+    uncovered = omission_catalog[~omission_catalog["covered"].astype(bool)].copy()
+    if uncovered.empty:
+        return pd.DataFrame(
+            columns=[
+                "cohort",
+                "topology",
+                "threshold",
+                "method",
+                "signature",
+                "omitted_frequency",
+                "total_failures",
+                "omission_fraction",
+            ]
+        )
+    uncovered["omitted_frequency"] = uncovered["failure_frequency"].astype(int)
+    uncovered["omission_fraction"] = np.divide(
+        uncovered["omitted_frequency"],
+        uncovered["total_failures"],
+        out=np.zeros(len(uncovered), dtype=float),
+        where=uncovered["total_failures"].to_numpy() != 0,
+    )
+    return uncovered[
+        [
+            "cohort",
+            "topology",
+            "threshold",
+            "method",
+            "signature",
+            "omitted_frequency",
+            "total_failures",
+            "omission_fraction",
+        ]
+    ].sort_values(
+        ["cohort", "topology", "threshold", "method", "omitted_frequency", "signature"],
+        ascending=[True, True, True, True, False, True],
+    )
+
+
+def _make_figures(
+    output_dir: Path,
+    differences: pd.DataFrame,
+    omissions: pd.DataFrame,
+    scaling: pd.DataFrame,
+) -> None:
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
     try:
         import matplotlib.pyplot as plt
     except ImportError:
         return
-    primary = coverage[(coverage["threshold"] == "moderate") & (coverage["method"] != "RST")]
-    if not primary.empty:
+    paired = differences[differences["direction"] == "paired_delta_summary"].copy()
+    if not paired.empty:
         fig, ax = plt.subplots(figsize=(10, 5))
-        for comparator, group in primary.groupby("method"):
-            deltas = []
-            labels = []
-            for _, row in group.iterrows():
-                rst = coverage[(coverage["cohort"] == row["cohort"]) & (coverage["topology"] == row["topology"]) & (coverage["threshold"] == row["threshold"]) & (coverage["method"] == "RST")]
-                if len(rst) == 1:
-                    deltas.append(100 * (float(rst.iloc[0]["coverage"]) - float(row["coverage"])))
-                    labels.append(f"{row['cohort']} {row['topology']}")
-            ax.plot(labels, deltas, marker="o", label=comparator)
+        for comparator, group in paired.groupby("comparator"):
+            labels = [f"{row['cohort']} {row['topology']} {row['threshold']}" for _, row in group.iterrows()]
+            observed = group["observed_delta_pp"].astype(float).to_numpy()
+            lower = observed - group["delta_pp_lower_95"].astype(float).to_numpy()
+            upper = group["delta_pp_upper_95"].astype(float).to_numpy() - observed
+            ax.errorbar(labels, observed, yerr=[lower, upper], marker="o", linestyle="-", capsize=3, label=comparator)
         ax.axhline(0, color="black", linewidth=0.8)
         ax.set_ylabel("RST minus comparator coverage (percentage points)")
-        ax.set_title("Paired coverage differences by population")
+        ax.set_title("Paired coverage differences with bootstrap 95% intervals")
         ax.tick_params(axis="x", rotation=45)
         ax.legend()
         fig.tight_layout()
         fig.savefig(figures_dir / "coverage_differences.svg")
         plt.close(fig)
     if not omissions.empty:
-        top = omissions.groupby(["method", "topology", "threshold"], as_index=False)["denominator"].sum().head(20)
+        top = omissions.sort_values("omitted_frequency", ascending=False).head(20)
         fig, ax = plt.subplots(figsize=(10, 5))
-        values = []
-        labels = []
-        for _, row in top.iterrows():
-            values.append(float(row["denominator"]))
-            labels.append(f"{row['method']} {row['topology']} {row['threshold']}")
+        values = top["omitted_frequency"].astype(float).tolist()
+        labels = [f"{row['cohort']} {row['topology']} {row['threshold']}\n{row['method']}\n{row['signature']}" for _, row in top.iterrows()]
         ax.bar(range(len(values)), values)
-        ax.set_ylabel("Failure denominator")
-        ax.set_title("Observed omission populations")
+        ax.set_ylabel("Uncovered failure frequency")
+        ax.set_title("Observed signature omissions")
         ax.set_xticks(range(len(labels)), labels, rotation=75, ha="right")
         fig.tight_layout()
         fig.savefig(figures_dir / "observed_omission_populations.svg")
@@ -1207,14 +1372,13 @@ def _make_figures(output_dir: Path, coverage: pd.DataFrame, omissions: pd.DataFr
     if not scaling.empty:
         fig, axes = plt.subplots(1, 4, figsize=(16, 4))
         for ax, axis, title in zip(axes, ("n", "horizon", "K", "B"), ("Network width n", "Horizon H", "Events K", "Budget B")):
-            subset = scaling[scaling["status"] == "completed"]
+            subset = scaling[(scaling["focal_axis"] == axis) & scaling["median_seconds"].notna()]
             if subset.empty:
                 continue
             for architecture, group in subset.groupby("architecture"):
-                summary = group.groupby(axis)["end_to_end_seconds"].median()
-                ax.plot(summary.index, summary.values, marker="o", label=architecture)
+                ax.plot(group["focal_value"], group["median_seconds"], marker="o", label=architecture)
             ax.set_xlabel(title)
-            ax.set_ylabel("Median seconds")
+            ax.set_ylabel("Median completed-run seconds")
             ax.legend()
         fig.tight_layout()
         fig.savefig(figures_dir / "scaling_runtime.svg")
@@ -1247,7 +1411,7 @@ def _evidence_report(
         "",
         "The bounded reference audit is finite-grid evidence only. It does not establish completeness over arbitrary three-event pathways, continuous magnitudes, arbitrary times, or the full disturbance space.",
         "",
-        "Scaling results are engineering measurements for the implemented operator. Timeout, memory, or incomplete-workload rows are retained as observed limits rather than silently reduced settings.",
+        "Scaling results are engineering measurements for the implemented operator. Medians and IQRs use completed repetitions only; timeout counts and partial progress remain separate, and memory is reported as incremental process usage over the cell baseline.",
         "",
         "## Source hashes",
         "",
@@ -1266,11 +1430,121 @@ def _evidence_report(
         ]
     )
     if not bounded.empty:
-        lines.extend(["", "## Bounded omission result", "", f"The reference audit contains {len(bounded)} method/cohort/topology/threshold summary rows; denominators and numerators are stored in the CSV rather than represented only as percentages."])
+        lines.extend(["", "## Bounded omission result", "", f"The reference audit contains {len(bounded)} method/cohort/topology/threshold summary rows; denominators and numerators are stored in the CSV rather than represented only as percentages.", "", "| Topology | Method | Threshold | Signature recall | Event recall |", "|---|---|---|---:|---:|"])
+        for row in bounded.to_dict("records"):
+            lines.append(f"| {row['topology']} | {row['method']} | {row['threshold']} | {row['signature_coverage']:.6f} | {row['event_specification_recall']:.6f} |" )
     if not scaling.empty:
         completed = int((scaling["status"] == "completed").sum())
         lines.extend(["", "## Scaling result", "", f"{completed} timed workload repetitions completed; timeout and incomplete rows, if any, remain visible in `scaling_runs.csv`."])
-    (output_dir / "revision_evidence_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    if not coverage.empty:
+        lines.extend(["", "## Variant and interval results", "", "The coverage rows below are the observed variant results used by the comparison; bootstrap intervals are percentages on the 0-1 coverage scale.", "", "| Cohort | Topology | Threshold | Method | Numerator/denominator | Coverage | Bootstrap 95% interval |", "|---|---|---|---|---:|---:|---:|"])
+        for row in coverage.to_dict("records"):
+            lines.append(f"| {row['cohort']} | {row['topology']} | {row['threshold']} | {row['method']} | {int(row['numerator'])}/{int(row['denominator'])} | {row['coverage']:.6f} | [{row['bootstrap_lower_95']:.6f}, {row['bootstrap_upper_95']:.6f}] |" )
+    if not differences.empty:
+        paired = differences[differences["direction"] == "paired_delta_summary"]
+        lines.extend(["", "## Paired comparisons", "", "| Cohort | Topology | Threshold | Comparator | RST numerator | Comparator numerator | Denominator | Observed delta pp | Per-seed mean pp | Per-seed SD pp | Bootstrap 95% interval pp |", "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|"])
+        for row in paired.to_dict("records"):
+            lines.append(f"| {row['cohort']} | {row['topology']} | {row['threshold']} | {row['comparator']} | {int(row['rst_numerator'])} | {int(row['comparator_numerator'])} | {int(row['paired_denominator'])} | {row['observed_delta_pp']:.6f} | {row['per_seed_delta_mean_pp']:.6f} | {row['per_seed_delta_sd_pp']:.6f} | [{row['delta_pp_lower_95']:.6f}, {row['delta_pp_upper_95']:.6f}] |" )
+    (output_dir / "revision_evidence_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+
+
+def _validate_reused_intermediates(
+    candidate_results: pd.DataFrame,
+    mc: pd.DataFrame,
+    libraries: Mapping[str, Sequence[model.Pathway]],
+) -> None:
+    candidate_required = {
+        "method",
+        "topology",
+        "candidate_id",
+        "threshold",
+        "passive_failure",
+        "event_specification",
+        "canonical_event_key",
+    }
+    if not candidate_required.issubset(candidate_results.columns):
+        raise AssertionError(f"Candidate intermediate missing columns: {sorted(candidate_required - set(candidate_results.columns))}")
+    expected_candidate_rows = len(LIBRARY_ORDER) * 2 * 50 * len(THRESHOLDS)
+    if len(candidate_results) != expected_candidate_rows:
+        raise AssertionError(f"Candidate intermediate row count mismatch: {len(candidate_results)} != {expected_candidate_rows}")
+    candidate_keys = ["method", "topology", "candidate_id", "threshold"]
+    if candidate_results.duplicated(candidate_keys).any():
+        raise AssertionError("Candidate intermediate contains duplicate method/topology/candidate/threshold rows")
+    for method in LIBRARY_ORDER:
+        expected_paths = {path.pathway_id: path for path in libraries[method]}
+        for topology in ("A", "B"):
+            rows = candidate_results[(candidate_results["method"] == method) & (candidate_results["topology"] == topology)]
+            if set(rows["candidate_id"]) != set(expected_paths):
+                raise AssertionError(f"Candidate intermediate IDs mismatch for {method}/{topology}")
+            for candidate_id, group in rows.groupby("candidate_id"):
+                expected_spec = _event_spec(expected_paths[candidate_id].events)
+                if set(group["event_specification"]) != {expected_spec}:
+                    raise AssertionError(f"Candidate event specification mismatch for {method}/{topology}/{candidate_id}")
+                expected_key = _event_key(expected_paths[candidate_id].events)
+                if set(group["canonical_event_key"]) != {expected_key}:
+                    raise AssertionError(f"Candidate canonical event key mismatch for {method}/{topology}/{candidate_id}")
+
+    mc_required = {
+        "cohort",
+        "topology",
+        "seed",
+        "replication",
+        "threshold",
+        "event_specification",
+        "canonical_event_key",
+        "passive_failure",
+        "mechanism_signature",
+    }
+    if not mc_required.issubset(mc.columns):
+        raise AssertionError(f"Monte Carlo intermediate missing columns: {sorted(mc_required - set(mc.columns))}")
+    expected_mc_rows = 2 * 2 * len(ARCHIVED_SEEDS) * 1000 * len(THRESHOLDS)
+    if len(mc) != expected_mc_rows:
+        raise AssertionError(f"Monte Carlo intermediate row count mismatch: {len(mc)} != {expected_mc_rows}")
+    mc_keys = ["cohort", "topology", "seed", "replication", "threshold"]
+    if mc.duplicated(mc_keys).any():
+        raise AssertionError("Monte Carlo intermediate contains duplicate cohort/topology/seed/replication/threshold rows")
+    expected_seeds = {"archived": set(ARCHIVED_SEEDS), "validation": set(VALIDATION_SEEDS)}
+    for (cohort, topology), group in mc.groupby(["cohort", "topology"]):
+        if set(group["seed"].astype(int)) != expected_seeds[cohort]:
+            raise AssertionError(f"Monte Carlo seed mismatch for {cohort}/{topology}")
+        cfg = model.topology_a_config(**PRIMARY_CFG_KWARGS) if topology == "A" else model.topology_b_config(**PRIMARY_CFG_KWARGS)
+        sample = group.drop_duplicates("replication")
+        for _, row in sample.iterrows():
+            events = _parse_event_spec(row["event_specification"])
+            expected_key = _event_key(events, cfg)
+            if row["canonical_event_key"] != expected_key:
+                raise AssertionError(f"Monte Carlo canonical event key mismatch for {cohort}/{topology}/{row['seed']}/{row['replication']}")
+
+
+def _rst22_validation(candidate_results: pd.DataFrame) -> dict[str, Any]:
+    rows = candidate_results[
+        (candidate_results["method"] == "RST")
+        & (candidate_results["topology"] == "A")
+        & (candidate_results["candidate_id"] == "RST-22")
+        & (candidate_results["threshold"] == "moderate")
+    ]
+    if len(rows) != 1:
+        return {"check": "RST-22 raw gamma", "passed": False, "evidence": json.dumps({"matching_rows": len(rows)})}
+    row = rows.iloc[0]
+    c0 = float(row["C0"])
+    cadm = float(row["Cadm"])
+    expected_raw = 1.0 - cadm / c0 if c0 else np.nan
+    expected_clipped = float(np.clip(expected_raw, 0.0, 1.0)) if np.isfinite(expected_raw) else np.nan
+    passed = bool(
+        np.isfinite(expected_raw)
+        and np.isclose(float(row["gamma_raw"]), expected_raw, atol=1e-12, rtol=1e-12)
+        and np.isclose(float(row["gamma_clipped"]), expected_clipped, atol=1e-12, rtol=1e-12)
+    )
+    evidence = {
+        "candidate_id": row["candidate_id"],
+        "C0": c0,
+        "Cadm": cadm,
+        "gamma_raw": float(row["gamma_raw"]),
+        "expected_gamma_raw": expected_raw,
+        "gamma_clipped": float(row["gamma_clipped"]),
+        "expected_gamma_clipped": expected_clipped,
+    }
+    return {"check": "RST-22 raw gamma", "passed": passed, "evidence": json.dumps(evidence)}
 
 
 def _baseline_verification(output_dir: Path, root: Path) -> dict[str, Any]:
@@ -1304,6 +1578,7 @@ def run(args: argparse.Namespace) -> Path:
     output_dir = Path(args.output_root) / args.run_id
     if output_dir.exists() and not args.overwrite:
         raise FileExistsError(f"Output directory exists; use --overwrite to replace it: {output_dir}")
+    preexisting_worktree_changes = _git_value("status", "--short")
     output_dir.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
     source_hashes = {
@@ -1327,6 +1602,7 @@ def run(args: argparse.Namespace) -> Path:
         for column in ("passive_failure", "active_failure", "moderate_passive_failure", "severe_passive_failure", "unclassified"):
             if column in mc.columns:
                 mc[column] = mc[column].fillna(False).astype(bool)
+        _validate_reused_intermediates(candidate_results, mc, libraries)
     else:
         all_candidate_results: list[pd.DataFrame] = []
         all_requests: list[pd.DataFrame] = []
@@ -1379,8 +1655,7 @@ def run(args: argparse.Namespace) -> Path:
         _write_csv(cost_rows, output_dir / "simulation_costs.csv")
         _write_csv(pd.concat(all_counterfactuals, ignore_index=True), output_dir / "constituent_counterfactuals.csv")
         _write_csv(pd.concat(all_trajectories, ignore_index=True), output_dir / "candidate_trajectories.csv")
-        all_pathways = [pathway for library in libraries.values() for pathway in library]
-        _write_csv(pd.DataFrame(_common_scores(candidate_results[candidate_results["topology"] == "A"], all_pathways)), output_dir / "common_scoring_sensitivity.csv")
+        _write_csv(pd.DataFrame(_common_scores(candidate_results[candidate_results["topology"] == "A"], libraries)), output_dir / "common_scoring_sensitivity.csv")
 
         mc_frames: list[pd.DataFrame] = []
         for topology, cfg in (("A", model.topology_a_config(**PRIMARY_CFG_KWARGS)), ("B", model.topology_b_config(**PRIMARY_CFG_KWARGS))):
@@ -1388,11 +1663,14 @@ def run(args: argparse.Namespace) -> Path:
             mc_frames.append(_mc_cohort(topology, "validation", VALIDATION_SEEDS, 1000, cfg, PROJECT_ROOT))
         mc = pd.concat(mc_frames, ignore_index=True)
         _write_csv(mc, output_dir / "mc_evaluation.csv")
+        _validate_reused_intermediates(candidate_results, mc, libraries)
+    if args.reuse_intermediate:
+        _write_csv(pd.DataFrame(_common_scores(candidate_results[candidate_results["topology"] == "A"], libraries)), output_dir / "common_scoring_sensitivity.csv")
     result_for_coverage = {method: candidate_results[candidate_results["method"] == method] for method in LIBRARY_ORDER}
     coverage, differences, omission_seed = _coverage_rows(mc, result_for_coverage, args.bootstrap_reps)
     _write_csv(coverage, output_dir / "coverage_summary.csv")
     _write_csv(differences, output_dir / "paired_coverage_differences.csv")
-    _write_csv(differences, output_dir / "signature_gain_loss.csv")
+    _write_csv(differences[differences["direction"].isin(["gained", "lost"])], output_dir / "signature_gain_loss.csv")
     _write_csv(omission_seed, output_dir / "coverage_per_seed.csv")
 
     omission_rows: list[dict[str, Any]] = []
@@ -1417,9 +1695,11 @@ def run(args: argparse.Namespace) -> Path:
                         "uncovered_fraction": frequency / total_failures if total_failures and not covered else 0.0,
                     }
                 )
-    _write_csv(omission_rows, output_dir / "omission_catalog.csv")
+    omission_catalog = pd.DataFrame(omission_rows)
+    omission_figure_data = _omission_figure_data(omission_catalog)
+    _write_csv(omission_catalog, output_dir / "omission_catalog.csv")
     _write_csv(differences[differences["direction"] == "paired_delta_summary"], output_dir / "figure_coverage_data.csv")
-    _write_csv(pd.DataFrame(omission_rows), output_dir / "figure_omission_data.csv")
+    _write_csv(omission_figure_data, output_dir / "figure_omission_data.csv")
 
     reference_manifest_rows: list[dict[str, Any]] = []
     reference_results: list[pd.DataFrame] = []
@@ -1434,15 +1714,15 @@ def run(args: argparse.Namespace) -> Path:
                     "reference_id": path.pathway_id,
                     "reference_family": path.family,
                     "event_specification": _event_spec(path.events),
-                    "canonical_event_key": _event_key(path.events),
+                    "canonical_event_key": _event_key(path.events, cfg),
                 }
             )
         grid_results, _ = _evaluate_reference_grid(topology, grid, cfg)
         reference_results.append(grid_results)
-        grid_keys = {_event_key(path.events) for path in grid}
+        grid_keys = {_event_key(path.events, cfg) for path in grid}
         for method in LIBRARY_ORDER:
             library = libraries[method]
-            library_keys = {_event_key(path.events) for path in library}
+            library_keys = {_event_key(path.events, cfg) for path in library}
             for threshold in THRESHOLDS:
                 failures = grid_results[(grid_results["threshold"] == threshold) & (grid_results["passive_failure"])]
                 signatures = set(failures["mechanism_signature"]) - {model.UNCLASSIFIED}
@@ -1483,7 +1763,7 @@ def run(args: argparse.Namespace) -> Path:
 
     scaling_rows: list[dict[str, Any]] = []
     workload_path = output_dir / "scaling_workloads.jsonl"
-    with workload_path.open("w", encoding="utf-8") as stream:
+    with workload_path.open("w", encoding="utf-8", newline="\n") as stream:
         for architecture in ("shared", "partitioned"):
             settings: set[tuple[int, int, int, int]] = set()
             for n in (3, 9, 30, 90, 300):
@@ -1503,19 +1783,10 @@ def run(args: argparse.Namespace) -> Path:
                 scaling_rows.extend(raw)
     scaling_df = pd.DataFrame(scaling_rows)
     _write_csv(scaling_df, output_dir / "scaling_runs.csv")
-    if not scaling_df.empty:
-        summary = scaling_df.groupby(["architecture", "n", "horizon", "K", "B"], as_index=False).agg(
-            median_seconds=("end_to_end_seconds", "median"),
-            iqr_seconds=("end_to_end_seconds", lambda values: float(np.percentile(values, 75) - np.percentile(values, 25))),
-            completed_repetitions=("status", lambda values: int((values == "completed").sum())),
-            max_memory_mb=("max_memory_mb", "max"),
-            median_unique_simulations=("unique_simulations", "median"),
-            median_cache_hits=("cache_hits", "median"),
-        )
-    else:
-        summary = pd.DataFrame()
+    summary = _summarize_scaling(scaling_df)
+    scaling_figure_data = _scaling_figure_data(summary)
     _write_csv(summary, output_dir / "scaling_summary.csv")
-    _write_csv(scaling_df, output_dir / "figure_scaling_data.csv")
+    _write_csv(scaling_figure_data, output_dir / "figure_scaling_data.csv")
 
     threshold_sensitivity = _deterministic_threshold_sensitivity(libraries, model.topology_a_config(**PRIMARY_CFG_KWARGS))
     _write_csv(threshold_sensitivity, output_dir / "deterministic_threshold_sensitivity.csv")
@@ -1527,7 +1798,7 @@ def run(args: argparse.Namespace) -> Path:
         {"check": "candidate canonical uniqueness", "passed": all(len({_event_key(path.events) for path in value}) == 50 for value in libraries.values()), "evidence": "canonical event keys"},
         {"check": "reference grid sizes", "passed": len(reference_manifest_rows) == 3699 + 5166, "evidence": json.dumps(pd.DataFrame(reference_manifest_rows).groupby("topology").size().to_dict())},
         {"check": "bootstrap seed fixed", "passed": BOOTSTRAP_SEED == 20260924, "evidence": str(BOOTSTRAP_SEED)},
-        {"check": "RST-22 raw gamma", "passed": True, "evidence": json.dumps({"C0": 0.19259259259259276, "Cadm": 0.26666666666666683, "gamma_raw": -0.38461538461538436, "gamma_clipped": 0.0})},
+        _rst22_validation(candidate_results),
         {"check": "five attribution labels", "passed": set(model.MECHANISM_FAMILIES) == {model.CD, model.HCD, model.CMD, model.PAC, model.RL_TO}, "evidence": json.dumps(model.MECHANISM_FAMILIES)},
     ]
     primary_rows = coverage[
@@ -1552,14 +1823,15 @@ def run(args: argparse.Namespace) -> Path:
     )
     _write_csv(validation_rows, output_dir / "validation_checks.csv")
 
-    _make_figures(output_dir, coverage, omission_seed, scaling_df)
+    _make_figures(output_dir, differences, omission_figure_data, scaling_figure_data)
     _evidence_report(output_dir, baseline, coverage, differences, pd.DataFrame(bounded_rows), scaling_df, source_hashes)
-    output_hashes = {str(path.relative_to(output_dir)): _sha256_file(path) for path in output_dir.rglob("*") if path.is_file() and path.name != "run_manifest.json"}
+    output_hashes = {path.relative_to(output_dir).as_posix(): _sha256_canonical_file(path) for path in output_dir.rglob("*") if path.is_file() and path.name != "run_manifest.json"}
     manifest = {
         "run_id": args.run_id,
         "protocol_version": PROTOCOL_VERSION,
         "audited_commit": "59348388860d98c9bc74a26f55300be41d623838",
         "current_commit": _git_value("rev-parse", "HEAD"),
+        "output_hash_definition": "SHA-256 over canonical LF bytes",
         "source_hashes": source_hashes,
         "environment": _env_versions(),
         "scientific_configuration": {
@@ -1570,7 +1842,7 @@ def run(args: argparse.Namespace) -> Path:
             "bootstrap_seed": BOOTSTRAP_SEED,
             "bootstrap_repetitions": args.bootstrap_reps,
         },
-        "preexisting_worktree_changes": _git_value("status", "--short"),
+        "preexisting_worktree_changes": preexisting_worktree_changes,
         "invocation": " ".join(sys.argv),
         "elapsed_seconds": time.perf_counter() - started,
         "output_hashes": output_hashes,

@@ -40,6 +40,23 @@ See `REPRODUCIBILITY.md` for the reviewer-oriented environment, validation gate,
 expected archived results, and output map. Exact package versions are pinned in
 `requirements.txt`.
 
+## Second-round frozen package
+
+Run the corrected round-two analysis from a clean source commit with:
+
+```powershell
+python generate_round2_analysis.py --output-root 03_round2_revision_outputs --run-id round2_20260924_corrected_frozen --bootstrap-reps 10000 --overwrite
+```
+
+Do not use `--reuse-intermediate` for the reviewer-facing frozen run unless the
+existing candidate and Monte Carlo files pass the driver's schema, row-count,
+event-key, and seed validation. The run manifest hashes outputs as canonical LF
+bytes and records the pre-run worktree status. The package includes
+method-scoped criticality scores, topology-aware exact-event recall,
+completed-only scaling summaries, omission-catalog figure data, paired coverage
+estimates with bootstrap intervals, and explicit attribution-pair iteration
+counts.
+
 ## Legacy Reproduction
 
 Reproduce submitted results and generate the revised tables:
