@@ -1340,6 +1340,7 @@ def _make_figures(
         import matplotlib.pyplot as plt
     except ImportError:
         return
+    plt.rcParams["svg.hashsalt"] = "rst-ijpr-round2"
     paired = differences[differences["direction"] == "paired_delta_summary"].copy()
     if not paired.empty:
         fig, ax = plt.subplots(figsize=(10, 5))
