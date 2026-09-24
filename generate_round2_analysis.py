@@ -1355,7 +1355,7 @@ def _make_figures(
         ax.tick_params(axis="x", rotation=45)
         ax.legend()
         fig.tight_layout()
-        fig.savefig(figures_dir / "coverage_differences.svg")
+        fig.savefig(figures_dir / "coverage_differences.svg", metadata={"Date": None})
         plt.close(fig)
     if not omissions.empty:
         top = omissions.sort_values("omitted_frequency", ascending=False).head(20)
@@ -1367,7 +1367,7 @@ def _make_figures(
         ax.set_title("Observed signature omissions")
         ax.set_xticks(range(len(labels)), labels, rotation=75, ha="right")
         fig.tight_layout()
-        fig.savefig(figures_dir / "observed_omission_populations.svg")
+        fig.savefig(figures_dir / "observed_omission_populations.svg", metadata={"Date": None})
         plt.close(fig)
     if not scaling.empty:
         fig, axes = plt.subplots(1, 4, figsize=(16, 4))
@@ -1381,7 +1381,7 @@ def _make_figures(
             ax.set_ylabel("Median completed-run seconds")
             ax.legend()
         fig.tight_layout()
-        fig.savefig(figures_dir / "scaling_runtime.svg")
+        fig.savefig(figures_dir / "scaling_runtime.svg", metadata={"Date": None})
         plt.close(fig)
 
 

@@ -1,6 +1,4 @@
-import tempfile
 import unittest
-from pathlib import Path
 
 import pandas as pd
 
@@ -83,10 +81,12 @@ class Round2ProtocolTests(unittest.TestCase):
         self.assertAlmostEqual(float(figure_data.iloc[0]["omission_fraction"]), 0.4)
 
     def test_portable_hash_normalizes_line_endings(self):
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "sample.txt"
+        path = round2.PROJECT_ROOT / ".hash_test_line_endings.tmp"
+        try:
             path.write_bytes(b"a\r\nb\r\n")
             self.assertEqual(round2._sha256_canonical_file(path), round2._sha256_text("a\nb\n"))
+        finally:
+            path.unlink(missing_ok=True)
 
     def test_rst22_validation_reads_candidate_result(self):
         candidate_results = pd.DataFrame([{"method": "RST", "topology": "A", "candidate_id": "RST-22", "threshold": "moderate", "C0": 2.0, "Cadm": 1.0, "gamma_raw": 0.5, "gamma_clipped": 0.5}])
