@@ -1629,9 +1629,9 @@ def run(args: argparse.Namespace) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
     source_hashes = {
-        "generate_revised_analysis.py": _sha256_file(PROJECT_ROOT / "generate_revised_analysis.py"),
-        "rst_revised_model.py": _sha256_file(PROJECT_ROOT / "rst_revised_model.py"),
-        "generate_round2_analysis.py": _sha256_file(Path(__file__).resolve()),
+        "generate_revised_analysis.py": _sha256_canonical_file(PROJECT_ROOT / "generate_revised_analysis.py"),
+        "rst_revised_model.py": _sha256_canonical_file(PROJECT_ROOT / "rst_revised_model.py"),
+        "generate_round2_analysis.py": _sha256_canonical_file(Path(__file__).resolve()),
     }
     prescribed = {
         "generate_revised_analysis.py": "28a62db0967dccdcda6eb39449da95a7fc934c3affe62e67db9ec8005db62ac2",
