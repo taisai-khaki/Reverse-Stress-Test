@@ -1,0 +1,10 @@
+﻿check,passed,evidence
+source hashes,True,"{""generate_revised_analysis.py"": ""28a62db0967dccdcda6eb39449da95a7fc934c3affe62e67db9ec8005db62ac2"", ""rst_revised_model.py"": ""22a277deae4cea8bcbb38b216a283472c661bec9490014136346ef3285e2ab75"", ""generate_round2_analysis.py"": ""1903c9a0a00343953fa3177e4135bd7ded7ffa3a057f690b3c00604125dacab4""}"
+baseline counts,True,"{""pooled_moderate_failures"": 2455, ""pooled_severe_failures"": 1445, ""baseline_FST_moderate_crossings"": 33, ""baseline_FST_severe_crossings"": 11, ""mechanism_balanced_FST_moderate_crossings"": 46, ""mechanism_balanced_FST_severe_crossings"": 35, ""RST_passive_pathways"": 48, ""RST_severe_pathways"": 39, ""RST_structural_pathways"": 41, ""RST_adaptation_limited_pathways"": 7}"
+candidate library sizes,True,"{""FST-original"": 50, ""MI-FST"": 50, ""RST"": 50, ""MI-C"": 50, ""MI-M"": 50, ""MI-MD"": 50, ""MI-MDA"": 50}"
+candidate canonical uniqueness,True,canonical event keys
+reference grid sizes,True,"{""A"": 3699, ""B"": 5166}"
+bootstrap seed fixed,True,20260924
+RST-22 raw gamma,True,"{""C0"": 0.19259259259259276, ""Cadm"": 0.26666666666666683, ""gamma_raw"": -0.38461538461538436, ""gamma_clipped"": 0.0}"
+five attribution labels,True,"[""Concentrated dependency"", ""Hidden convergent dependency"", ""Compounding moderate disturbance"", ""Propagation-amplified cascade"", ""Recovery lag and temporal overlap""]"
+archived RST-minus-MI-FST primary margin,True,"{""RST_numerator"": 2215, ""MI_FST_numerator"": 2093, ""denominator"": 2455, ""observed_pp"": 4.96945010183299, ""expected_pp"": 4.969450101832994}"

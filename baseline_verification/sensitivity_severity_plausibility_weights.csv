@@ -1,0 +1,7 @@
+omega_C,omega_P,top_pathway,top_generation_family,top_mechanism_family,top_classification,T2P_IF,corridor_IF,T2P_rank,corridor_rank,rank_stable
+1.0,0.0,RST-08,Concentrated dependency,Concentrated dependency,Structural,0.7488232499335464,0.2511707533605832,1,2,True
+0.75,0.25,RST-40,Propagation-amplified cascade,Concentrated dependency,Structural,0.7360728191621021,0.2469007391179656,1,2,True
+0.625,0.375,RST-40,Propagation-amplified cascade,Concentrated dependency,Structural,0.7310877259405164,0.24523127245926885,1,2,True
+0.5,0.5,RST-40,Propagation-amplified cascade,Concentrated dependency,Structural,0.7267781997724363,0.2437880476422809,1,2,True
+0.25,0.75,RST-25,Compounding moderate disturbance,Concentrated dependency,Structural,0.7197020984811495,0.24141831960425508,1,2,True
+0.0,1.0,RST-23,Compounding moderate disturbance,Concentrated dependency,Structural,0.7141349016693744,0.23955391124787428,1,2,True

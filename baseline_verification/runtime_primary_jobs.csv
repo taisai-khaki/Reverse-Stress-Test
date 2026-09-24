@@ -1,0 +1,27 @@
+workload,job_id,topology,dependence_model,seed,size,seconds,units_per_second,source
+Monte Carlo,topology_A_independent_seed_42_n_1000,A,Independent baseline,42.0,1000,19.026933800021652,52.5570756964983,executed
+Monte Carlo,topology_A_independent_seed_314_n_1000,A,Independent baseline,314.0,1000,18.805826900003012,53.17500822044894,executed
+Monte Carlo,topology_A_independent_seed_1618_n_1000,A,Independent baseline,1618.0,1000,20.015184200019576,49.96206829807851,executed
+Monte Carlo,topology_A_independent_seed_2026_n_1000,A,Independent baseline,2026.0,1000,20.255924800003413,49.368271746340184,executed
+Monte Carlo,topology_A_independent_seed_2718_n_1000,A,Independent baseline,2718.0,1000,19.976226900005713,50.05950347909364,executed
+Monte Carlo,topology_B_independent_seed_42_n_1000,B,Independent baseline,42.0,1000,21.442597199988086,46.63614163309264,executed
+Monte Carlo,topology_B_independent_seed_314_n_1000,B,Independent baseline,314.0,1000,19.280214399972465,51.866643142797635,executed
+Monte Carlo,topology_B_independent_seed_1618_n_1000,B,Independent baseline,1618.0,1000,19.230121800035704,52.00175071164361,executed
+Monte Carlo,topology_B_independent_seed_2026_n_1000,B,Independent baseline,2026.0,1000,19.88763889996335,50.28248979328777,executed
+Monte Carlo,topology_B_independent_seed_2718_n_1000,B,Independent baseline,2718.0,1000,18.519683099992108,53.99660429397014,executed
+Monte Carlo,topology_A_shared_upstream_shock_seed_42_n_1000,A,Shared upstream shock,42.0,1000,20.705888200027402,48.29544090741669,executed
+Monte Carlo,topology_A_shared_upstream_shock_seed_314_n_1000,A,Shared upstream shock,314.0,1000,20.03365360002499,49.91600733271901,executed
+Monte Carlo,topology_A_shared_upstream_shock_seed_1618_n_1000,A,Shared upstream shock,1618.0,1000,24.077053799992427,41.533320825171494,executed
+Monte Carlo,topology_A_shared_upstream_shock_seed_2026_n_1000,A,Shared upstream shock,2026.0,1000,19.97216310002841,50.06968924655825,executed
+Monte Carlo,topology_A_shared_upstream_shock_seed_2718_n_1000,A,Shared upstream shock,2718.0,1000,20.573611499974504,48.60595331068827,executed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_42_n_1000,A,Supplier-cluster shock,42.0,1000,18.5272188000381,53.9746418927132,executed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_314_n_1000,A,Supplier-cluster shock,314.0,1000,20.255001900019124,49.370521164900794,executed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_1618_n_1000,A,Supplier-cluster shock,1618.0,1000,20.93192810000619,47.77390765066235,executed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_2026_n_1000,A,Supplier-cluster shock,2026.0,1000,20.504169700026978,48.77056787130884,executed
+Monte Carlo,topology_A_supplier_cluster_shock_seed_2718_n_1000,A,Supplier-cluster shock,2718.0,1000,20.799369600019418,48.07838022163261,executed
+Monte Carlo,topology_A_demand_supply_coupling_seed_42_n_1000,A,Demand-supply coupling,42.0,1000,17.889416599995457,55.898972133068554,executed
+Monte Carlo,topology_A_demand_supply_coupling_seed_314_n_1000,A,Demand-supply coupling,314.0,1000,18.510044599999674,54.02472125864125,executed
+Monte Carlo,topology_A_demand_supply_coupling_seed_1618_n_1000,A,Demand-supply coupling,1618.0,1000,19.246063900005538,51.95867608024061,executed
+Monte Carlo,topology_A_demand_supply_coupling_seed_2026_n_1000,A,Demand-supply coupling,2026.0,1000,19.343007799994666,51.69826793950193,executed
+Monte Carlo,topology_A_demand_supply_coupling_seed_2718_n_1000,A,Demand-supply coupling,2718.0,1000,18.054307499958668,55.38844400441774,executed
+Primary RST,topology_A_RST_budget_50,A,N/A,,50,1.7441824999987148,28.6667249556952,executed

@@ -1,0 +1,134 @@
+{
+  "generator": "generate_revised_analysis.py",
+  "model": "rst_revised_model.py",
+  "generator_sha256": "28a62db0967dccdcda6eb39449da95a7fc934c3affe62e67db9ec8005db62ac2",
+  "model_sha256": "22a277deae4cea8bcbb38b216a283472c661bec9490014136346ef3285e2ab75",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 8,
+  "seeds": [
+    42,
+    314,
+    1618,
+    2026,
+    2718
+  ],
+  "replications_per_seed": 1000,
+  "workers": 1,
+  "dependence_models": [
+    "Independent baseline",
+    "Shared upstream shock",
+    "Supplier-cluster shock",
+    "Demand-supply coupling"
+  ],
+  "primary_mechanism_priority": [
+    "Hidden convergent dependency",
+    "Compounding moderate disturbance",
+    "Propagation-amplified cascade",
+    "Recovery lag and temporal overlap",
+    "Concentrated dependency"
+  ],
+  "topology_A": {
+    "horizon_weeks": 52,
+    "demand_per_week": 900.0,
+    "tier1_nodes": [
+      "S1A",
+      "S1B",
+      "S1C"
+    ],
+    "tier1_allocation_shares": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "tier1_capacity": 400.0,
+    "tier1_initial_inventory": 200.0,
+    "tier1_order_up_to": 1100.0,
+    "t2p_capacity": 1000.0,
+    "t2p_to_tier1_lead_weeks": 2,
+    "upstream_nodes": [
+      "T2P"
+    ],
+    "tier1_upstream_nodes": [
+      "T2P",
+      "T2P",
+      "T2P"
+    ],
+    "upstream_capacities": null,
+    "corridor_capacity": 1200.0,
+    "corridor_lead_weeks": 1,
+    "fp_initial_inventory": 0.0,
+    "protected_reserve_capacity": 900.0,
+    "active_backlog_trigger_ratio": 0.2,
+    "active_alt_corridor_units": 200.0,
+    "active_reserve_release_frac": 0.3,
+    "severity_weight": 0.625,
+    "plausibility_weight": 0.375,
+    "mc_interarrival_mean_weeks": 18.0,
+    "dependence_strength": 0.65
+  },
+  "topology_B": {
+    "horizon_weeks": 52,
+    "demand_per_week": 900.0,
+    "tier1_nodes": [
+      "S1A",
+      "S1B",
+      "S1C"
+    ],
+    "tier1_allocation_shares": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "tier1_capacity": 400.0,
+    "tier1_initial_inventory": 200.0,
+    "tier1_order_up_to": 1100.0,
+    "t2p_capacity": 1000.0,
+    "t2p_to_tier1_lead_weeks": 2,
+    "upstream_nodes": [
+      "T2P-A",
+      "T2P-B"
+    ],
+    "tier1_upstream_nodes": [
+      "T2P-A",
+      "T2P-A",
+      "T2P-B"
+    ],
+    "upstream_capacities": null,
+    "corridor_capacity": 1200.0,
+    "corridor_lead_weeks": 1,
+    "fp_initial_inventory": 0.0,
+    "protected_reserve_capacity": 900.0,
+    "active_backlog_trigger_ratio": 0.2,
+    "active_alt_corridor_units": 200.0,
+    "active_reserve_release_frac": 0.3,
+    "severity_weight": 0.625,
+    "plausibility_weight": 0.375,
+    "mc_interarrival_mean_weeks": 18.0,
+    "dependence_strength": 0.65
+  },
+  "outputs": [
+    "analysis_summary.json",
+    "criticality_rankings.csv",
+    "fst_baseline_results.csv",
+    "fst_mechanism_balanced_results.csv",
+    "monte_carlo_primary_5000.csv",
+    "primary_exact_multilabel_signature_catalog.csv",
+    "primary_exact_multilabel_signature_coverage.csv",
+    "primary_mechanism_coverage.csv",
+    "primary_method_comparison.csv",
+    "primary_seed_summary.csv",
+    "robustness_topology_seed_runs.csv",
+    "robustness_topology_summary.csv",
+    "rst_results.csv",
+    "runtime_primary_jobs.csv",
+    "runtime_scaling.csv",
+    "sensitivity_dependence_seed_runs.csv",
+    "sensitivity_dependence_summary.csv",
+    "sensitivity_response.csv",
+    "sensitivity_severity_plausibility_weights.csv",
+    "sensitivity_threshold.csv",
+    "validation_mechanism_attribution.csv",
+    "validation_system_operator.csv"
+  ]
+}

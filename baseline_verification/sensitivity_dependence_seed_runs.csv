@@ -1,0 +1,21 @@
+topology,dependence_model,seed,replications,moderate_failures,severe_failures,structural_failures,adaptation_limited_failures,adaptation_limited_share,dominant_mechanism_family
+A,Demand-supply coupling,42,1000,466,262,356,110,0.23605150214592274,Concentrated dependency
+A,Demand-supply coupling,314,1000,467,255,348,119,0.25481798715203424,Concentrated dependency
+A,Demand-supply coupling,1618,1000,461,272,340,121,0.26247288503253796,Concentrated dependency
+A,Demand-supply coupling,2026,1000,463,280,351,112,0.24190064794816415,Concentrated dependency
+A,Demand-supply coupling,2718,1000,465,252,347,118,0.2537634408602151,Concentrated dependency
+A,Independent baseline,42,1000,496,295,371,125,0.25201612903225806,Concentrated dependency
+A,Independent baseline,314,1000,484,299,373,111,0.22933884297520662,Concentrated dependency
+A,Independent baseline,1618,1000,494,286,379,115,0.23279352226720648,Concentrated dependency
+A,Independent baseline,2026,1000,484,287,363,121,0.25,Concentrated dependency
+A,Independent baseline,2718,1000,497,278,377,120,0.2414486921529175,Concentrated dependency
+A,Shared upstream shock,42,1000,511,322,401,110,0.21526418786692758,Hidden convergent dependency
+A,Shared upstream shock,314,1000,492,324,391,101,0.20528455284552846,Hidden convergent dependency
+A,Shared upstream shock,1618,1000,515,327,423,92,0.1786407766990291,Hidden convergent dependency
+A,Shared upstream shock,2026,1000,506,336,393,113,0.22332015810276679,Hidden convergent dependency
+A,Shared upstream shock,2718,1000,504,315,399,105,0.20833333333333334,Hidden convergent dependency
+A,Supplier-cluster shock,42,1000,448,245,334,114,0.2544642857142857,Concentrated dependency
+A,Supplier-cluster shock,314,1000,457,272,350,107,0.23413566739606126,Concentrated dependency
+A,Supplier-cluster shock,1618,1000,456,254,342,114,0.25,Concentrated dependency
+A,Supplier-cluster shock,2026,1000,459,269,353,106,0.23093681917211328,Concentrated dependency
+A,Supplier-cluster shock,2718,1000,462,255,361,101,0.21861471861471862,Concentrated dependency
