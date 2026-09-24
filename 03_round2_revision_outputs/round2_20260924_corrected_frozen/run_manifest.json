@@ -1,0 +1,92 @@
+{
+  "run_id": "round2_20260924_corrected_frozen",
+  "protocol_version": "IJPR-round2-v1-frozen-20260924",
+  "audited_commit": "59348388860d98c9bc74a26f55300be41d623838",
+  "current_commit": "f53b5c358ca9882054916507d38e8538719daf43",
+  "output_hash_definition": "SHA-256 over canonical LF bytes",
+  "source_hashes": {
+    "generate_revised_analysis.py": "28a62db0967dccdcda6eb39449da95a7fc934c3affe62e67db9ec8005db62ac2",
+    "rst_revised_model.py": "22a277deae4cea8bcbb38b216a283472c661bec9490014136346ef3285e2ab75",
+    "generate_round2_analysis.py": "1e1bc187d44a209f038e22db355d05ec24bb31b67cdf0255a905f8c7e40731c2"
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  },
+  "scientific_configuration": {
+    "primary_response": {
+      "active_backlog_trigger_ratio": 0.2,
+      "active_alt_corridor_units": 200.0,
+      "active_reserve_release_frac": 0.3
+    },
+    "thresholds": {
+      "moderate": {
+        "name": "SL<0.90 for >=2 periods",
+        "alpha": 0.9,
+        "consecutive": 2
+      },
+      "severe": {
+        "name": "SL<0.85 for >=3 periods",
+        "alpha": 0.85,
+        "consecutive": 3
+      }
+    },
+    "archived_seeds": [
+      42,
+      314,
+      1618,
+      2026,
+      2718
+    ],
+    "validation_seeds": [
+      7001,
+      7002,
+      7003,
+      7004,
+      7005
+    ],
+    "bootstrap_seed": 20260924,
+    "bootstrap_repetitions": 10000
+  },
+  "preexisting_worktree_changes": "D 00_reproduce_submitted_results/reproduction_log.json\n D 00_reproduce_submitted_results/table4_fst_original.csv\n D 00_reproduce_submitted_results/table5_rst_pathways.csv\n D 00_reproduce_submitted_results/table6_current_comparison.csv\n D 00_reproduce_submitted_results/table7_criticality.csv\n D 00_reproduce_submitted_results/table8_threshold_sensitivity.csv\n D 01_revised_simulation_outputs/revision_manifest.json\n D 01_revised_simulation_outputs/tableA_fst_original_vs_enhanced.csv\n D 01_revised_simulation_outputs/tableB_corrected_comparison.csv\n D 01_revised_simulation_outputs/tableC_multilabel_coverage.csv\n D 01_revised_simulation_outputs/tableD_response_sensitivity.csv\n D 01_revised_simulation_outputs/tableE_weight_sensitivity.csv\n D 01_revised_simulation_outputs/tableF_disturbance_correlation.csv\n D outputs_r26_robustness/r26_robustness_manifest.json\n D outputs_r26_robustness/r26_robustness_runs.csv\n D outputs_r26_robustness/r26_robustness_spread.csv\n D outputs_r26_robustness/r26_robustness_topology_summary.csv\n D outputs_tables/appendix_a_fst_full_list.csv\n D outputs_tables/appendix_b_rst_full_list.csv\n D outputs_tables/appendix_c_metadata.csv\n D outputs_tables/criticality_scores.csv\n D outputs_tables/fst_enhanced_results.csv\n D outputs_tables/fst_results.csv\n D outputs_tables/monte_carlo_ground_truth.csv\n D outputs_tables/rst_results.csv\n D outputs_tables/summary.json\n D outputs_tables/summary_corrected.json\n D outputs_tables/table10_mechanism_summary.csv\n D outputs_tables/table4_fst_summary.csv\n D outputs_tables/table5_rst_family_counts.csv\n D outputs_tables/table6_corrected_comparison.csv\n D outputs_tables/table6_fst_vs_rst.csv\n D outputs_tables/table6b_fst_original_vs_enhanced.csv\n D outputs_tables/table6c_mechanism_coverage_corrected.csv\n D outputs_tables/table7_criticality_comparison.csv\n D outputs_tables/table7_kendall_tau.csv\n D outputs_tables/table8_threshold_sensitivity.csv\n D outputs_tables/table9_passive_active_pathways.csv\n D outputs_tables/tables_manifest.json",
+  "invocation": "generate_round2_analysis.py --output-root 03_round2_revision_outputs --run-id round2_20260924_corrected_frozen --bootstrap-reps 10000 --overwrite",
+  "elapsed_seconds": 5063.487491599983,
+  "output_hashes": {
+    "baseline_verification.json": "3a821c7f6d565bf59cbe74397b23286895a15795d96082a40aa6801e1e5584f7",
+    "bounded_omission_summary.csv": "2fbbfb3943978b35a4a09349a09d30983f6c2aa47f777dd590c11f6a901dfa50",
+    "candidate_manifest.csv": "490a0e4477e3cb55f3f9738d9ca5815145cf5c7680a118c54ac74ffd205c2870",
+    "candidate_results.csv": "2d02b6a03a96823125350905fd7b0ba7b720507d1f8540974555089cd7d0aa20",
+    "candidate_trajectories.csv": "078f0c702492c62f2f1548825113ee42bf2490771a0a35149a18d4f3a07e9c99",
+    "common_scoring_sensitivity.csv": "3017e755f972b08219c1f41a48ab9cb89fd2b8da894c6daf8b8446cd3475eb20",
+    "constituent_counterfactuals.csv": "47231463f1339b2d9444f6003bc2d10eb2f5719290ac29717b32c06cbfeb53bb",
+    "coverage_per_seed.csv": "d5d0212be734cab4e7d2f9ebd9aee2012439af57549405ded834d1e3f293b1e7",
+    "coverage_summary.csv": "a51f923871bdefdf8adf6c3f9538697c2dcf3821d520c8014df5286e1b1f4b88",
+    "deterministic_threshold_sensitivity.csv": "b97b210abbe52c296a08d497e4b20ddab1ea5f7224d5e6a6224a28057a8ce258",
+    "existing_robustness_index.csv": "c16d370ce8ea6aecefbb2de6089d8046f84e5d795d1970b603392f5e71ceeb91",
+    "figure_coverage_data.csv": "ea0df98a8db172cba49c7792ab27a6011d4bcd4eae57c6fc76f64645ba220e95",
+    "figure_omission_data.csv": "6d186d3804bd9a61774b285cd764ee5765f8c1dd99a5f387306300d2bcf046b0",
+    "figure_scaling_data.csv": "852fa1894f339b46cb29a9afbebe8af56d84ca3c833fb18f15f12cb59a565009",
+    "mc_evaluation.csv": "5f858b2cadff06d871842bc50df5d61d0496d909f9f82a2a82f64ae87eba69c0",
+    "missing_signature_witnesses.csv": "10639c7612ca119cde2151f6c3ad4181a63a24a49674ba490da815a9f6c89ada",
+    "omission_catalog.csv": "62d5e893e1f6dab6dac9e95ea42ea3b648c2cd12923d066a5f0d5f0de953e0e9",
+    "paired_coverage_differences.csv": "e23eb52d9b104f1ae871f9b5711b374756602ea0f551d6d07260bd2f187fb02d",
+    "reference_grid_manifest.csv": "e767b59f09c70e6b6b27c2e43c428a198fc85a7e0a9850ae2d58b7230dd20419",
+    "reference_grid_results.csv": "4308af18793611fb337423a0490609547e7d13e6f7ffc1f64d9b3b5683300cad",
+    "revision_evidence_report.md": "1b2db7278d5bf8a73b15ff2502569753fb7c3db6496b032286d1067dfcc71f7a",
+    "scaling_runs.csv": "4d2c8c9c969466d4e8ea96ff4005230ae5c02fd425072aa3a12d796c2e60e711",
+    "scaling_summary.csv": "5821e37a152e2e5f1010094782302a7640d144774eef77525a25a23495c2255b",
+    "scaling_workloads.jsonl": "0502e52155948d9c7eff0b2700c0d861048cc06bb4751ba2b171ce0a6f7ab66e",
+    "signature_gain_loss.csv": "b8244c062911d0891c3dfe60feac3c26fd6435f315a7ce045cdc9fc505ba79d5",
+    "simulation_costs.csv": "d33081c718eda5bf06aed2aec6d63ef198f8be2cd07ab5717c1cfdd05133e705",
+    "simulation_executions.csv": "8d19494095fd649e3b88cf172ed48658dfea44247e6d5d31a37fe9e71a9a29fa",
+    "simulation_requests.csv": "67ba836abd3a45eb50d135ac44a37718e9d042477ee85548b6468bcc17e2b7fa",
+    "validation_checks.csv": "47ad08c8e7326039deb0dd0fe3c36cc1af29b1ea50568c1fd18c1550ae2b263e",
+    "figures/coverage_differences.svg": "e8c0bf546566c80888730c895d400ee01c9527c0b1a9f4e4fb2eed46f406cdc1",
+    "figures/observed_omission_populations.svg": "28f7d0d02fa158aa9f3adacf3f02db630f9e98ea07bb956ff55fbb86b535d8eb",
+    "figures/scaling_runtime.svg": "b70ed80eea53c973c71d3678d01eda91cbc3d77e47e91c788ae03fe2ad51d1cf"
+  }
+}

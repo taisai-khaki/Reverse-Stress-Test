@@ -1,0 +1,7 @@
+﻿path,exists_in_worktree,reviewer_relevance,reuse_status,interpretation_limit
+02_revised_analysis_outputs/sensitivity_threshold.csv,True,threshold sensitivity,reused; no rerun,existing analysis retained
+02_revised_analysis_outputs/sensitivity_response.csv,True,response sensitivity,reused; no rerun,existing analysis retained
+02_revised_analysis_outputs/sensitivity_severity_plausibility_weights.csv,True,weight sensitivity,reused; no rerun,existing analysis retained
+02_revised_analysis_outputs/sensitivity_dependence_summary.csv,True,dependence structures,reused; no rerun,existing analysis retained
+02_revised_analysis_outputs/robustness_topology_summary.csv,True,seed and topology robustness,reused; no rerun,existing analysis retained
+02_revised_analysis_outputs/runtime_scaling.csv,True,archived runtime table,reused; limited archived scope,does not establish network-size scaling
