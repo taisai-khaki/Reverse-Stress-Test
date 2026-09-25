@@ -1,0 +1,552 @@
+﻿cohort,topology,threshold,method,signature,signature_code,omitted_frequency,total_failures,omission_fraction
+archived,A,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,179,2455,0.07291242362525459
+archived,A,moderate,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,48,2455,0.019551934826883912
+archived,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,40,2455,0.016293279022403257
+archived,A,moderate,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,MI-C,Compounding moderate disturbance,CMD,82,2455,0.03340122199592668
+archived,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,40,2455,0.016293279022403257
+archived,A,moderate,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,MI-C,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,MI-FST,Compounding moderate disturbance,CMD,82,2455,0.03340122199592668
+archived,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,40,2455,0.016293279022403257
+archived,A,moderate,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,MI-FST,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,MI-M,Compounding moderate disturbance,CMD,82,2455,0.03340122199592668
+archived,A,moderate,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,MI-M,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,MI-MD,Compounding moderate disturbance,CMD,82,2455,0.03340122199592668
+archived,A,moderate,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,MI-MD,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,MI-MDA,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,moderate,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,86,2455,0.03503054989816701
+archived,A,moderate,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,36,2455,0.014663951120162933
+archived,A,moderate,RST,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,27,2455,0.010997963340122199
+archived,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,26,2455,0.010590631364562118
+archived,A,moderate,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,25,2455,0.010183299389002037
+archived,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,19,2455,0.007739307535641548
+archived,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,19,2455,0.007739307535641548
+archived,A,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2455,0.000814663951120163
+archived,A,severe,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,116,1445,0.08027681660899653
+archived,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,61,1445,0.04221453287197232
+archived,A,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,53,1445,0.03667820069204152
+archived,A,severe,FST-original,Compounding moderate disturbance,CMD,52,1445,0.035986159169550176
+archived,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,25,1445,0.01730103806228374
+archived,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,19,1445,0.01314878892733564
+archived,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,61,1445,0.04221453287197232
+archived,A,severe,MI-C,Compounding moderate disturbance,CMD,52,1445,0.035986159169550176
+archived,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,19,1445,0.01314878892733564
+archived,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,61,1445,0.04221453287197232
+archived,A,severe,MI-FST,Compounding moderate disturbance,CMD,52,1445,0.035986159169550176
+archived,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,19,1445,0.01314878892733564
+archived,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,MI-M,Compounding moderate disturbance,CMD,52,1445,0.035986159169550176
+archived,A,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,MI-MD,Compounding moderate disturbance,CMD,52,1445,0.035986159169550176
+archived,A,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,MI-MD,Concentrated dependency; Hidden convergent dependency,CD+HCD,36,1445,0.02491349480968858
+archived,A,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency,CD+HCD,36,1445,0.02491349480968858
+archived,A,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,A,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,40,1445,0.02768166089965398
+archived,A,severe,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,39,1445,0.02698961937716263
+archived,A,severe,RST,Concentrated dependency; Hidden convergent dependency,CD+HCD,36,1445,0.02491349480968858
+archived,A,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,17,1445,0.011764705882352941
+archived,A,severe,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,14,1445,0.009688581314878892
+archived,A,severe,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,8,1445,0.005536332179930796
+archived,A,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,1445,0.004152249134948097
+archived,A,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,1,1445,0.0006920415224913495
+archived,B,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,253,2133,0.1186122831692452
+archived,B,moderate,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,40,2133,0.01875293014533521
+archived,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,23,2133,0.010782934833567745
+archived,B,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,21,2133,0.009845288326300985
+archived,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,MI-C,Compounding moderate disturbance,CMD,88,2133,0.04125644631973746
+archived,B,moderate,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,23,2133,0.010782934833567745
+archived,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,MI-FST,Compounding moderate disturbance,CMD,88,2133,0.04125644631973746
+archived,B,moderate,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,23,2133,0.010782934833567745
+archived,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,MI-M,Compounding moderate disturbance,CMD,88,2133,0.04125644631973746
+archived,B,moderate,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,MI-MD,Compounding moderate disturbance,CMD,88,2133,0.04125644631973746
+archived,B,moderate,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,13,2133,0.006094702297233943
+archived,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,moderate,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,94,2133,0.04406938584153774
+archived,B,moderate,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,47,2133,0.02203469292076887
+archived,B,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,15,2133,0.007032348804500703
+archived,B,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2133,0.006094702297233943
+archived,B,moderate,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,9,2133,0.004219409282700422
+archived,B,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,7,2133,0.0032817627754336614
+archived,B,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,6,2133,0.0028129395218002813
+archived,B,severe,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,135,961,0.1404786680541103
+archived,B,severe,FST-original,Compounding moderate disturbance,CMD,60,961,0.062434963579604576
+archived,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,43,961,0.044745057232049947
+archived,B,severe,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,32,961,0.03329864724245578
+archived,B,severe,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency,CD+HCD,8,961,0.008324661810613945
+archived,B,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,MI-C,Compounding moderate disturbance,CMD,60,961,0.062434963579604576
+archived,B,severe,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,MI-FST,Compounding moderate disturbance,CMD,60,961,0.062434963579604576
+archived,B,severe,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,MI-M,Compounding moderate disturbance,CMD,60,961,0.062434963579604576
+archived,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,43,961,0.044745057232049947
+archived,B,severe,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,14,961,0.014568158168574402
+archived,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency,CD+HCD,8,961,0.008324661810613945
+archived,B,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,MI-MD,Compounding moderate disturbance,CMD,60,961,0.062434963579604576
+archived,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,43,961,0.044745057232049947
+archived,B,severe,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,14,961,0.014568158168574402
+archived,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency,CD+HCD,8,961,0.008324661810613945
+archived,B,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,43,961,0.044745057232049947
+archived,B,severe,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,14,961,0.014568158168574402
+archived,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency,CD+HCD,8,961,0.008324661810613945
+archived,B,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+archived,B,severe,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,40,961,0.04162330905306972
+archived,B,severe,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,16,961,0.01664932362122789
+archived,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,16,961,0.01664932362122789
+archived,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,14,961,0.014568158168574402
+archived,B,severe,RST,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,10,961,0.01040582726326743
+archived,B,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,8,961,0.008324661810613945
+archived,B,severe,RST,Concentrated dependency; Hidden convergent dependency,CD+HCD,8,961,0.008324661810613945
+archived,B,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,961,0.007284079084287201
+archived,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,7,961,0.007284079084287201
+archived,B,severe,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,2,961,0.002081165452653486
+validation,A,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,142,2483,0.057188884414015304
+validation,A,moderate,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,53,2483,0.02134514699959726
+validation,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,42,2483,0.016915022150624244
+validation,A,moderate,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,MI-C,Compounding moderate disturbance,CMD,81,2483,0.03262182843334676
+validation,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,42,2483,0.016915022150624244
+validation,A,moderate,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,MI-C,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,MI-FST,Compounding moderate disturbance,CMD,81,2483,0.03262182843334676
+validation,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,42,2483,0.016915022150624244
+validation,A,moderate,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,MI-FST,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,MI-M,Compounding moderate disturbance,CMD,81,2483,0.03262182843334676
+validation,A,moderate,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,MI-M,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,MI-MD,Compounding moderate disturbance,CMD,81,2483,0.03262182843334676
+validation,A,moderate,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,MI-MD,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,MI-MDA,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,moderate,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,85,2483,0.0342327829238824
+validation,A,moderate,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,40,2483,0.016109544905356425
+validation,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,28,2483,0.011276681433749497
+validation,A,moderate,RST,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,24,2483,0.009665726943213854
+validation,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,23,2483,0.009262988320579944
+validation,A,moderate,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,22,2483,0.008860249697946033
+validation,A,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,18,2483,0.00724929520741039
+validation,A,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,4,2483,0.0016109544905356424
+validation,A,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,2,2483,0.0008054772452678212
+validation,A,severe,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,100,1404,0.07122507122507123
+validation,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,62,1404,0.04415954415954416
+validation,A,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,54,1404,0.038461538461538464
+validation,A,severe,FST-original,Compounding moderate disturbance,CMD,51,1404,0.03632478632478633
+validation,A,severe,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,24,1404,0.017094017094017096
+validation,A,severe,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,62,1404,0.04415954415954416
+validation,A,severe,MI-C,Compounding moderate disturbance,CMD,51,1404,0.03632478632478633
+validation,A,severe,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,24,1404,0.017094017094017096
+validation,A,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,62,1404,0.04415954415954416
+validation,A,severe,MI-FST,Compounding moderate disturbance,CMD,51,1404,0.03632478632478633
+validation,A,severe,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,24,1404,0.017094017094017096
+validation,A,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,MI-M,Compounding moderate disturbance,CMD,51,1404,0.03632478632478633
+validation,A,severe,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,MI-MD,Compounding moderate disturbance,CMD,51,1404,0.03632478632478633
+validation,A,severe,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,MI-MD,Concentrated dependency; Hidden convergent dependency,CD+HCD,24,1404,0.017094017094017096
+validation,A,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency,CD+HCD,24,1404,0.017094017094017096
+validation,A,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,A,severe,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,42,1404,0.029914529914529916
+validation,A,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,34,1404,0.024216524216524215
+validation,A,severe,RST,Concentrated dependency; Hidden convergent dependency,CD+HCD,24,1404,0.017094017094017096
+validation,A,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,22,1404,0.01566951566951567
+validation,A,severe,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,20,1404,0.014245014245014245
+validation,A,severe,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,10,1404,0.007122507122507123
+validation,A,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,1404,0.00641025641025641
+validation,A,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,3,1404,0.002136752136752137
+validation,B,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,225,2171,0.10363887609396591
+validation,B,moderate,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,37,2171,0.01704283740211884
+validation,B,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,31,2171,0.01427913403961308
+validation,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,2171,0.006909258406264394
+validation,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,MI-C,Compounding moderate disturbance,CMD,96,2171,0.044219253800092125
+validation,B,moderate,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,2171,0.006909258406264394
+validation,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,MI-FST,Compounding moderate disturbance,CMD,96,2171,0.044219253800092125
+validation,B,moderate,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,2171,0.006909258406264394
+validation,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,MI-M,Compounding moderate disturbance,CMD,96,2171,0.044219253800092125
+validation,B,moderate,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,MI-MD,Compounding moderate disturbance,CMD,96,2171,0.044219253800092125
+validation,B,moderate,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,18,2171,0.008291110087517274
+validation,B,moderate,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,moderate,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,90,2171,0.041455550437586364
+validation,B,moderate,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,49,2171,0.022570244127130355
+validation,B,moderate,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,15,2171,0.006909258406264394
+validation,B,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,13,2171,0.005988023952095809
+validation,B,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,9,2171,0.004145555043758637
+validation,B,moderate,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,7,2171,0.0032243205895900505
+validation,B,severe,FST-original,Concentrated dependency; Propagation-amplified cascade,CD+PAC,127,931,0.1364124597207304
+validation,B,severe,FST-original,Compounding moderate disturbance,CMD,53,931,0.05692803437164339
+validation,B,severe,FST-original,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,36,931,0.03866809881847476
+validation,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,FST-original,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+PAC+RL-TO,28,931,0.03007518796992481
+validation,B,severe,FST-original,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,FST-original,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency,CD+HCD,6,931,0.00644468313641246
+validation,B,severe,FST-original,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,FST-original,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,MI-C,Compounding moderate disturbance,CMD,53,931,0.05692803437164339
+validation,B,severe,MI-C,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,MI-C,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,MI-C,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,MI-C,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,MI-C,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,MI-FST,Compounding moderate disturbance,CMD,53,931,0.05692803437164339
+validation,B,severe,MI-FST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,MI-FST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,MI-FST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,MI-FST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,MI-FST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,MI-M,Compounding moderate disturbance,CMD,53,931,0.05692803437164339
+validation,B,severe,MI-M,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,36,931,0.03866809881847476
+validation,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,MI-M,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,931,0.01611170784103115
+validation,B,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,MI-M,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency,CD+HCD,6,931,0.00644468313641246
+validation,B,severe,MI-M,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,MI-M,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,MI-MD,Compounding moderate disturbance,CMD,53,931,0.05692803437164339
+validation,B,severe,MI-MD,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,36,931,0.03866809881847476
+validation,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,MI-MD,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,931,0.01611170784103115
+validation,B,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,MI-MD,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency,CD+HCD,6,931,0.00644468313641246
+validation,B,severe,MI-MD,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,MI-MD,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,MI-MDA,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,HCD+CMD+PAC,36,931,0.03866809881847476
+validation,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,MI-MDA,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,931,0.01611170784103115
+validation,B,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,MI-MDA,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency,CD+HCD,6,931,0.00644468313641246
+validation,B,severe,MI-MDA,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,MI-MDA,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623
+validation,B,severe,RST,Concentrated dependency; Recovery lag and temporal overlap,CD+RL-TO,43,931,0.04618689581095596
+validation,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,HCD+CMD+PAC+RL-TO,29,931,0.031149301825993556
+validation,B,severe,RST,Compounding moderate disturbance; Recovery lag and temporal overlap,CMD+RL-TO,25,931,0.02685284640171858
+validation,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance,HCD+CMD,15,931,0.01611170784103115
+validation,B,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade,CMD+PAC,12,931,0.01288936627282492
+validation,B,severe,RST,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,CD+HCD+PAC+RL-TO,11,931,0.011815252416756176
+validation,B,severe,RST,Hidden convergent dependency; Compounding moderate disturbance; Recovery lag and temporal overlap,HCD+CMD+RL-TO,9,931,0.00966702470461869
+validation,B,severe,RST,Concentrated dependency; Hidden convergent dependency,CD+HCD,6,931,0.00644468313641246
+validation,B,severe,RST,Compounding moderate disturbance; Propagation-amplified cascade; Recovery lag and temporal overlap,CMD+PAC+RL-TO,4,931,0.004296455424274973
+validation,B,severe,RST,Concentrated dependency; Hidden convergent dependency; Recovery lag and temporal overlap,CD+HCD+RL-TO,3,931,0.00322234156820623

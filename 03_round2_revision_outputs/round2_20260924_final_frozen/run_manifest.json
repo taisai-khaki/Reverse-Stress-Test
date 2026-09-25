@@ -1,0 +1,92 @@
+{
+  "run_id": "round2_20260924_final_frozen",
+  "protocol_version": "IJPR-round2-v1-frozen-20260924",
+  "audited_commit": "59348388860d98c9bc74a26f55300be41d623838",
+  "current_commit": "0f8c24f6844cd9475b9aab1bfe5fbe9bbb87fde0",
+  "output_hash_definition": "SHA-256 over canonical LF bytes",
+  "source_hashes": {
+    "generate_revised_analysis.py": "28a62db0967dccdcda6eb39449da95a7fc934c3affe62e67db9ec8005db62ac2",
+    "rst_revised_model.py": "22a277deae4cea8bcbb38b216a283472c661bec9490014136346ef3285e2ab75",
+    "generate_round2_analysis.py": "ae9456c32c32004c94a15449855e8746c7198042c9260162ea60d78026bbbd8f"
+  },
+  "environment": {
+    "python": "3.14.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  },
+  "scientific_configuration": {
+    "primary_response": {
+      "active_backlog_trigger_ratio": 0.2,
+      "active_alt_corridor_units": 200.0,
+      "active_reserve_release_frac": 0.3
+    },
+    "thresholds": {
+      "moderate": {
+        "name": "SL<0.90 for >=2 periods",
+        "alpha": 0.9,
+        "consecutive": 2
+      },
+      "severe": {
+        "name": "SL<0.85 for >=3 periods",
+        "alpha": 0.85,
+        "consecutive": 3
+      }
+    },
+    "archived_seeds": [
+      42,
+      314,
+      1618,
+      2026,
+      2718
+    ],
+    "validation_seeds": [
+      7001,
+      7002,
+      7003,
+      7004,
+      7005
+    ],
+    "bootstrap_seed": 20260924,
+    "bootstrap_repetitions": 10000
+  },
+  "preexisting_worktree_changes": "",
+  "invocation": "generate_round2_analysis.py --output-root 03_round2_revision_outputs --run-id round2_20260924_final_frozen --bootstrap-reps 10000 --overwrite",
+  "elapsed_seconds": 5455.831849000009,
+  "output_hashes": {
+    "baseline_verification.json": "3ca99d5772d26e1aa10fbbe058545474436c17fb5d407e9b79a2642844e78404",
+    "bounded_omission_summary.csv": "2fbbfb3943978b35a4a09349a09d30983f6c2aa47f777dd590c11f6a901dfa50",
+    "candidate_manifest.csv": "490a0e4477e3cb55f3f9738d9ca5815145cf5c7680a118c54ac74ffd205c2870",
+    "candidate_results.csv": "2d02b6a03a96823125350905fd7b0ba7b720507d1f8540974555089cd7d0aa20",
+    "candidate_trajectories.csv": "078f0c702492c62f2f1548825113ee42bf2490771a0a35149a18d4f3a07e9c99",
+    "common_scoring_sensitivity.csv": "3017e755f972b08219c1f41a48ab9cb89fd2b8da894c6daf8b8446cd3475eb20",
+    "constituent_counterfactuals.csv": "47231463f1339b2d9444f6003bc2d10eb2f5719290ac29717b32c06cbfeb53bb",
+    "coverage_per_seed.csv": "d5d0212be734cab4e7d2f9ebd9aee2012439af57549405ded834d1e3f293b1e7",
+    "coverage_summary.csv": "a51f923871bdefdf8adf6c3f9538697c2dcf3821d520c8014df5286e1b1f4b88",
+    "deterministic_threshold_sensitivity.csv": "b97b210abbe52c296a08d497e4b20ddab1ea5f7224d5e6a6224a28057a8ce258",
+    "existing_robustness_index.csv": "c16d370ce8ea6aecefbb2de6089d8046f84e5d795d1970b603392f5e71ceeb91",
+    "figure_coverage_data.csv": "ea0df98a8db172cba49c7792ab27a6011d4bcd4eae57c6fc76f64645ba220e95",
+    "figure_omission_data.csv": "1c1e8ded360221fc72b62f6a6a481aa94fbd41b819fff1c92eecd431fc7a8a90",
+    "figure_scaling_data.csv": "aa9f916a35f024c0a3ee76ae9d95a16e2899ea1a72a33edbd6ed37404c59f1d1",
+    "mc_evaluation.csv": "5f858b2cadff06d871842bc50df5d61d0496d909f9f82a2a82f64ae87eba69c0",
+    "missing_signature_witnesses.csv": "10639c7612ca119cde2151f6c3ad4181a63a24a49674ba490da815a9f6c89ada",
+    "omission_catalog.csv": "62d5e893e1f6dab6dac9e95ea42ea3b648c2cd12923d066a5f0d5f0de953e0e9",
+    "paired_coverage_differences.csv": "e23eb52d9b104f1ae871f9b5711b374756602ea0f551d6d07260bd2f187fb02d",
+    "reference_grid_manifest.csv": "e767b59f09c70e6b6b27c2e43c428a198fc85a7e0a9850ae2d58b7230dd20419",
+    "reference_grid_results.csv": "4308af18793611fb337423a0490609547e7d13e6f7ffc1f64d9b3b5683300cad",
+    "revision_evidence_report.md": "2494e5a6b267641df03c28d0ff5189c4ccf23c29b44401b6c0edce4fc24ffb88",
+    "scaling_runs.csv": "1d0c15a1380474d39fa36e80902cc8dba08ffdf5380faf35c543039f66d422cc",
+    "scaling_summary.csv": "fe9f01308f1f821a4cdaec071176e236469f0b0042d7e05d33a7d6a047701207",
+    "scaling_workloads.jsonl": "0502e52155948d9c7eff0b2700c0d861048cc06bb4751ba2b171ce0a6f7ab66e",
+    "signature_gain_loss.csv": "b8244c062911d0891c3dfe60feac3c26fd6435f315a7ce045cdc9fc505ba79d5",
+    "simulation_costs.csv": "277273e5add3b40f817d41f432f21d9446150059422378c70bd7ebc0d906da1c",
+    "simulation_executions.csv": "bc57a62fec4bcbd745ebf5fb9526531302a50bdae6d41b66cfb0679c54697e54",
+    "simulation_requests.csv": "b120511d08fb25312ff226394ed1d9b1f390bcc6a98c30ba17473153f6eeaae0",
+    "validation_checks.csv": "b37aff7088aa6933b8fecf5c0289d53c568e48939456aa62a977b7d65045b583",
+    "figures/coverage_differences.svg": "e8c0bf546566c80888730c895d400ee01c9527c0b1a9f4e4fb2eed46f406cdc1",
+    "figures/observed_omission_populations.svg": "81d4539291e769d7bcb297a4bfea6ba33cf5c7fa250f3eefeb138f83c863c417",
+    "figures/scaling_runtime.svg": "ca45fecdb9ad5aad1e71d03b810f4df70de812a308319d29a83fe5b20dec5d02"
+  }
+}
