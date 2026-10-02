@@ -23,6 +23,18 @@ class Round2ProtocolTests(unittest.TestCase):
         self.assertEqual(set(changed.loc[changed["variant_id"] == "MI-MDA", "candidate_id"]), {"FST-MI-13", "FST-MI-14", "FST-MI-15", "FST-MI-16"})
         self.assertEqual(set(changed.loc[changed["variant_id"] == "MI-MD", "candidate_id"]), {f"FST-MI-{i:02d}" for i in range(23, 41)})
 
+    def test_mi_mda_corridor_and_demand_events_use_three_periods(self):
+        libraries, _ = round2._build_candidate_libraries()
+        pathways = {
+            pathway.pathway_id: pathway
+            for pathway in libraries["MI-MDA"]
+            if pathway.pathway_id in {f"FST-MI-{i:02d}" for i in range(13, 17)}
+        }
+        self.assertEqual(set(pathways), {f"FST-MI-{i:02d}" for i in range(13, 17)})
+        for pathway in pathways.values():
+            self.assertEqual({event.target for event in pathway.events}, {"corridor", "demand"})
+            self.assertEqual({event.duration_weeks for event in pathway.events}, {3})
+
     def test_reference_grid_sizes(self):
         cfg_a = model.topology_a_config(**round2.PRIMARY_CFG_KWARGS)
         cfg_b = model.topology_b_config(**round2.PRIMARY_CFG_KWARGS)

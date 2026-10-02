@@ -257,7 +257,7 @@ def _build_candidate_libraries() -> tuple[dict[str, list[model.Pathway]], list[d
         _replace_events(
             mi_mda,
             idx,
-            (_capacity("corridor", corridor), _demand(demand_magnitude, duration=3)),
+            (_capacity("corridor", corridor, duration=3), _demand(demand_magnitude, duration=3)),
             "Simultaneous corridor-demand",
         )
     variants["MI-MDA"] = mi_mda
