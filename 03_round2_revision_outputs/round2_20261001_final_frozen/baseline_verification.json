@@ -1,0 +1,28 @@
+{
+  "expected": {
+    "pooled_moderate_failures": 2455,
+    "pooled_severe_failures": 1445,
+    "baseline_FST_moderate_crossings": 33,
+    "baseline_FST_severe_crossings": 11,
+    "mechanism_balanced_FST_moderate_crossings": 46,
+    "mechanism_balanced_FST_severe_crossings": 35,
+    "RST_passive_pathways": 48,
+    "RST_severe_pathways": 39,
+    "RST_structural_pathways": 41,
+    "RST_adaptation_limited_pathways": 7
+  },
+  "observed": {
+    "pooled_moderate_failures": 2455,
+    "pooled_severe_failures": 1445,
+    "baseline_FST_moderate_crossings": 33,
+    "baseline_FST_severe_crossings": 11,
+    "mechanism_balanced_FST_moderate_crossings": 46,
+    "mechanism_balanced_FST_severe_crossings": 35,
+    "RST_passive_pathways": 48,
+    "RST_severe_pathways": 39,
+    "RST_structural_pathways": 41,
+    "RST_adaptation_limited_pathways": 7
+  },
+  "passed": true,
+  "source_summary": "C:\\Users\\L03128674\\projects\\rst_ijpr_code_final_clean\\baseline_verification\\analysis_summary.json"
+}

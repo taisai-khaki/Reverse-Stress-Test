@@ -1,0 +1,167 @@
+﻿cohort,topology,threshold,comparator,direction,signature,candidate_support_ids,support_method,monte_carlo_frequency,rst_numerator,comparator_numerator,paired_denominator,observed_delta_pp,per_seed_delta_mean_pp,per_seed_delta_sd_pp,delta_pp_lower_95,delta_pp_upper_95
+archived,A,moderate,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,48.0,,,,,,,,
+archived,A,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-20;RST-22;RST-41;RST-42;RST-43;RST-44;RST-45,RST,179.0,,,,,,,,
+archived,A,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,40.0,,,,,,,,
+archived,A,moderate,FST-original,paired_delta_summary,,,,,2215.0,1948.0,2455.0,10.875763747454176,10.869214419813428,1.6132627453635355,9.670834396111982,12.118780096308186
+archived,A,moderate,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,82.0,,,,,,,,
+archived,A,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,40.0,,,,,,,,
+archived,A,moderate,MI-FST,paired_delta_summary,,,,,2215.0,2093.0,2455.0,4.969450101832994,4.970884457503198,0.6929521226011457,4.139322653350121,5.839170497314276
+archived,A,moderate,MI-C,gained,Compounding moderate disturbance,RST-30,RST,82.0,,,,,,,,
+archived,A,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,40.0,,,,,,,,
+archived,A,moderate,MI-C,paired_delta_summary,,,,,2215.0,2093.0,2455.0,4.969450101832994,4.970884457503198,0.6929521226011457,4.149857807714272,5.827220863895681
+archived,A,moderate,MI-M,gained,Compounding moderate disturbance,RST-30,RST,82.0,,,,,,,,
+archived,A,moderate,MI-M,paired_delta_summary,,,,,2215.0,2133.0,2455.0,3.340122199592668,3.3390615165156534,0.8752494089168142,2.6552197206316155,4.068383730391507
+archived,A,moderate,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,82.0,,,,,,,,
+archived,A,moderate,MI-MD,paired_delta_summary,,,,,2215.0,2133.0,2455.0,3.340122199592668,3.3390615165156534,0.8752494089168142,2.638080083868329,4.060104726323668
+archived,A,moderate,MI-MDA,paired_delta_summary,,,,,2215.0,2215.0,2455.0,0.0,0.0,0.0,0.0,0.0
+archived,A,severe,FST-original,gained,Compounding moderate disturbance,RST-30,RST,52.0,,,,,,,,
+archived,A,severe,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,53.0,,,,,,,,
+archived,A,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-42;RST-43;RST-44;RST-45,RST,116.0,,,,,,,,
+archived,A,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41,RST,25.0,,,,,,,,
+archived,A,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,19.0,,,,,,,,
+archived,A,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,61.0,,,,,,,,
+archived,A,severe,FST-original,lost,Concentrated dependency; Hidden convergent dependency,FST-48,FST-original,36.0,,,,,,,,
+archived,A,severe,FST-original,paired_delta_summary,,,,,1284.0,994.0,1445.0,20.069204152249135,20.08121269024661,1.3595743741940494,17.706881507989284,22.47608344371744
+archived,A,severe,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,52.0,,,,,,,,
+archived,A,severe,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,19.0,,,,,,,,
+archived,A,severe,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,61.0,,,,,,,,
+archived,A,severe,MI-FST,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-37;FST-MI-38;FST-MI-39;FST-MI-40,MI-FST,36.0,,,,,,,,
+archived,A,severe,MI-FST,paired_delta_summary,,,,,1284.0,1188.0,1445.0,6.643598615916955,6.630487672012366,1.8501904408373948,4.981624184943687,8.411843876177658
+archived,A,severe,MI-C,gained,Compounding moderate disturbance,RST-30,RST,52.0,,,,,,,,
+archived,A,severe,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,19.0,,,,,,,,
+archived,A,severe,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,61.0,,,,,,,,
+archived,A,severe,MI-C,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-37;FST-MI-38;FST-MI-39;FST-MI-40,MI-C,36.0,,,,,,,,
+archived,A,severe,MI-C,paired_delta_summary,,,,,1284.0,1188.0,1445.0,6.643598615916955,6.630487672012366,1.8501904408373948,4.912256767430172,8.345458914705395
+archived,A,severe,MI-M,gained,Compounding moderate disturbance,RST-30,RST,52.0,,,,,,,,
+archived,A,severe,MI-M,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-40,MI-M,36.0,,,,,,,,
+archived,A,severe,MI-M,paired_delta_summary,,,,,1284.0,1268.0,1445.0,1.1072664359861593,1.0825621874441285,1.8644089015888659,-0.14984207368930696,2.3726448011165386
+archived,A,severe,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,52.0,,,,,,,,
+archived,A,severe,MI-MD,paired_delta_summary,,,,,1284.0,1232.0,1445.0,3.5986159169550174,3.586856306678257,0.9972579970093695,2.683568472423238,4.599324096061707
+archived,A,severe,MI-MDA,paired_delta_summary,,,,,1284.0,1284.0,1445.0,0.0,0.0,0.0,0.0,0.0
+validation,A,moderate,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,53.0,,,,,,,,
+validation,A,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-20;RST-22;RST-41;RST-42;RST-43;RST-44;RST-45,RST,142.0,,,,,,,,
+validation,A,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,42.0,,,,,,,,
+validation,A,moderate,FST-original,paired_delta_summary,,,,,2237.0,2000.0,2483.0,9.544905356423682,9.535215958811165,0.8712037395914348,8.39723940863703,10.696121502668342
+validation,A,moderate,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,81.0,,,,,,,,
+validation,A,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,42.0,,,,,,,,
+validation,A,moderate,MI-FST,paired_delta_summary,,,,,2237.0,2114.0,2483.0,4.953685058397101,4.966188372576992,1.0054189571818917,4.127873938421281,5.816733067729084
+validation,A,moderate,MI-C,gained,Compounding moderate disturbance,RST-30,RST,81.0,,,,,,,,
+validation,A,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-23;RST-24,RST,42.0,,,,,,,,
+validation,A,moderate,MI-C,paired_delta_summary,,,,,2237.0,2114.0,2483.0,4.953685058397101,4.966188372576992,1.0054189571818917,4.106856007388267,5.818641028964897
+validation,A,moderate,MI-M,gained,Compounding moderate disturbance,RST-30,RST,81.0,,,,,,,,
+validation,A,moderate,MI-M,paired_delta_summary,,,,,2237.0,2156.0,2483.0,3.262182843334676,3.2692449435533275,0.6428382292054701,2.5806451612903225,3.978892839099052
+validation,A,moderate,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,81.0,,,,,,,,
+validation,A,moderate,MI-MD,paired_delta_summary,,,,,2237.0,2156.0,2483.0,3.262182843334676,3.2692449435533275,0.6428382292054701,2.572347266881029,3.98600167395163
+validation,A,moderate,MI-MDA,paired_delta_summary,,,,,2237.0,2237.0,2483.0,0.0,0.0,0.0,0.0,0.0
+validation,A,severe,FST-original,gained,Compounding moderate disturbance,RST-30,RST,51.0,,,,,,,,
+validation,A,severe,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,54.0,,,,,,,,
+validation,A,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-42;RST-43;RST-44;RST-45,RST,100.0,,,,,,,,
+validation,A,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41,RST,22.0,,,,,,,,
+validation,A,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,24.0,,,,,,,,
+validation,A,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,62.0,,,,,,,,
+validation,A,severe,FST-original,lost,Concentrated dependency; Hidden convergent dependency,FST-48,FST-original,24.0,,,,,,,,
+validation,A,severe,FST-original,paired_delta_summary,,,,,1240.0,951.0,1404.0,20.584045584045583,20.57284730431506,2.7866528598890095,18.266426769676833,22.87769784172662
+validation,A,severe,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,51.0,,,,,,,,
+validation,A,severe,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,24.0,,,,,,,,
+validation,A,severe,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,62.0,,,,,,,,
+validation,A,severe,MI-FST,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-37;FST-MI-38;FST-MI-39;FST-MI-40,MI-FST,24.0,,,,,,,,
+validation,A,severe,MI-FST,paired_delta_summary,,,,,1240.0,1127.0,1404.0,8.048433048433049,8.05504620662401,3.1738403719762642,6.364284764248188,9.781881884540123
+validation,A,severe,MI-C,gained,Compounding moderate disturbance,RST-30,RST,51.0,,,,,,,,
+validation,A,severe,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24;RST-26,RST,24.0,,,,,,,,
+validation,A,severe,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-23;RST-25;RST-36,RST,62.0,,,,,,,,
+validation,A,severe,MI-C,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-37;FST-MI-38;FST-MI-39;FST-MI-40,MI-C,24.0,,,,,,,,
+validation,A,severe,MI-C,paired_delta_summary,,,,,1240.0,1127.0,1404.0,8.048433048433049,8.05504620662401,3.1738403719762642,6.361144051675989,9.733253611466216
+validation,A,severe,MI-M,gained,Compounding moderate disturbance,RST-30,RST,51.0,,,,,,,,
+validation,A,severe,MI-M,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-40,MI-M,24.0,,,,,,,,
+validation,A,severe,MI-M,paired_delta_summary,,,,,1240.0,1213.0,1404.0,1.9230769230769231,1.923433781001626,0.8238333701276296,0.7071388728410065,3.1204670145858424
+validation,A,severe,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,51.0,,,,,,,,
+validation,A,severe,MI-MD,paired_delta_summary,,,,,1240.0,1189.0,1404.0,3.6324786324786325,3.6357766835757017,0.6046226239386971,2.6988610461839397,4.661062544075091
+validation,A,severe,MI-MDA,paired_delta_summary,,,,,1240.0,1240.0,1404.0,0.0,0.0,0.0,0.0,0.0
+archived,B,moderate,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,21.0,,,,,,,,
+archived,B,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-20;RST-22;RST-42;RST-43;RST-44;RST-45,RST,253.0,,,,,,,,
+archived,B,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41,RST,40.0,,,,,,,,
+archived,B,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,23.0,,,,,,,,
+archived,B,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,FST-original,paired_delta_summary,,,,,1942.0,1592.0,2133.0,16.408813877168306,16.388269122883592,1.5676497243552998,14.865486652296468,18.049044436746524
+archived,B,moderate,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,88.0,,,,,,,,
+archived,B,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,23.0,,,,,,,,
+archived,B,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,MI-FST,paired_delta_summary,,,,,1942.0,1818.0,2133.0,5.813408345053914,5.814724452214056,0.45042514473361417,4.83202454742029,6.8404024851640655
+archived,B,moderate,MI-C,gained,Compounding moderate disturbance,RST-30,RST,88.0,,,,,,,,
+archived,B,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,23.0,,,,,,,,
+archived,B,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,MI-C,paired_delta_summary,,,,,1942.0,1818.0,2133.0,5.813408345053914,5.814724452214056,0.45042514473361417,4.861102918043102,6.815020862308762
+archived,B,moderate,MI-M,gained,Compounding moderate disturbance,RST-30,RST,88.0,,,,,,,,
+archived,B,moderate,MI-M,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,MI-M,paired_delta_summary,,,,,1942.0,1841.0,2133.0,4.735114861697141,4.73352743362842,0.6310716480671689,3.842546952636379,5.681831413812084
+archived,B,moderate,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,88.0,,,,,,,,
+archived,B,moderate,MI-MD,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,MI-MD,paired_delta_summary,,,,,1942.0,1841.0,2133.0,4.735114861697141,4.73352743362842,0.6310716480671689,3.853427073733188,5.663095052263576
+archived,B,moderate,MI-MDA,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,13.0,,,,,,,,
+archived,B,moderate,MI-MDA,paired_delta_summary,,,,,1942.0,1929.0,2133.0,0.6094702297233943,0.6109914324539487,0.2713471172627237,0.28942862622705,0.9726838017978493
+archived,B,severe,FST-original,gained,Compounding moderate disturbance,RST-30,RST,60.0,,,,,,,,
+archived,B,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-44;RST-45,RST,135.0,,,,,,,,
+archived,B,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41;RST-42;RST-43,RST,32.0,,,,,,,,
+archived,B,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,43.0,,,,,,,,
+archived,B,severe,FST-original,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-48,FST-original,14.0,,,,,,,,
+archived,B,severe,FST-original,paired_delta_summary,,,,,833.0,577.0,961.0,26.63891779396462,26.515217918569213,3.6752718249906158,23.643576337185248,29.657435856724156
+archived,B,severe,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,60.0,,,,,,,,
+archived,B,severe,MI-FST,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-39;FST-MI-40,MI-FST,8.0,,,,,,,,
+archived,B,severe,MI-FST,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-MI-37;FST-MI-38,MI-FST,14.0,,,,,,,,
+archived,B,severe,MI-FST,paired_delta_summary,,,,,833.0,795.0,961.0,3.9542143600416235,3.9082994196975407,1.7191173368346897,2.1118979268040308,5.773461867016309
+archived,B,severe,MI-C,gained,Compounding moderate disturbance,RST-30,RST,60.0,,,,,,,,
+archived,B,severe,MI-C,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-39;FST-MI-40,MI-C,8.0,,,,,,,,
+archived,B,severe,MI-C,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-MI-37;FST-MI-38,MI-C,14.0,,,,,,,,
+archived,B,severe,MI-C,paired_delta_summary,,,,,833.0,795.0,961.0,3.9542143600416235,3.9082994196975407,1.7191173368346897,2.118632258186422,5.806485676329324
+archived,B,severe,MI-M,gained,Compounding moderate disturbance,RST-30,RST,60.0,,,,,,,,
+archived,B,severe,MI-M,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,43.0,,,,,,,,
+archived,B,severe,MI-M,paired_delta_summary,,,,,833.0,730.0,961.0,10.718002081165453,10.643749060872588,2.0271423248113396,8.805635011441648,12.68988857125071
+archived,B,severe,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,60.0,,,,,,,,
+archived,B,severe,MI-MD,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,43.0,,,,,,,,
+archived,B,severe,MI-MD,paired_delta_summary,,,,,833.0,730.0,961.0,10.718002081165453,10.643749060872588,2.0271423248113396,8.832419807754617,12.725392846813842
+archived,B,severe,MI-MDA,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,43.0,,,,,,,,
+archived,B,severe,MI-MDA,paired_delta_summary,,,,,833.0,790.0,961.0,4.474505723204995,4.373673669269335,2.0204379935427146,3.2257252379560146,5.843475061717402
+validation,B,moderate,FST-original,gained,Concentrated dependency; Hidden convergent dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-46,RST,31.0,,,,,,,,
+validation,B,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-20;RST-22;RST-42;RST-43;RST-44;RST-45,RST,225.0,,,,,,,,
+validation,B,moderate,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41,RST,37.0,,,,,,,,
+validation,B,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,15.0,,,,,,,,
+validation,B,moderate,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,FST-original,paired_delta_summary,,,,,1975.0,1649.0,2171.0,15.01612160294795,15.017397352675601,1.939739475097047,13.534129124605121,16.48964388900585
+validation,B,moderate,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,96.0,,,,,,,,
+validation,B,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,15.0,,,,,,,,
+validation,B,moderate,MI-FST,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,MI-FST,paired_delta_summary,,,,,1975.0,1846.0,2171.0,5.9419622293873795,5.958329528876946,1.342929904084205,4.979190388883528,6.951632913713715
+validation,B,moderate,MI-C,gained,Compounding moderate disturbance,RST-30,RST,96.0,,,,,,,,
+validation,B,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance,RST-24,RST,15.0,,,,,,,,
+validation,B,moderate,MI-C,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,MI-C,paired_delta_summary,,,,,1975.0,1846.0,2171.0,5.9419622293873795,5.958329528876946,1.342929904084205,4.942249821002708,6.92521747809664
+validation,B,moderate,MI-M,gained,Compounding moderate disturbance,RST-30,RST,96.0,,,,,,,,
+validation,B,moderate,MI-M,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,MI-M,paired_delta_summary,,,,,1975.0,1861.0,2171.0,5.25103638876094,5.263758918821031,1.2362232158482873,4.3357933579335795,6.229876212541448
+validation,B,moderate,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,96.0,,,,,,,,
+validation,B,moderate,MI-MD,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,MI-MD,paired_delta_summary,,,,,1975.0,1861.0,2171.0,5.25103638876094,5.263758918821031,1.2362232158482873,4.3478260869565215,6.215226077135191
+validation,B,moderate,MI-MDA,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-29,RST,18.0,,,,,,,,
+validation,B,moderate,MI-MDA,paired_delta_summary,,,,,1975.0,1957.0,2171.0,0.8291110087517273,0.834664022558349,0.5654659159851473,0.4655493482309125,1.2351271198844427
+validation,B,severe,FST-original,gained,Compounding moderate disturbance,RST-30,RST,53.0,,,,,,,,
+validation,B,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade,RST-44;RST-45,RST,127.0,,,,,,,,
+validation,B,severe,FST-original,gained,Concentrated dependency; Propagation-amplified cascade; Recovery lag and temporal overlap,RST-41;RST-42;RST-43,RST,28.0,,,,,,,,
+validation,B,severe,FST-original,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,36.0,,,,,,,,
+validation,B,severe,FST-original,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-48,FST-original,15.0,,,,,,,,
+validation,B,severe,FST-original,paired_delta_summary,,,,,774.0,545.0,931.0,24.597207303974223,24.56458069572557,1.2123839811060664,21.630359137882877,27.65737874097007
+validation,B,severe,MI-FST,gained,Compounding moderate disturbance,RST-30,RST,53.0,,,,,,,,
+validation,B,severe,MI-FST,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-39;FST-MI-40,MI-FST,6.0,,,,,,,,
+validation,B,severe,MI-FST,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-MI-37;FST-MI-38,MI-FST,15.0,,,,,,,,
+validation,B,severe,MI-FST,paired_delta_summary,,,,,774.0,742.0,931.0,3.4371643394199785,3.404806063894507,1.1378617693070696,1.649442067376602,5.291049978549978
+validation,B,severe,MI-C,gained,Compounding moderate disturbance,RST-30,RST,53.0,,,,,,,,
+validation,B,severe,MI-C,lost,Concentrated dependency; Hidden convergent dependency,FST-MI-39;FST-MI-40,MI-C,6.0,,,,,,,,
+validation,B,severe,MI-C,lost,Hidden convergent dependency; Compounding moderate disturbance,FST-MI-37;FST-MI-38,MI-C,15.0,,,,,,,,
+validation,B,severe,MI-C,paired_delta_summary,,,,,774.0,742.0,931.0,3.4371643394199785,3.404806063894507,1.1378617693070696,1.6573216589188795,5.229455709711846
+validation,B,severe,MI-M,gained,Compounding moderate disturbance,RST-30,RST,53.0,,,,,,,,
+validation,B,severe,MI-M,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,36.0,,,,,,,,
+validation,B,severe,MI-M,paired_delta_summary,,,,,774.0,685.0,931.0,9.559613319011815,9.531641701880442,2.4302040152288384,7.668067226890757,11.471861471861471
+validation,B,severe,MI-MD,gained,Compounding moderate disturbance,RST-30,RST,53.0,,,,,,,,
+validation,B,severe,MI-MD,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,36.0,,,,,,,,
+validation,B,severe,MI-MD,paired_delta_summary,,,,,774.0,685.0,931.0,9.559613319011815,9.531641701880442,2.4302040152288384,7.773055541234899,11.503419729731593
+validation,B,severe,MI-MDA,gained,Hidden convergent dependency; Compounding moderate disturbance; Propagation-amplified cascade,RST-37;RST-38,RST,36.0,,,,,,,,
+validation,B,severe,MI-MDA,paired_delta_summary,,,,,774.0,738.0,931.0,3.866809881847476,3.8466202995774355,1.84441647959405,2.6665983606557377,5.139664804469274
