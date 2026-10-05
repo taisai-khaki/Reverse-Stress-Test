@@ -2,7 +2,7 @@
 
 This package contains the submitted-result audit, the revised Sections 3 and 4
 computational model, fixed-seed Monte Carlo outputs, deterministic FST/RST
-outputs, sensitivity checks, topology robustness results, and regression tests.
+outputs, sensitivity checks, two-topology sensitivity results, and regression tests.
 
 ## Environment
 
@@ -21,10 +21,12 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
-The package currently contains 14 regression tests covering the system operator,
-pipeline and inventory conservation, response bounds, mechanism attribution,
-adaptation-limited taxonomy, severe RST count, response-sensitivity settings,
-and exact multilabel-signature matching.
+The current suite contains 29 automated regression tests. It covers the
+system operator, conservation and response bounds, mechanism attribution,
+response-setting consistency, exact-signature coverage, calibrated candidate
+variants, bounded omission, paired bootstrap comparisons, scaling summaries,
+and canonical output-digest verification. All 29 tests must pass before the
+authoritative release is regenerated.
 
 ## Full Revised Analysis
 
@@ -59,11 +61,14 @@ Sharing only one label does not count as an exact match.
 
 - `00_reproduce_submitted_results/`: audit of the originally submitted results.
 - `01_revised_simulation_outputs/`: earlier revised Tables A-F retained for traceability.
-- `02_revised_analysis_outputs/`: final revised analysis, raw fixed-seed runs, and review workbook.
+- `02_revised_analysis_outputs/`: archived revised-analysis source files, raw fixed-seed runs, and review workbook.
 - `outputs_tables/`: corrected legacy comparison tables and appendices.
 - `outputs_r26_robustness/`: earlier reviewer R2-6 robustness package retained for traceability.
 
-The authoritative revised summary is
-`02_revised_analysis_outputs/analysis_summary.json`. The workbook
-`02_revised_analysis_outputs/revised_analysis_review.xlsx` provides a formatted
-review of the same CSV and JSON outputs.
+The authoritative result package is
+`03_round2_revision_outputs/round2_20261001_final_frozen/`.
+Its `run_manifest.json` is the controlling identity record for the
+reconciled analysis. The sensitivity and scientific-validation files
+reused from `02_revised_analysis_outputs` are listed in
+`existing_robustness_index.csv`. The 00- and 01-series outputs remain
+available only for traceability.

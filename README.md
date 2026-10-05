@@ -2,7 +2,7 @@
 
 This folder contains a runnable Python implementation of the paper:
 
-`Reverse Stress Testing for Supply Chain Resilience: A Failure-First Analytical Framework for Identifying Non-Viability Pathways`
+`Mechanism-Guided Reverse Stress Testing for Supply Chain Resilience`
 
 ## Files
 
@@ -19,7 +19,7 @@ This folder contains a runnable Python implementation of the paper:
   - Moderate: `SL_t < 0.90` for at least 2 consecutive periods.
   - Severe: `SL_t < 0.85` for at least 3 consecutive periods.
 - Monte Carlo ground-truth generation.
-- Forward Stress Testing (50-scenario baseline).
+- FST-original and calibrated 50-candidate comparison libraries.
 - Mechanism-guided RST candidate search (50-pathway budget).
 - Passive vs active RST classification:
   - `Structural` vs `Adaptation-limited`.
@@ -45,8 +45,19 @@ expected archived results, and output map. Exact package versions are pinned in
 Run the corrected round-two analysis from a clean source commit with:
 
 ```powershell
-python generate_round2_analysis.py --output-root 03_round2_revision_outputs --run-id round2_20260924_corrected_frozen --bootstrap-reps 10000 --overwrite
+python generate_round2_analysis.py --output-root 03_round2_revision_outputs --run-id round2_20261001_final_frozen --bootstrap-reps 10000 --overwrite
 ```
+
+Authoritative release:
+`03_round2_revision_outputs/round2_20261001_final_frozen/`
+
+The `run_manifest.json` records the exact source identity, invocation,
+environment, scientific settings, and canonical-LF SHA-256 digests for
+all 32 generated outputs. The 02-series directory remains the archived
+source for the sensitivity and scientific-validation files enumerated in
+`existing_robustness_index.csv`; the 03-series manifest controls the
+reconciled comparison, omission, interval, workload, and scaling results.
+The 00- and 01-series directories are retained only for traceability.
 
 Do not use `--reuse-intermediate` for the reviewer-facing frozen run unless the
 existing candidate and Monte Carlo files pass the driver's schema, row-count,
@@ -94,20 +105,20 @@ Revision workflow outputs:
 - `outputs_tables/table6b_fst_original_vs_enhanced.csv`: original vs enhanced FST baseline.
 - `outputs_tables/table6c_mechanism_coverage_corrected.csv`: mechanism-family coverage diagnostics.
 - `outputs_tables/summary_corrected.json`: corrected comparison summary and decision-rule result.
-- `outputs_r26_robustness/r26_robustness_runs.csv`: per-seed/per-topology robustness results.
+- `outputs_r26_robustness/r26_robustness_runs.csv`: earlier per-seed two-topology sensitivity results.
 - `outputs_r26_robustness/r26_robustness_spread.csv`: mean, spread, and range by topology and overall.
 - `outputs_r26_robustness/r26_robustness_topology_summary.csv`: compact topology-level summary.
 
-Revised-model outputs:
+Archived 02-series source outputs:
 
 - `02_revised_analysis_outputs/validation_system_operator.csv`: nominal-state, nonnegativity, conservation, corridor, rerouting, and reserve checks.
-- `02_revised_analysis_outputs/validation_mechanism_attribution.csv`: causal-prefix, order-invariance, and mechanism-counterfactual checks.
+- `02_revised_analysis_outputs/validation_mechanism_attribution.csv`: failure-onset-prefix, order-invariance, and mechanism-counterfactual checks.
 - `02_revised_analysis_outputs/monte_carlo_primary_5000.csv`: pooled five-seed primary Monte Carlo results.
 - `02_revised_analysis_outputs/primary_method_comparison.csv`: baseline FST, mechanism-balanced FST, and RST comparison.
 - `02_revised_analysis_outputs/primary_exact_multilabel_signature_coverage.csv`: frequency-weighted and unique exact-signature coverage by method.
 - `02_revised_analysis_outputs/primary_exact_multilabel_signature_catalog.csv`: Monte Carlo signature frequencies and method-specific exact matches.
 - `02_revised_analysis_outputs/sensitivity_*.csv`: threshold, response, severity-plausibility weight, and dependence analyses.
-- `02_revised_analysis_outputs/robustness_topology_*.csv`: five-seed results and spread for both topologies.
+- `02_revised_analysis_outputs/robustness_topology_*.csv`: five-seed two-topology sensitivity results and spread.
 - `02_revised_analysis_outputs/runtime_*.csv`: primary-job timings and explicit scaling evidence.
 - `02_revised_analysis_outputs/analysis_summary.json`: top-line results and manuscript-consistency flags.
 
@@ -118,6 +129,6 @@ Revised-model outputs:
 - Mechanism attribution is multilabel and counterfactual. Adaptation-limited is only a passive-active classification.
 - Exact multilabel-signature coverage requires equality of the complete mechanism-label set; sharing only one label does not count as an exact match.
 - The primary response baseline remains `tau_B=0.20D`; the four `kappa_alt` and `rho_rel` sensitivity reruns use `tau_B=0.17D` for consistency with the manuscript robustness design.
-- Revised numerical results are not calibrated to retain the submitted counts. `analysis_summary.json` records the resulting discrepancies explicitly.
+- Revised numerical results are not calibrated to retain the submitted counts. The archived 02-series `analysis_summary.json` records the resulting discrepancies, while `03_round2_revision_outputs/round2_20261001_final_frozen/run_manifest.json` controls the authoritative scientific release.
 - The manuscript does not define a primary-label tie-break. Scalar primary-family summaries use the fixed priority `HCD, CMD, PAC, RL-TO, CD`; multilabel outputs remain available in every pathway table.
 - Topology B preserves total upstream capacity at 1,000 units/week and allocates it 2:1 across T2P-A and T2P-B according to served tier-1 channels.
